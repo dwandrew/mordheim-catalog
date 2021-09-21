@@ -15,8 +15,6 @@ ActiveRecord::Schema.define(version: 2021_09_21_134649) do
   create_table "armour_special_rules", force: :cascade do |t|
     t.integer "armour_id"
     t.integer "special_rule_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "armours", force: :cascade do |t|
@@ -24,8 +22,6 @@ ActiveRecord::Schema.define(version: 2021_09_21_134649) do
     t.string "saving_throw"
     t.string "cost"
     t.string "rarity", default: "Common"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "equipment", force: :cascade do |t|
@@ -33,15 +29,11 @@ ActiveRecord::Schema.define(version: 2021_09_21_134649) do
     t.string "description"
     t.string "cost"
     t.string "rarity"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "special_rules", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "spells", force: :cascade do |t|
@@ -50,15 +42,11 @@ ActiveRecord::Schema.define(version: 2021_09_21_134649) do
     t.string "difficulty"
     t.string "description"
     t.string "number"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "weapon_special_rules", force: :cascade do |t|
     t.integer "weapon_id"
     t.integer "special_rule_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "weapons", force: :cascade do |t|
@@ -67,8 +55,6 @@ ActiveRecord::Schema.define(version: 2021_09_21_134649) do
     t.string "range"
     t.string "strength"
     t.string "rarity", default: "Common"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
 end

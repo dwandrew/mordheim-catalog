@@ -6,7 +6,6 @@ class CreateEquipment < ActiveRecord::Migration[6.1]
       t.string :cost
       t.string :rarity
 
-      t.timestamps
     end
   end
 end

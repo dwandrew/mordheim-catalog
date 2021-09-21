@@ -7,7 +7,6 @@ class CreateSpells < ActiveRecord::Migration[6.1]
       t.string :description
       t.string :number
 
-      t.timestamps
     end
   end
 end

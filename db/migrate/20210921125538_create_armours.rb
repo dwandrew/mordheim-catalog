@@ -6,7 +6,6 @@ class CreateArmours < ActiveRecord::Migration[6.1]
       t.string :cost
       t.string :rarity, :default => "Common"
 
-      t.timestamps
     end
   end
 end

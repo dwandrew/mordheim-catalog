@@ -6,8 +6,7 @@ class CreateWeapons < ActiveRecord::Migration[6.1]
       t.string :range
       t.string :strength
       t.string :rarity, :default => "Common"
-      
-      t.timestamps
+
     end
   end
 end

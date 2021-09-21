@@ -86,3 +86,146 @@ Armour.create(name:"Buckler", cost:"5", saving_throw:"-").special_rules<< Specia
 Armour.create(name:"Helmet", cost:"10", saving_throw:"-").special_rules<< SpecialRule.find_by_name("Avoid stun")
 Armour.create(name:"Ithilmar armour", rarity: "Rare 11", cost:"90", saving_throw:"5+")
 Armour.create(name:"Gromril armour", rarity: "Rare 11", cost:"150", saving_throw:"4+")
+
+# Equipment.create(name:"", description:"", cost:"", rarity:"Common")
+Equipment.create(name:"Rope & hook", description:"A warrior equipped with a rope & hook may re-roll failed Initiative tests when climbing up and down.", cost:"5", rarity:"Common")
+Equipment.create(name:"Black Lotus", description:"A weapon coated with the sap of the Black Lotus will wound its target automatically if you roll a 6 to hit. Note that you can still roll a dice for every wound inflicted in this way. If you roll a 6, you will inflict a critical hit with that roll. If you do not roll a 6, you will cause a normal wound. Take armour saves as normal.", cost:"10+D6", rarity:"Rare 9, (Not available to Witch Hunters, Warrior-Priests or Sisters of Sigmar. Rare 7 for Skaven)")
+Equipment.create(name:"Dark Venom", description:"Any hit caused by a weapon coated with Dark Venom counts as having +1 Strength, so, for example, if a warrior with Strength 3 wielding a poisoned sword hits an opponent, he will cause a Strength 4 hit instead. Armour saving throws are modified to take into account the increased Strength of the attack.", cost:"30+2D6", rarity:"Rare 8, (Not available to Witch Hunters, Warrior-Priests or Sisters of Sigmar.)")
+Equipment.create(name:"Mad Cap Mushrooms", description:"The feared cult of Goblin Fanatics of the Worlds Edge Mountains use these hallucinogenic mushrooms to drive themselves into a frenzied state. Effect: Any warrior who takes Mad Cap Mushrooms before a battle will be subject to frenzy. The Mad Cap Mushroom has no effect on Undead such as Vampires and Zombies, or the Possessed. Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes permanently stupid.", cost:"30+3D6", rarity:"Rare 9")
+Equipment.create(name:"Crimson Shade", description:"Crimson Shade is the name given by Old Worlders to the leaves of the blood oak of Estalia. It is an extremely addictive drug, but grants its users inhuman quickness and strength. Effect: A model using Crimson Shade has his Initiative increased by +D3 points, and Movement and Strength by +1 (this effect lasts for one game). Crimson Shade has no effect on Undead such as Vampires and Zombies, or the Possessed. Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes addicted and you must try to buy him a new batch of Crimson Shade before every battle from now on. If you fail to buy any, he will leave your warband. On a roll of 12 the model’s Initiative is increased permanently by +1.", cost:"35+D6", rarity:"Rare 8")
+Equipment.create(name:"Mandrake Root", description:"The man-shaped Mandrake Root grows in the rotting swamps of Sylvania. It is a noxious, deadly plant which is highly addictive and slowly kills its users, but also allows them to shrug off almost any pain. Effect: Mandrake Root makes a man almost oblivious to pain. His Toughness is increased by +1 for the duration of a battle and he treats all stunned results as knocked down instead. Mandrake Root has no effect on Undead, such as Vampires and Zombies, or on the Possessed. Side effects: Mandrake Root is highly poisonous. At the end of the battle, roll 2D6. On a roll of 2-3 the model loses 1 point of Toughness permanently", cost:"25+D6", rarity:"Rare 8")
+Equipment.create(name:"Lucky charm", description:"These take many shapes, but the most common are symbolic hammers that a pious Sigmarite Priest has touched, or carved heads of ancient Dwarf gods. The first time a model with a lucky charm is hit in a battle they roll a D6. On a 4+ the hit is discarded and no damage is suffered. Owning two or more charms does not confer any extra benefits, the model may still only try to discard the first hit.", cost:"10", rarity:"Rare 6")
+Equipment.create(name:"Blessed water", description:"The priests of Ulric, Sigmar, Mórr and Manann hold great power over evil. Pure water from a clear fountain, blessed by one of these priests, is said to burn things of darkness and evil. A vial of blessed water contains enough liquid for just one use, and has a thrown range of twice the thrower’s Strength in inches. Roll to hit using the model’s BS. No modifiers for range or moving apply. Blessed water causes 1 wound on Undead, Daemon or Possessed models automatically. There is no armour save. Undead or Possessed models may not use blessed water.", cost:"10+3D6", rarity:"Rare 6 (Common for Warrior-Priests and Sisters of Sigmar; May not be bought by Undead)")
+Equipment.create(name:"Elven cloak", description:"Made from the hair of Elven maidens and interwoven with living tree leaves, an Elven cloak is a wonder to behold. A warrior wearing such a cloak will blend into the shadows, making it very difficult to shoot at them with missile weapons. Elven cloaks rarely come up for sale, but are sometimes recovered from dead warriors or offered by Elves as rewards to men who have served them in some way. A warrior aiming a missile weapon at a warrior wearing an Elven cloak suffers -1 on his to hit roll.", cost:"100+D6x10", rarity:"Rare 12")
+Equipment.create(name:"Hunting Arrows", description:"The best hunting arrows are made by the hunters of Drakwald forest. They have sharp, barbed arrowheads which cause excruciating pain when they hit their target. A skilled archer can severely injure his target with a single arrow. A model using a short bow, bow, long bow or Elf bow may use these arrows. They add +1 to all Injury rolls.", cost:"25+D6", rarity:"Rare 8")
+Equipment.create(name:"Garlic", description:"Garlic is a common herb grown in most gardens of the Empire. It is said to ward off Vampires and other denizens of the dark. A Vampire must pass a Leadership test or it will be unable to charge a model carrying a clove of garlic. Garlic lasts for the duration of one battle only, whether it is used or not", cost:"1", rarity:"Common (May not be bought by the Undead)")
+Equipment.create(name:"Net", description:"Steel nets, such as those used by Pit Fighters, can be used in battles. Once per game, the net may be thrown in the shooting phase instead of the model shooting a missile weapon. Treat the net as a missile weapon in all respects with a range of 8\". Use the model’s BS to determine whether the net hits or not – there are no movement or range penalties. If it hits, the target must immediately roll a D6. If the result is equal to, or lower than his Strength, he rips the net apart. If the result is higher, he may not move, shoot or cast spells in his next turn, although he is not otherwise affected. In either case the net is lost.", cost:"5", rarity:"Common")
+Equipment.create(name:"Bugman’s ale", description:"Of all the Dwarf brewmasters, Josef Bugman is the most famous. His ale is known throughout the Old World, and widely regarded as the best. A warband that drinks a barrel of Bugman’s before a battle will be immune to fear for the whole of the battle. Elves may not drink Bugman’s ale as they are far too delicate to cope with its effects. There is only enough ale to supply the warband for one battle.", cost:"50+3D6", rarity:"Rare 9")
+Equipment.create(name:"Tome of Magic", description:"Sometimes books of forbidden lore are offered for sale in the markets and dark alleys of the settlements around Mordheim. If a warband includes a wizard, he will gain an extra spell from the tome, permanently. He may randomly generate this new spell from his own list or the Lesser Magic list. See the Magic section for details. The benefits from each Tome of Magic apply to only one model.", cost:"200+D6X25", rarity:"Rare 12 (Not available to Witch Hunters or Sisters of Sigmar)")
+Equipment.create(name:"Holy tome", description:"Books of prayers and descriptions of the holy deeds of religious heroes like Sigmar Heldenhammer are copied by hand in the scriptoriums of Sigmar and Ulric, and given or sold to the faithful. Of these tomes, the Deus Sigmar is the most common and well known, but other texts such as the Scriptures of Sigmar are also sold to those who follow the faith. A holy man can recite his prayers from such a book, strengthening his faith and belief. A Warrior Priest or Sister of Sigmar with a holy tome can add +1 to the score when determining whether he (or she) can recite a spell successfully or not.", cost:"100+D6x10", rarity:"Rare 8 (Only available to Warrior-Priests and Sisters of Sigmar)")
+Equipment.create(name:"Halfling cookbook", description:"All Halfling chefs have their own secret recipes, and these are recorded in tomes handwritten in Mootland, the home country of the Halflings. Food prepared according to these recipes will attract warriors during these lean times. The maximum number of warriors allowed in your warband is increased by +1 (note that neither an Undead warband nor a Carnival of Chaos warband can use this item).", cost:"30+3D6", rarity:"Rare 7")
+
+Equipment.create(name:"Healing herbs", description:"Certain plants that grow on the banks of the River Stir have curative properties. Herbalists collect their roots and leaves and use them to treat the sick and wounded. A Hero with healing herbs can use them at the beginning of any of his recovery phases as long as he is not engaged in hand-to-hand combat. This restores all wounds he has previously lost during the game.", cost:"20+2D6", rarity:"Rare 8")
+Equipment.create(name:"Holy (Unholy) relic", description:"In this age of superstition and religious fanaticism, holy objects are an important part of life. Relics abound in the Old World: hairs of Sigmar, pieces from Ulric’s hammer, teeth of Daemon Princes, all are sold to men needing encouragement before battle and as charms against sorcery. A model with a holy relic will automatically pass the first Leadership test he is required to make in the game. If worn by the leader, it will allow him to automatically pass the first Rout test if he has not taken any Leadership tests before. You can only ignore the first Leadership test in any single game – owning two or more holy relics will not allow you to ignore second and subsequent tests.", cost:"15+3D6", rarity:"Rare 8 (Rare 6 for Warrior-Priests and Sisters of Sigmar)")
+Equipment.create(name:"Lantern", description:"A model that is in possession of a lantern may add +4\" to the distance from which he is able to spot hidden enemies.", cost:"10", rarity:"Common")
+Equipment.create(name:"Superior blackpowder", description:"The model has acquired a better quality of blackpowder than is normally available. This new batch adds +1 Strength to all blackpowder weapons that the model has. There is enough superior blackpowder to last for one game.", cost:"30", rarity:"Rare 11")
+Equipment.create(name:"Mordheim map", description:"Some survivors of the cataclysm still remain in the
+many settlements around Mordheim, and make a
+living by preparing maps of the city from memory.
+Many of these maps are faked, and even real ones are
+often crude and inaccurate.
+A map can help a warband find their way through the
+confusing maze of streets and into areas with rich
+buildings to loot.
+When you buy a map, roll a D6: \n
+1: Fake. The map is a fake, and is
+completely worthless. It leads you on
+a fool’s errand. Your opponent may
+automatically choose the next
+scenario you play.\n
+2-3: Vague. Though crude, the map is
+generally accurate (well… parts of it
+are… perhaps!). You may re-roll any
+one dice during the next exploration
+phase if you wish but you must accept
+the result of the second roll.\n
+4: Catacomb map. The map shows a
+way through the catacombs into the
+city. You may automatically choose the
+scenario next time you fight a battle.\n
+5: Accurate. The map is recently made
+and very detailed. You may re-roll up
+to three dice during the next
+exploration phase if you wish. You
+must accept the result of the second
+roll.\n
+6: Master map. This is one of the
+twelve master maps of Mordheim
+made for Count von Steinhardt of
+Ostermark. From now on you may
+always re-roll one dice when rolling
+on the Exploration chart as long as
+the Hero who possesses this map was
+not taken out of action in the battle.", cost:"20+4D6", rarity:"Rare 9")
+Equipment.create(name:"Cathayan silk cloak", description:"Some rich warband leaders like to flaunt their wealth and purchase clothes made out of silk from distant Cathay. This silk is the most expensive fabric in the known world, and wearing such clothes is a sure way to attract attention – especially thieves and assassins!
+Any Mercenary warband whose leader is wearing silk clothes may re-roll the first failed Rout test. However, after each battle in which the leader is taken out of action, roll a D6. On a roll of 1-3 the clothes are ruined and must be discarded", cost:"50+2D6", rarity:"Rare 9")
+Equipment.create(name:"Tears of shallaya", description:"Tears of Shallaya are vials of water from the holy spring in Couronne. Shallaya is the goddess of healing and mercy and it is said that this water has curative properties and is proof against any poison.\n A model who drinks a vial of the Tears of Shallaya at the beginning of a battle will be completely immune to all poisons for the duration of combat. Undead and Possessed warriors may not use the Tears of Shallaya.\n There is enough liquid in a vial of the Tears of Shallaya to last for the duration of one battle.", cost:"10+2D6", rarity:"Rare 7")
+Equipment.create(name:"Wardog", description:"The men of the Empire have always been experts at
+raising ferocious bloodhounds to guard their cattle
+and holdings against roaming Goblins and Beastmen.
+A highly trained wardog is a dangerous opponent and
+worth its weight in gold in Mordheim.
+If you purchase a wardog, it will fight exactly like a
+member of your warband, though it is treated as part
+of the equipment of the Hero who bought it. You will
+need a model to represent it on a battlefield.
+Wardogs never gain experience, and if they are put
+out of action they have exactly the same chance of
+recovering as Henchmen (ie, 1-2: Dead; 3-6: Alive).
+Wardogs count towards the maximum number of
+warriors allowed in your warband.
+Profile M WS BS S T W I A Ld
+Wardog 6 4 0 4 3 1 4 1 5
+You could also use the profile above to represent one
+of the more exotic animals used by the warbands of
+Mordheim, such as trained bears, Chaos familiars or
+even fighting monkeys from the far-off Southlands!", cost:"25+2D6", rarity:"Rare 10 (Not available to skaven)")
+Equipment.create(name:"Horse", description:"You may mount one of your Heroes on a horse or
+warhorse in the coming battles.
+Horses and warhorses can only be used if you are
+using the optional rules for mounted models at the
+back of the book.
+Only Humans can buy or use horses and warhorses.
+Profile M WS BS S T W I A Ld
+Horse 8 0 0 3 3 1 3 0 5", cost:"40", rarity:"Rare 8 (only available to Humans)")
+Equipment.create(name:"Warhorse", description:"You may mount one of your Heroes on a horse or
+warhorse in the coming battles.
+Horses and warhorses can only be used if you are
+using the optional rules for mounted models at the
+back of the book.
+Only Humans can buy or use horses and warhorses.
+Profile M WS BS S T W I A Ld
+Warhorse 8 3 0 3 3 1 3 1 5", cost:"80", rarity:"Rare 11 (only available to Humans)")
+
+Spell.create(number:"1", name: "The Hammer of Sigmar", difficulty: "7",
+description: "This weapon of the faithful glows with a golden light, imbued as it is with the righteous power of
+Sigmar.
+The wielder gains +2 Strength in hand-to-hand combat and all hits they inflict cause double
+damage (eg, 2 wounds instead of 1). The Priest must test each shooting phase they want to use
+the Hammer.",
+school: "Prayers of Sigmar")
+
+Spell.create(number:"2", school: "Prayers of Sigmar", name: "Hearts of Steel", difficulty: "8", description: "As the three words of power are spoken, waves of glory surround the servant of Sigmar. The
+faithful are heartened by the warrior god’s presence.
+Any allied warriors within 8\" of the warrior become immune to Fear and All Alone tests. In
+addition, the whole warband gains +1 to any Rout tests they have to make. The effects of this spell
+last until the caster is knocked down, stunned or put out of action. If cast again the effects are not
+cumulative, ie, the maximum bonus to Rout tests remains +1.")
+
+Spell.create(number:3, school: "Prayers of Sigmar", name:"Soulfire", difficulty: "9",
+description: "The wrath of Sigmar comes to earth. Purifying flames surround the Priest and wipe out those who
+resist the righteous fury of the God-Emperor!
+All enemy models within 4\" of the servant of Sigmar suffer a Strength 3 hit. No armour saves are
+allowed. The servants of darkness and Chaos are especially susceptible to Sigmar’s holy power.
+Undead and Possessed models in range suffer a Strength 5 hit instead.")
+
+Spell.create(number:"4", school: "Prayers of Sigmar", name: "Shield of Faith", difficulty: "6",
+description: "A shield of pure white light appears in front of the Priest. As long as their faith remains strong the
+shield will protect them.
+The Priest is immune to all spells. Roll at the beginning of each turn in the recovery phase. On a
+roll of 1 or 2 the shield disappears.")
+
+Spell.create(number:"5", school: "Prayers of Sigmar", name: "Healing Hand", difficulty: "5",
+description: "Laying hands upon a wounded comrade, the servant of Sigmar calls upon their Lord to heal the
+warrior’s wounds.
+Any one model within 2\" of the Priest (including themself) may be healed. The warrior is restored
+to his full quota of Wounds. In addition, if any friendly models within 2\" are stunned or knocked
+down, they immediately come to their senses, stand up, and continue fighting as normal.")
+
+Spell.create(number:"6", school: "Prayers of Sigmar", name: "Armour of Righteousness", difficulty: "9",
+description: "Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above
+their head.
+The Priest has an armour save of 2+ which replaces their normal armour save. In addition, they cause
+fear in their enemies and is therefore immune to fear himself.
+The power of the Armour of Righteousness lasts until the beginning of the Casters’s next
+Shooting phase.")
