@@ -4,10 +4,12 @@ class WeaponsController < ApplicationController
   # GET /weapons or /weapons.json
   def index
     @weapons = Weapon.all
+   
   end
 
   # GET /weapons/1 or /weapons/1.json
   def show
+    render :json => @weapon, :include => :special_rules
   end
 
   # GET /weapons/new
