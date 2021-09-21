@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_083820) do
 
   create_table "weapons", force: :cascade do |t|
     t.string "name"
-    t.integer "cost"
+    t.string "cost"
     t.string "range"
     t.string "strength"
     t.datetime "created_at", precision: 6, null: false

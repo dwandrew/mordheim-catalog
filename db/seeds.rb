@@ -10,6 +10,7 @@
 
 # SpecialRule.create(name:"", description:"")
 SpecialRule.create(name:"+1 Enemy Armour Save", description:"An enemy wounded by this weapon gains a +1 bonus to their armour save, or a 6+ armour save if they normally have none") 
+SpecialRule.create(name:"-1 Enemy Armour Save", description:"An enemy wounded by this weapon gains a -1 penalty to their armour save") 
 SpecialRule.create(name:"Concussion", description:"Bludgeoning weapons are excellent to use for striking your enemy senseless. A roll of 2-4 is treated as stunned when rolling on the injury chart when using this weapon")
 SpecialRule.create(name:"Cutting edge", description:"This weapon is built for cutting through armour. It has an extra save modifier of -1 on top of normal strength modifiers")
 SpecialRule.create(name:"Parry", description:"This weapon/armour allows for parrying. When their opponent hits (in close combat) the modal may roll a D6, if this is higher than the highest to hit score the opponent rolled that attack is discarded. You may not parry something that is double your strength, it is simply too powerful a blow to stop")
@@ -24,16 +25,24 @@ SpecialRule.create(name:"Lance bonus", description:"This weapon is well build fo
 SpecialRule.create(name:"Cavalry weapon", description:"This weapon can only be used when mounted.")
 SpecialRule.create(name:"Gromril weapon", description:"This weapon gives an extra -1 save modifier on top of other strength and weapon modifiers.")
 SpecialRule.create(name:"Ithilmar weapon", description:"This weapon gives the user +1 initiative in close combat")
+SpecialRule.create(name:"Move or fire", description:"You may not move and fire this weapon in the same turn other than to pivot on the spot or stand up (unless a special rule/ability states otherwise) ")
 # Weapon.create(name:"", range:"Close Combat", cost:0, strength:"As user")
 # Weapon.create(name:"Fist", range:"Close Combat", cost:0, strength:"As user -1")
-Weapon.create(name:"Fist", range:"Close Combat", cost:0, strength:"As user -1").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
-Weapon.create(name:"Dagger", range:"Close Combat", cost:2, strength:"").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
-Weapon.create(name:"Hammer, staff, mace or club", range:"Close Combat", cost:3, strength:"As user").special_rules<< SpecialRule.find_by_name("Concussion")
-Weapon.create(name:"Axe or pick", range:"Close Combat", cost:5, strength:"As user").special_rules<< SpecialRule.find_by_name("Cutting edge")
-Weapon.create(name:"Sword", range:"Close Combat", cost:10, strength:"As user").special_rules<< SpecialRule.find_by_name("Parry")
-Weapon.create(name:"Flail", range:"Close Combat", cost:15, strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Two-handed")]
-Weapon.create(name:"Morning star", range:"Close Combat", cost:15, strength:"As user +1").special_rules<< [SpecialRule.find_by_name("Difficult to use"), SpecialRule.find_by_name("Heavy")]
-Weapon.create(name:"Halberd", range:"Close Combat", cost:10, strength:"As user +1").special_rules<< SpecialRule.find_by_name("Two-handed")
-Weapon.create(name:"Spear", range:"Close Combat", cost:10, strength:"As user").special_rules<< [SpecialRule.find_by_name("Unwieldy"), SpecialRule.find_by_name("Strike first"), SpecialRule.find_by_name("Cavalry bonus")]
-Weapon.create(name:"Lance", range:"Close Combat", cost:40, strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Cavalry weapon"), SpecialRule.find_by_name("Lance bonus")]
-Weapon.create(name:"Double handed weapon", range:"Close Combat", cost:0, strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Strike last"), SpecialRule.find_by_name("Two-handed")]
+Weapon.create(name:"Fist", range:"Close Combat", cost:"0", strength:"As user -1").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
+Weapon.create(name:"Dagger", range:"Close Combat", cost:"2", strength:"").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
+Weapon.create(name:"Hammer, staff, mace or club", range:"Close Combat", cost:"3", strength:"As user").special_rules<< SpecialRule.find_by_name("Concussion")
+Weapon.create(name:"Axe or pick", range:"Close Combat", cost:"5", strength:"As user").special_rules<< SpecialRule.find_by_name("Cutting edge")
+Weapon.create(name:"Sword", range:"Close Combat", cost:"10", strength:"As user").special_rules<< SpecialRule.find_by_name("Parry")
+Weapon.create(name:"Flail", range:"Close Combat", cost:"15", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Two-handed")]
+Weapon.create(name:"Morning star", range:"Close Combat", cost:"15", strength:"As user +1").special_rules<< [SpecialRule.find_by_name("Difficult to use"), SpecialRule.find_by_name("Heavy")]
+Weapon.create(name:"Halberd", range:"Close Combat", cost:"10", strength:"As user +1").special_rules<< SpecialRule.find_by_name("Two-handed")
+Weapon.create(name:"Spear", range:"Close Combat", cost:"10", strength:"As user").special_rules<< [SpecialRule.find_by_name("Unwieldy"), SpecialRule.find_by_name("Strike first"), SpecialRule.find_by_name("Cavalry bonus")]
+Weapon.create(name:"Lance", range:"Close Combat", cost:"40", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Cavalry weapon"), SpecialRule.find_by_name("Lance bonus")]
+Weapon.create(name:"Double handed weapon", range:"Close Combat", cost:"15", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Strike last"), SpecialRule.find_by_name("Two-handed")]
+
+
+Weapon.create(name:"Short bow", range:"16\"", cost:"5", strength:"3")
+Weapon.create(name:"Bow", range:"24\"", cost:"10", strength:"3")
+Weapon.create(name:"Long bow", range:"30\"", cost:"15", strength:"3")
+Weapon.create(name:"Elf bow", range:"36\"", cost:"35 + 3D6", strength:"3").special_rules<< SpecialRule.find_by_name("-1 Enemy Armour Save")
+Weapon.create(name:"Crossbow", range:"30\"", cost:"25", strength:"4").special_rules<< SpecialRule.find_by_name("Move or fire")
