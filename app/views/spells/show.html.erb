@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School:</strong>
+  <%= @spell.school %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @spell.name %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @spell.difficulty %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @spell.description %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @spell.number %>
+</p>
+
+<%= link_to 'Edit', edit_spell_path(@spell) %> |
+<%= link_to 'Back', spells_path %>

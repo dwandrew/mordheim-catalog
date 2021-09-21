@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :spells
+  resources :equipment
   resources :armours
   resources :special_rules
   resources :weapons
