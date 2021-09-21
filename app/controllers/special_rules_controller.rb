@@ -1,13 +1,15 @@
 class SpecialRulesController < ApplicationController
-  before_action :set_special_rule, only: %i[ show edit update destroy ]
+  before_action :set_special_rule, only: %i[ show ]
 
   # GET /special_rules or /special_rules.json
   def index
     @special_rules = SpecialRule.all
+    render :json => @special_rules, :include => :weapons
   end
 
   # GET /special_rules/1 or /special_rules/1.json
   def show
+    render :json => @special_rule, :include => :weapons
   end
 
   # GET /special_rules/new
