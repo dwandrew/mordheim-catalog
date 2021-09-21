@@ -9,10 +9,10 @@
 
 
 # SpecialRule.create(name:"", description:"")
-SpecialRule.create(name:"+1 Enemy Armour Save", description:"An enemy wounded by this weapon gains a +1 bonus to their armour save, or a 6+ armour save if they normally have none") 
-SpecialRule.create(name:"-1 Enemy Armour Save", description:"An enemy wounded by this weapon gains a -1 penalty to their armour save") 
+SpecialRule.create(name:"+1 Enemy Armour saving_throw", description:"An enemy wounded by this weapon gains a +1 bonus to their armour saving_throw, or a 6+ armour saving_throw if they normally have none") 
+SpecialRule.create(name:"-1 Enemy Armour saving_throw", description:"An enemy wounded by this weapon gains a -1 penalty to their armour saving_throw") 
 SpecialRule.create(name:"Concussion", description:"Bludgeoning weapons are excellent to use for striking your enemy senseless. A roll of 2-4 is treated as stunned when rolling on the injury chart when using this weapon")
-SpecialRule.create(name:"Cutting edge", description:"This weapon is built for cutting through armour. It has an extra save modifier of -1 on top of normal strength modifiers")
+SpecialRule.create(name:"Cutting edge", description:"This weapon is built for cutting through armour. It has an extra saving_throw modifier of -1 on top of normal strength modifiers")
 SpecialRule.create(name:"Parry", description:"This weapon/armour allows for parrying. When their opponent hits (in close combat) the modal may roll a D6, if this is higher than the highest to hit score the opponent rolled that attack is discarded. You may not parry something that is double your strength, it is simply too powerful a blow to stop")
 SpecialRule.create(name:"Heavy", description:"Any strength bonus offered by this weapon only occurs during the first turn of each combat the model is involved in")
 SpecialRule.create(name:"Two-handed", description:"This weapon requires both hands to use, the model cannot use a second hand weapon, shield or buckler during combat (unless a special rule/ability states otherwise). They may still use a shield against ranged attacks if the modal is not in combat.")   
@@ -23,25 +23,32 @@ SpecialRule.create(name:"Cavalry bonus", description:"This weapon is well build 
 SpecialRule.create(name:"Strike last", description:"This weapon is slow and cumbersome, therefore any attacks with it strike last in combat even when charging (unless a special rule/ability states otherwise)")
 SpecialRule.create(name:"Lance bonus", description:"This weapon is well build for use as a cavalry weapon. The model gets a +2 str bonus with attacks made by this weapon if mounted and has charged this round")
 SpecialRule.create(name:"Cavalry weapon", description:"This weapon can only be used when mounted.")
-SpecialRule.create(name:"Gromril weapon", description:"This weapon gives an extra -1 save modifier on top of other strength and weapon modifiers.")
-SpecialRule.create(name:"Ithilmar weapon", description:"This weapon gives the user +1 initiative in close combat")
+
 SpecialRule.create(name:"Move or fire", description:"You may not move and fire this weapon in the same turn other than to pivot on the spot or stand up (unless a special rule/ability states otherwise)")
 SpecialRule.create(name:"Fire twice at half range", description:"You may fire twice in the shooting phase if you do not move in the movement phase and your target is at half range or less. If you fire twice both shots are at -1 to hit")
 SpecialRule.create(name:"Fire twice", description:"You may fire twice in the shooting phase. If you fire twice both shots are at -1 to hit")
 SpecialRule.create(name:"Thrown weapon", description:"Models using thrown weapons do not suffer penalties for moving or range. They cannot be used in close combat")
 SpecialRule.create(name:"Shoot in close combat", description:"A model armed with this weapon may shoot it in the first round of a hand-to-hand combat and this shot is always resolved first, before any blows are struck. This shot has an extra -2 to hit penalty. Use model’s Ballistic Skill to see whether it hits or not. This bonus attack is in addition to any close combat weapon attacks")
 SpecialRule.create(name:"Prepare shot", description:"A weapon with this rule takes a whole turn to reload, so you may only fire every other turn. If you have a brace of weapons (ie, two) you may fire every turn.")
-SpecialRule.create(name:"Hand to hand", description:"A weapon with this rule can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 save modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with a -2 save modifier, regardless of the firer’s Strength.")
+SpecialRule.create(name:"Hand to hand", description:"A weapon with this rule can be used in hand-to-hand combat as well as for shooting. A model armed with a pistol and another close combat weapon gains +1 Attack, which is resolved at Strength 4 with a -2 saving_throw modifier. This bonus attack can be used only once per combat. If you are firing a brace of pistols, your model can fight with 2 Attacks in the first turn of close combat. These attacks are resolved with a model’s Weapon Skill like any normal close combat attack and likewise may be parried. Successful hits are resolved at Strength 4 and with a -2 saving_throw modifier, regardless of the firer’s Strength.")
 SpecialRule.create(name:"Accuracy", description:"This weapon is built for accuracy as a skilled duellist is able to hit a coin from twenty paces. All shots and close combat attacks from this weapon have a +1 bonus to hit.")
 SpecialRule.create(name:"Shot", description:"When your model fires the blunderbus draw a 16\" line  1\" wide from the user. Any and all models in its path are automatically hit with a strength 3 hit.")
 SpecialRule.create(name:"Fire once", description:"This weapon takes so long to reload it can only be fired once per game")
 SpecialRule.create(name:"Pick target", description:"A model armed with this weapon can target any enemy in sight, not just the closest one")
+SpecialRule.create(name:"Encumbrance", description:"A warrior who is armed with both this armour and a shield suffers a -1 Movement penalty")
+SpecialRule.create(name:"Avoid stun", description:"A warrior equipped with a helment has a 4+ saving_throw against being stunned. If the saving_throw if made treat the warrior as being Knocked down, this saving_throw is not modified by the opponents strength or other armour saving_throw modifiers.")
+SpecialRule.create(name:"Shielded", description:"If the model is armed with a single handed weapon and a shield they get an extra +1 to their armour saving_throw.")
+
+SpecialRule.create(name:"Gromril weapon", description:"This weapon gives an extra -1 saving_throw modifier on top of other strength and weapon modifiers.")
+SpecialRule.create(name:"Ithilmar weapon", description:"This weapon gives the user +1 initiative in close combat")
+
+# SpecialRule.create(name:"", description:"")
     
 
 # Weapon.create(name:"", range:"Close Combat", cost:0, strength:"As user")
 # Weapon.create(name:"Fist", range:"Close Combat", cost:0, strength:"As user -1")
-Weapon.create(name:"Fist", range:"Close Combat", cost:"0", strength:"As user -1").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
-Weapon.create(name:"Dagger", range:"Close Combat", cost:"2", strength:"").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour Save")
+Weapon.create(name:"Fist", range:"Close Combat", cost:"0", strength:"As user -1").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour saving_throw")
+Weapon.create(name:"Dagger", range:"Close Combat", cost:"2", strength:"").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour saving_throw")
 Weapon.create(name:"Hammer, staff, mace or club", range:"Close Combat", cost:"3", strength:"As user").special_rules<< SpecialRule.find_by_name("Concussion")
 Weapon.create(name:"Axe or pick", range:"Close Combat", cost:"5", strength:"As user").special_rules<< SpecialRule.find_by_name("Cutting edge")
 Weapon.create(name:"Sword", range:"Close Combat", cost:"10", strength:"As user").special_rules<< SpecialRule.find_by_name("Parry")
@@ -49,22 +56,33 @@ Weapon.create(name:"Flail", range:"Close Combat", cost:"15", strength:"As user +
 Weapon.create(name:"Morning star", range:"Close Combat", cost:"15", strength:"As user +1").special_rules<< [SpecialRule.find_by_name("Difficult to use"), SpecialRule.find_by_name("Heavy")]
 Weapon.create(name:"Halberd", range:"Close Combat", cost:"10", strength:"As user +1").special_rules<< SpecialRule.find_by_name("Two-handed")
 Weapon.create(name:"Spear", range:"Close Combat", cost:"10", strength:"As user").special_rules<< [SpecialRule.find_by_name("Unwieldy"), SpecialRule.find_by_name("Strike first"), SpecialRule.find_by_name("Cavalry bonus")]
-Weapon.create(name:"Lance", range:"Close Combat", cost:"40", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Cavalry weapon"), SpecialRule.find_by_name("Lance bonus")]
+Weapon.create(name:"Lance", rarity: "Rare 8", range:"Close Combat", cost:"40", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Cavalry weapon"), SpecialRule.find_by_name("Lance bonus")]
 Weapon.create(name:"Double handed weapon", range:"Close Combat", cost:"15", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Strike last"), SpecialRule.find_by_name("Two-handed")]
+Weapon.create(name:"Gromril weapon", rarity: "Rare 11", range:"Close Combat", cost: "4 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Gromril weapon")
+Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", cost: "3 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Ithilmar weapon")
 
 
 Weapon.create(name:"Short bow", range:"16\"", cost:"5", strength:"3")
 Weapon.create(name:"Bow", range:"24\"", cost:"10", strength:"3")
 Weapon.create(name:"Long bow", range:"30\"", cost:"15", strength:"3")
-Weapon.create(name:"Elf bow", range:"36\"", cost:"35 + 3D6", strength:"3").special_rules<< SpecialRule.find_by_name("-1 Enemy Armour Save")
+Weapon.create(name:"Elf bow", rarity: "Rare 12", range:"36\"", cost:"35 + 3D6", strength:"3").special_rules<< SpecialRule.find_by_name("-1 Enemy Armour saving_throw")
 Weapon.create(name:"Crossbow", range:"30\"", cost:"25", strength:"4").special_rules<< SpecialRule.find_by_name("Move or fire")
 Weapon.create(name:"Sling", range:"18\"", cost:"2", strength:"3").special_rules<< SpecialRule.find_by_name("Fire twice at half range")
-Weapon.create(name:"Throwing star/knife", range:"6\"", cost:"15", strength:"As user").special_rules<< SpecialRule.find_by_name("Thrown weapon")
-Weapon.create(name:"Repeater crossbow", range:"24\"", cost:"40", strength:"3").special_rules<< SpecialRule.find_by_name("Fire twice")
-Weapon.create(name:"Crossbow pistol", range:"10\"", cost:"35", strength:"4").special_rules<< SpecialRule.find_by_name("Shoot in close combat")
+Weapon.create(name:"Throwing star/knife", rarity: "Rare 5", range:"6\"", cost:"15", strength:"As user").special_rules<< SpecialRule.find_by_name("Thrown weapon")
+Weapon.create(name:"Repeater crossbow", rarity: "Rare 8", range:"24\"", cost:"40", strength:"3").special_rules<< SpecialRule.find_by_name("Fire twice")
+Weapon.create(name:"Crossbow pistol", rarity: "Rare 9", range:"10\"", cost:"35", strength:"4").special_rules<< SpecialRule.find_by_name("Shoot in close combat")
 
-Weapon.create(name:"Pistol", range:"6\"", cost:"15/30", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour Save"), SpecialRule.find_by_name("Hand to hand")]
-Weapon.create(name:"Duelling pistol", range:"10\"", cost:"30/60", strength:"4").special_rules<< [SpecialRule.find_by_name("Accuracy"), SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour Save"), SpecialRule.find_by_name("Hand to hand")]
-Weapon.create(name:"Blunderbuss", range:"Special\"", cost:"30", strength:"3").special_rules<< [SpecialRule.find_by_name("Shot"), SpecialRule.find_by_name("Fire once")]
-Weapon.create(name:"Handgun", range:"24\"", cost:"35", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("Move or fire"), SpecialRule.find_by_name("-1 Enemy Armour Save")]
-Weapon.create(name:"Hochland long rifle", range:"48\"", cost:"200", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("Move or fire"), SpecialRule.find_by_name("-1 Enemy Armour Save"), SpecialRule.find_by_name("Pick target")]
+Weapon.create(name:"Pistol", rarity: "Rare 8", range:"6\"", cost:"15/30", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
+Weapon.create(name:"Duelling pistol",rarity: "Rare 10", range:"10\"", cost:"30/60", strength:"4").special_rules<< [SpecialRule.find_by_name("Accuracy"), SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
+Weapon.create(name:"Blunderbuss", rarity: "Rare 9", range:"Special\"", cost:"30", strength:"3").special_rules<< [SpecialRule.find_by_name("Shot"), SpecialRule.find_by_name("Fire once")]
+Weapon.create(name:"Handgun", rarity: "Rare 8", range:"24\"", cost:"35", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("Move or fire"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw")]
+Weapon.create(name:"Hochland long rifle", rarity: "Rare 11", range:"48\"", cost:"200", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("Move or fire"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Pick target")]
+
+# Armour.create(name:"", cost:"", saving_throw:"")
+Armour.create(name:"Shield", cost:"5", saving_throw:"6+").special_rules<< SpecialRule.find_by_name("Shielded") 
+Armour.create(name:"Light armour", cost:"20", saving_throw:"6+")
+Armour.create(name:"Heavy armour", cost:"50", saving_throw:"5+").special_rules<< SpecialRule.find_by_name("Encumbrance")
+Armour.create(name:"Buckler", cost:"5", saving_throw:"-").special_rules<< SpecialRule.find_by_name("Parry")
+Armour.create(name:"Helmet", cost:"10", saving_throw:"-").special_rules<< SpecialRule.find_by_name("Avoid stun")
+Armour.create(name:"Ithilmar armour", rarity: "Rare 11", cost:"90", saving_throw:"5+")
+Armour.create(name:"Gromril armour", rarity: "Rare 11", cost:"150", saving_throw:"4+")

@@ -1,13 +1,15 @@
 class ArmoursController < ApplicationController
-  before_action :set_armour, only: %i[ show edit update destroy ]
+  before_action :set_armour, only: %i[ show ]
 
   # GET /armours or /armours.json
   def index
     @armours = Armour.all
+    render :json => @armours, :include => :special_rules
   end
 
   # GET /armours/1 or /armours/1.json
   def show
+    render :json => @armour, :include => :special_rules
   end
 
   # GET /armours/new
@@ -64,6 +66,6 @@ class ArmoursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def armour_params
-      params.require(:armour).permit(:name, :save, :cost)
+      params.require(:armour).permit(:name, :saving_throw, :cost, :rarity)
     end
 end

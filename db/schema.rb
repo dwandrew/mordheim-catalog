@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 2021_09_21_125622) do
 
   create_table "armours", force: :cascade do |t|
     t.string "name"
-    t.string "save"
+    t.string "saving_throw"
     t.string "cost"
+    t.string "rarity", default: "Common"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_125622) do
     t.string "cost"
     t.string "range"
     t.string "strength"
+    t.string "rarity", default: "Common"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
