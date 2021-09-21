@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @armour.name %>
+</p>
+
+<p>
+  <strong>Save:</strong>
+  <%= @armour.save %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @armour.cost %>
+</p>
+
+<%= link_to 'Edit', edit_armour_path(@armour) %> |
+<%= link_to 'Back', armours_path %>
