@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_21_125622) do
+ActiveRecord::Schema.define(version: 2021_09_21_134649) do
 
   create_table "armour_special_rules", force: :cascade do |t|
     t.integer "armour_id"
@@ -28,9 +28,28 @@ ActiveRecord::Schema.define(version: 2021_09_21_125622) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "equipment", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
+    t.string "cost"
+    t.string "rarity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "special_rules", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "spells", force: :cascade do |t|
+    t.string "school"
+    t.string "name"
+    t.string "difficulty"
+    t.string "description"
+    t.string "number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

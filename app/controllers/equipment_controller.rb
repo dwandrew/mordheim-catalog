@@ -1,13 +1,15 @@
 class EquipmentController < ApplicationController
-  before_action :set_equipment, only: %i[ show edit update destroy ]
+  before_action :set_equipment, only: %i[ show  ]
 
   # GET /equipment or /equipment.json
   def index
     @equipment = Equipment.all
+    render :json => @equipment
   end
 
   # GET /equipment/1 or /equipment/1.json
   def show
+    render :json => @equipment
   end
 
   # GET /equipment/new
