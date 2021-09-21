@@ -1,9 +1,11 @@
 class WeaponsController < ApplicationController
-  before_action :set_weapon, only: %i[ show edit update destroy ]
+  # before_action :set_weapon, only: %i[ show edit update destroy ]
+  before_action :set_weapon, only: %i[ show  ]
 
   # GET /weapons or /weapons.json
   def index
     @weapons = Weapon.all
+    render :json => @weapons, :include => :special_rules
    
   end
 
