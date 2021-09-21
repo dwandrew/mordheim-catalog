@@ -226,6 +226,83 @@ Spell.create(number:"6", school: "Prayers of Sigmar", name: "Armour of Righteous
 description: "Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above
 their head.
 The Priest has an armour save of 2+ which replaces their normal armour save. In addition, they cause
-fear in their enemies and is therefore immune to fear himself.
+fear in their enemies and is therefore immune to fear themself.
 The power of the Armour of Righteousness lasts until the beginning of the Casters’s next
 Shooting phase.")
+
+Spell.create(number:"1", name:"Lifestealer", difficulty: "10", school:"Necromancy", description: "The Necromancer sucks out the very essence of life from their victim, stealing its vigour for themself.
+You may choose a single model within 6\". The target suffers a wound (no save allowed) and the
+Necromancer gains an extra wound for the duration of the battle. This may take the Necromancer’s
+Wounds above his original maximum value. This spell will not affect the Possessed or any Undead
+models.")
+
+Spell.create(number:"2", name:"Re-Animation", difficulty: "5", school:"Necromancy", description: "At the spoken command of the Necromancer, the dead rise to fight again.
+One Zombie that went out of action during the last hand-to-hand combat or Shooting phase
+immediately returns to the battle. Place the model within 6\" of the Necromancer. The model
+cannot be placed straight into hand-to-hand combat with an enemy model.")
+
+Spell.create(number:"3", name:"Death vision", difficulty: "6", school:"Necromancy", description: "The Necromancer calls on the power of Necromancy to reveal the moment of his enemies’ death.
+The Necromancer causes fear in their enemies for the duration of the battle.")
+
+Spell.create(number:"4", name:"Spell of Doom", difficulty: "9", school:"Necromancy", description: "The Necromancer whispers to the sleeping dead to rise up from the ground and seize their enemies.
+Choose one enemy model within 12\". The model must immediately roll equal to or less than their
+Strength on a D6 or the dead emerging from the earth will rend him with supernatural power. If
+they fail, you may roll on the Injury table to see what happens to the unfortunate warrior.")
+
+Spell.create(number:"5", name:"Call of Vanhel", difficulty: "6", school:"Necromancy", description: "The Necromancer summons the world of the dead to invigorate their Undead servants.
+A single Zombie or Dire Wolf within 6\" of the Necromancer may immediately move again up to its
+maximum Movement distance (ie, 9\" in the case of Dire Wolves). If this moves them into base
+contact with an enemy model, they count as charging.")
+
+Spell.create(number:"6", name:"Spell of Awakening", difficulty: "Auto", school:"Necromancy", description: "The Necromancer calls the soul of a slain Hero back to their body and enslaves them with corrupt
+magic.
+If an enemy Hero is killed (ie, your opponent rolls 11-16 on the Serious Injury chart after the
+battle) then the Necromancer may raise them to fight as a Zombie in their service.
+The dead Hero retains their characteristics and all their weapons and armour but may not use any
+other equipment or skills. They may no longer run, counts as a Henchman group on their own, and
+may not gain additional experience. This spell always succeeds (rules for Henchmen and
+experience are described later). The new Zombie follows all the normal Zombie rules (immune to
+poison, causes fear) except for retaining their profile, weapons and armour.")
+
+Spell.create(number: "1", school:"Chaos rituals", name: "Vision of Torment", difficulty: "10", description: "The Chaos Mage summons horrible visions of the realm of Chaos, causing their enemy to recoil in
+utter horror.
+This spell has a range of 6\" and must be cast on the closest enemy model. If the Chaos Mage is in
+hand-to-hand combat, they must choose their target from those in base contact with them. The affected
+model is immediately stunned. If the model cannot be stunned it is knocked down instead.")
+
+Spell.create(number: "2", school:"Chaos rituals",  name: "Eye of God", difficulty: "7", description: "The Chaos Mage implores the Dark gods to grant a boon to their servant.
+You may use the Eye of God successfully only once per battle. Choose any single model within 6\",
+friend or foe. Roll a D6 to see what happens to the affected model.
+D6 Result
+1 The wrath of the gods descends upon the target. The model is taken
+He does not have to roll on the Serious Injury chart after the battle though.
+out of action immediately.
+2-5 The model gains +1 to any one of his characteristics during this battle (chosen by the player who
+cast the spell).
+6 The model gains +1 to all of its characteristics for the duration of the battle.")
+
+Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and his blood spurts out, burning flesh and armour.
+This attack has a range of 8\" and causes D3 S5 hits. It hits the first model in its path. After using
+this spell the Chaos Mage must roll on the Injury table for himself to see how dangerous the
+wound is, though treat the out of action result as stunned instead.")
+
+
+Spell.create(number: "4", school:"Chaos rituals",  name: "Lure of Chaos", difficulty: "9", description: "The Chaos Mage calls upon the taint of chaos which exists in the inner soul of all living beings.
+The spell has a range of 12\" and must be cast on the closest enemy model. Roll a D6 and add the
+Chaos Mage’s Leadership to the score. Then roll a D6 and add the target’s Leadership to the score.
+If the Chaos Mage beats their opponent’s score he gains control of the model until the model passes
+a Leadership test in their own recovery phase. The model may not commit suicide, but can attack
+models on their own side, and will not fight warriors from the Chaos Mage’s warband. If they were
+engaged in hand-to-hand combat with any warriors of the Chaos Mage’s warband, they will
+immediately move 1\" apart.")
+
+Spell.create(number: "5", school:"Chaos rituals",  name: "Wings of Darkness", difficulty: "7", description: "The Chaos Mage is lifted from the ground by two shadowy Daemons and carried wherever they
+want to go.
+The Chaos Mage may immediately move anywhere within 12\", including into base contact with an
+enemy, in which case they count as charging. If they engage a fleeing enemy, in the close combat
+phase they will score one automatic hit and then their opponent will flee again (if they survive).")
+
+Spell.create(number: "6", school:"Chaos rituals",  name: "Word of Pain", difficulty: "7", description: "Speaking the forbidden name of their dark god, the Chaos Mage causes indescribable pain to all
+who hear it.
+All models within 3\" of the Chaos Mage, friend or foe, suffer one S3 hit. No armour saves are
+allowed.")
