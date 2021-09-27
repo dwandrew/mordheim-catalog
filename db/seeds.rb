@@ -345,3 +345,36 @@ The sword gives the wizard +1 Attack, +2 Strength and +2
 Weapon Skill. Take a Leadership test at the beginning of
 each of the wizard’s own turns. If the test fails, the sword
 disappears.")
+
+
+Spell.create(number: "1", school: "Magic of the horned rat", name: "Warpfire", difficulty: "8", description: 
+"A green flame leaps from the outstretched paw of the Sorcerer and burns its victims with
+indescribable agony.
+The spell has a range of 8\", hitting the first model in its path. The spell causes D3 Strength 4 hits
+on its target, and one Strength 3 hit on each model within 2\" of the target.")
+Spell.create(number: "2", school: "Magic of the horned rat",  name: "Children of the Horned Rat", difficulty: "Auto", description: 
+"The Sorcerer raises his paws and calls upon the Father of the Skaven to send forth his servants.
+This spell must be used before the game, and may only be used once. When cast, the spell
+summons D3 Giant Rats, which are placed within 6\" of the Sorcerer. The Sorcerer may cast this
+spell successfully only once per battle, and the rats disappear after the battle. They do not count
+towards the maximum size of the Skaven warband.")
+Spell.create(number: "3", school: "Magic of the horned rat",  name: "Gnawdoom", difficulty: "7", description: 
+"The target is attacked by rats and soon is covered from head to foot in small, bleeding wounds.
+The Gnawdoom causes 2D6 Strength 1 hits on a single model within 8\" of the caster.")
+Spell.create(number: "4", school: "Magic of the horned rat",  name: "Black Fury", difficulty: "8", description: 
+"With a chittering incantation the Sorcerer turns into a monstrous rat-like creature, which
+attacks with an insane fury.
+The Sorcerer may immediately charge any enemy model within 12\" (ignoring any terrain and
+interposing models) and gains 2 extra Attacks and +1 Strength during this turn’s hand-to-hand
+combat phase only.")
+Spell.create(number: "5", school: "Magic of the horned rat",  name: "Eye of the Warp", difficulty: "8", description: 
+"Gaze into the eye of the warp and despair!
+All standing models in base contact with the Sorcerer must take an immediate Leadership test. If
+they fail, they each suffer a Strength 3 hit and must run 2D6\" directly away from the Sorcerer,
+exactly as if they had lost their nerve when fighting against more than one opponent.")
+Spell.create(number: "6", school: "Magic of the horned rat",  name: "Sorcerer’s Curse", difficulty: "6", description: 
+"The Sorcerer points a claw towards one of his enemies and curses him in the name of the
+Horned One.
+The spell has a range of 12\" and affects a single model within range. The target must re-roll
+any successful armour saves and to hit rolls during the Skaven hand-to-hand phase and his
+own next shooting and hand-to-hand combat phases.")
