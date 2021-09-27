@@ -306,3 +306,42 @@ Spell.create(number: "6", school:"Chaos rituals",  name: "Word of Pain", difficu
 who hear it.
 All models within 3\" of the Chaos Mage, friend or foe, suffer one S3 hit. No armour saves are
 allowed.")
+
+Spell.create(number: "1", school: "Lesser magic", name: "Fires of U’Zhul", difficulty: "7", description:
+"The wizard summons a fiery ball of flames and hurls it upon their enemies.
+The fireball has a range of 18\" and causes one Strength 4 hit. It strikes the first model in its path.
+Armour saves are taken as normal (ie, with -1 modifier).")
+
+Spell.create(number: "2", school: "Lesser magic",  name: "Flight of Zimmeran", difficulty: "7", description:
+"Calling upon the power of the winds of magic, the wizard walks on air.
+The wizard may immediately move anywhere within 12\", including into base contact with an
+enemy, in which case they count as charging. If they engage a fleeing enemy in the close combat
+phase they will score 1 automatic hit and then their opponent will flee again (if they survive).")
+
+Spell.create(number: "3", school: "Lesser magic",  name: "Dread of Aramar", difficulty: "7", description:
+"The wizard places a sense of mind-numbing fear into the minds of their opponents.
+A single model within 12\" of the wizard must pass a Leadership test or flee 2D\" directly away from
+them. If they flee, they must test at the start of each of their own movement phases and will continue to
+flee until they pass a test. Note that this spell does not affect Undead or any model immune to
+fear.")
+Spell.create(number: "4", school: "Lesser magic",  name: "Silver Arrows of Arha", difficulty: "7", description:
+"Silvery arrows appear from thin air and circle around the wizard, shooting out to strike his foes.
+Unlike other spells, this cannot be cast whilst in hand-to-hand combat. The spell summons D6+2
+arrows which the wizard can use to shoot against one enemy model. The arrows have a range of
+24\". Use the wizard’s own Ballistic Skill to determine whether they hit or not, but ignore movement,
+range and cover penalties. The arrows cause one S3 hit each.")
+
+Spell.create(number: "5",  school: "Lesser magic", 
+name: "Luck of Shemtek", difficulty: "6", description:
+"The wizard summons the fickle power of magic to manipulate chance.
+The wizard may re-roll all their failed dice rolls, though the second results
+stand. The effect lasts until the beginning of his own next turn.")
+
+Spell.create(number: "6", school: "Lesser magic", 
+name: "Sword of Rezhebel", difficulty: "8", description:
+"A flaming sword appears in the hand of the wizard,
+promising red ruin to all who stand in their way.
+The sword gives the wizard +1 Attack, +2 Strength and +2
+Weapon Skill. Take a Leadership test at the beginning of
+each of the wizard’s own turns. If the test fails, the sword
+disappears.")
