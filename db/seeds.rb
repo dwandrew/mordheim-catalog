@@ -830,7 +830,8 @@ Experience for each enemy he puts out of action",
 wyrdstone: "One shard of wyrdstone for each Hero of either
 warband who is inside the objective building at the
 end of the game (up to a maximum of three shards
-per warband)."
+per warband).",
+special_rules: ""
  )
  Scenario.create(
 name:"Skirmish", 
@@ -1047,3 +1048,184 @@ Scenario.create(
     each warband has."
     )
 
+Scenario.create(
+    name:"Hidden treasure", 
+    description: "There is a rumour that one of the ruined buildings
+    has a concealed cellar with a treasure chest hidden in
+    it. Two rival warbands have heard about the cellar and
+    are now searching the area. Who knows what they will
+    find?", 
+    terrain: "Each player takes it in turn to place a piece of terrain,
+    either a ruined building, tower, or other similar item.
+    We suggest that the terrain is set up within an area
+    roughly 4' x 4'.", 
+    warbands: "Both players roll a D6 and whoever rolls highest
+    chooses which warband sets up first. This warband is
+    deployed within 8\" of any table edge the player
+    chooses. His opponent sets up within 8\" of the
+    opposite side.",
+    starting:"Roll a D6. The player rolling highest has the first turn.",
+    ending: "When one warband gets the treasure to safety, or a
+    warband fails a Rout test, the game ends. The
+    victorious warband then gains the treasure chest.",
+    experience: "+1 Survives. If a Hero or a Henchman group survives
+    the battle they gain +1 Experience.\n
+    +1 Winning Leader. The leader of the winning
+    warband gains +1 Experience.\n
+    +1 Per Enemy Out of Action. Any Hero earns +1
+    Experience for each enemy he puts out of action.\n
+    +2 For Finding the Chest. If a Hero finds the
+    treasure chest he earns +2 Experience.",
+    wyrdstone: "",
+    special_rules: "All the warriors (not animals!) in each warband know
+    roughly what they are looking for and must inspect
+    the buildings to find the treasure. Each time a warrior
+    enters a building which has not been previously
+    searched by either side roll 2D6. On a score of 12, he
+    has found the treasure. Buildings in the deployment
+    zones are not searched (since they have already
+    been thoroughly ransacked) and each building
+    may only be searched once.
+    If you have not scored 12 with any roll when
+    there is only one building left to search, the
+    treasure will automatically be found there. After
+    finding the treasure chest, the warrior must then
+    take it to safety via his own table edge. Carrying
+    the treasure chest will slow the warrior carrying
+    it to half speed. Two or more models may carry
+    the chest without any penalty. You may use the
+    treasure chest model to represent the chest. If
+    the carrier is put out of action, place the treasure
+    chest at the spot where he fell. Any man-sized
+    model may pick it up by moving into base
+    contact with it.
+    Whoever recovers the chest may roll on the
+    following chart after the game to see what the
+    chest contains. Note that you roll for each item
+    separately, apart from the gold crowns, which are
+    always automatically found. For example, roll to
+    see if you find any wyrdstone – you need a 5+ to
+    find it. Then roll to see if you find the armour,
+    and so on. This can make the chest a very
+    valuable acquisition – however, it could also
+    mean that your warband has risked death for
+    only three gold crowns!
+    ITEMS D6 ROLL REQUIRED TO FIND
+    3D6 gc Automatic
+    D3 pieces of wyrdstone 5+
+    Suit of light armour 4+
+    Sword 3+
+    D3 gems worth 10 gc each 5+"
+    )
+
+Scenario.create(
+    name:"Occupy", 
+    description: "This scenario takes place in a part of Mordheim where
+    the buildings are bursting with shards of wyrdstone
+    and other wealth. Taking and holding these buildings
+    means that your warband gains rich pickings.
+    Unfortunately, your opponent has the same idea.", 
+    terrain: "Each player takes it in turn to place a piece of terrain,
+    either a ruined building, tower, or other similar item.
+    We suggest that the terrain is set up within an area
+    roughly 4' x 4'.", 
+    warbands: "Each player rolls a D6. The player with the highest
+    score decides which warband sets up first. The first
+    player chooses the table edge he wants to set up on,
+    and places all his warriors within 8\" of it. His
+    opponent then sets up within 8\" of the opposite edge.",
+    starting:"Both players roll a D6. The player with the higher
+    score takes the first turn.",
+    ending: "There is no need to take any
+    Rout tests – as the game lasts
+    for a maximum of eight
+    turns. If one warband
+    voluntarily routs, the game
+    ends and the winning
+    warband is considered to
+    occupy all of the buildings
+    on the table",
+    experience: "+1 Survives. If a Hero or a
+    Henchman group survives
+    they gain +1 Experience.\n
+    +1 Winning Leader. The
+    leader of the warband who
+    controls the highest number
+    of buildings at the end of the
+    battle gains +1 Experience.
+    If both sides occupy the
+    same number of buildings,
+    then the battle is considered
+    to be a draw and neither
+    leader gains this bonus.\n
+    +1 Per Enemy Out of
+    Action. Any Hero earns +1
+    Experience for each enemy
+    he puts out of action.",
+    wyrdstone: "",
+    special_rules: "The objective is to capture
+    D3+2 of the buildings on
+    the tabletop. Mark these
+    buildings, starting with the
+    one closest to the centre of
+    the table, working your way
+    outwards to the next nearest
+    building. A building is
+    occupied if at least one of
+    your standing models is
+    inside and no enemy models
+    are inside the building."
+    )
+
+Scenario.create(
+    name:"Suprise attack", 
+    description: "One warband is out searching the ruins of Mordheim
+    for loot when it is attacked by an enemy warband. The
+    defenders are spread thinly and must muster a
+    defence quickly to drive off their attackers.", 
+    terrain: "Starting with the attacker, each player takes it in turn
+    to place a piece of terrain, either a ruined building,
+    tower, or other similar item. We suggest that the
+    terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "1. The defending player rolls a D6 for each Hero
+    and Henchman group in his warband, in any
+    order he chooses. On a 1-3, they are elsewhere in
+    the ruins and turn up later as reinforcements. On
+    a 4-6 they are deployed at the start of the game.
+    Note that at least one Hero or Henchmen group
+    will be present at the start. If all roll 1-3, the last
+    Hero or Henchmen group will automatically be
+    deployed at the start of the battle. \n
+    2. The defender deploys his available Heroes and
+    Henchmen on the table. No model may be closer
+    than 8\" to another model, as the warband is
+    spread out wide to search the ruins. No model
+    may be deployed closer than 8\" to a table edge.\n
+    3. The attacker deploys his whole warband within 8\"
+    of a random table edge, as shown below. He may
+    choose which edge to nominate as ‘1’ before
+    rolling to see where he deploys.",
+    starting:"The attacker always
+    gets the first
+    turn.",
+    ending: "The game ends when one warband fails a Rout test.
+    The routing warband loses",
+    experience: "+1 Survives. If a Hero or a Henchman group survives
+    the battle they gain +1 Experience.\n
+    +1 Winning Leader. The leader of the winning
+    warband gains +1 Experience.\n
+    +1 Per Enemy Out of
+    Action. A Hero earns
+    +1 Experience for
+    each enemy he
+    puts out of
+    action.",
+    wyrdstone: "",
+    special_rules: "The defender, at the start of his second and
+    subsequent turns, may roll a D6 for each of his
+    Henchmen groups or Heroes not yet on the table. On
+    a 4+ they move on in the movement phase from a
+    random table edge as shown below – roll a D6. All
+    reinforcements for that turn arrive from the same
+    edge and may charge on the turn in which they arrive."
+    )
