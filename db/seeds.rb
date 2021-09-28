@@ -551,3 +551,79 @@ scale even the highest wall or fence with ease. They can
 climb up or down a height equal to twice his normal
 Movement, and does not need to make Initiative tests
 when doing so.")
+
+
+
+Skill.create(type: "skaven", name:"Black hunger" description:
+"The Skaven can draw upon the dreaded Black Hunger, the fighting frenzy which gives him
+unnatural strength and speed but can ravage him from inside. The Skaven Hero may
+declare at the beginning of his turn that he is using this skill. The Hero may add +1
+attack and +D3\" to the total move to his profile for the duration of his own turn
+but will suffer D3 S3 hits with no armour save possible at the end of the
+turn.")
+Skill.create(type: "skaven", name:"Tail fighting" description:
+"The Skaven may wield a shield, knife or a sword with its tail. The
+model gains an extra attack with the appropriate weapon or a +1
+bonus to its armour save.")
+Skill.create(type: "skaven", name:"Wall runner" description:
+"The Skaven does not need to take an Initiative test when
+climbing up walls and other sheer surfaces.")
+Skill.create(type: "skaven", name:"Infiltration", description:
+"A Skaven with this skill is always placed on the battlefield
+after the opposing warband and can be placed anywhere
+on the table as long as it is out of sight of the opposing
+warband and more than 12\" away from any enemy model.
+If both players have models which infiltrate, roll a D6 for
+each, and the lowest roll sets up first.")
+Skill.create(type: "skaven", name:"Art of silent death" description:
+"The Skaven has patiently mastered the deadly art of
+open-hand fighting, as taught by the mystics of Cathay in
+the temples of the far East. In hand-to-hand combat, the
+Skaven can fight with his bare paws without any
+penalties and counts as having two weapons (ie, +1
+attack). In addition, a Skaven Hero with this skill will
+cause a critical hit on a To Wound roll of 5-6 instead of
+just 6. This skill may be used in conjunction with the
+Eshin Fighting Claws (+2 Attacks instead of +1)")
+
+
+Skill.create(type: "sisters of sigmar", name: "Sign of Sigmar", description:
+"The Sister is favoured by the great god Sigmar.
+Possessed or Undead opponents lose their first attack
+against the Priestess in the first round of hand-to-hand
+combat (down to a minimum of 1).")
+Skill.create(type: "sisters of sigmar", name: "Protection of Sigmar", description:
+"The Sister has been blessed by the High Matriarch.
+Any spell which would affect her is nullified on a D6
+roll of 4+. Note that if the spell is nullified it will not
+affect any other models either.")
+Skill.create(type: "sisters of sigmar", name: "Utter Determination", description:
+"Only the Matriarch may have this skill, which allows
+her to re-roll any failed Rout tests.")
+Skill.create(type: "sisters of sigmar", name: "Righteous Fury", description:
+"The Sister feels cold fury and utter contempt towards
+any evil that pollutes the soil of the holy Empire with
+its presence. The model hates all Skaven, Undead or
+Possessed warbands and all models in them.")
+Skill.create(type: "sisters of sigmar", name: "Absolute Faith", description:
+"The Sister puts her faith in Sigmar, and faces dangers
+unflinchingly. She may re-roll any Fear tests and does
+not have to test if she is fighting alone against several
+opponents.")
+
+
+
+Skill.create(type: "generic", name:"Leader", description: "Any models in the warband within 6\" of the
+leader may use his Leadership instead of their own.")
+Skill.create(type: "generic", name:"Wizard", desctiption: "The character is a wizard and uses the magic of their warband. See the Magic section for details")
+Skill.create(type: "generic", name:"Prayers", desctiption: "The character is a servant of sigmar and may use the prayers of sigmar. See the Magic section for details")
+Skill.create(type: "generic", name:"Fear", desctiption: "They model causes fear. See they psychology section for details")
+Skill.create(type: "possessed", name:"Mutations", desctiption: "The model may start the game with one or
+more mutations each. See the Mutations list at the end of the possessed warband for costs.")
+
+Skill.create(type: "witch hunters", name:"Burn the Witch!", description:
+"This model hates
+all models
+who can
+cast
+spells.")
