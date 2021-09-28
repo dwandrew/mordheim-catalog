@@ -92,20 +92,20 @@ Equipment.create(name:"Rope & hook", description:"A warrior equipped with a rope
 Equipment.create(name:"Black Lotus", description:"A weapon coated with the sap of the Black Lotus will wound its target automatically if you roll a 6 to hit. Note that you can still roll a dice for every wound inflicted in this way. If you roll a 6, you will inflict a critical hit with that roll. If you do not roll a 6, you will cause a normal wound. Take armour saves as normal.", cost:"10+D6", rarity:"Rare 9, (Not available to Witch Hunters, Warrior-Priests or Sisters of Sigmar. Rare 7 for Skaven)")
 Equipment.create(name:"Dark Venom", description:"Any hit caused by a weapon coated with Dark Venom counts as having +1 Strength, so, for example, if a warrior with Strength 3 wielding a poisoned sword hits an opponent, he will cause a Strength 4 hit instead. Armour saving throws are modified to take into account the increased Strength of the attack.", cost:"30+2D6", rarity:"Rare 8, (Not available to Witch Hunters, Warrior-Priests or Sisters of Sigmar.)")
 Equipment.create(name:"Mad Cap Mushrooms", description:"The feared cult of Goblin Fanatics of the Worlds Edge Mountains use these hallucinogenic mushrooms to drive themselves into a frenzied state. Effect: Any warrior who takes Mad Cap Mushrooms before a battle will be subject to frenzy. The Mad Cap Mushroom has no effect on Undead such as Vampires and Zombies, or the Possessed. Side effect: After the battle, roll a D6. On a roll of a 1 the model becomes permanently stupid.", cost:"30+3D6", rarity:"Rare 9")
-Equipment.create(name:"Crimson Shade", description:"Crimson Shade is the name given by Old Worlders to the leaves of the blood oak of Estalia. It is an extremely addictive drug, but grants its users inhuman quickness and strength. Effect: A model using Crimson Shade has his Initiative increased by +D3 points, and Movement and Strength by +1 (this effect lasts for one game). Crimson Shade has no effect on Undead such as Vampires and Zombies, or the Possessed. Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes addicted and you must try to buy him a new batch of Crimson Shade before every battle from now on. If you fail to buy any, he will leave your warband. On a roll of 12 the model’s Initiative is increased permanently by +1.", cost:"35+D6", rarity:"Rare 8")
-Equipment.create(name:"Mandrake Root", description:"The man-shaped Mandrake Root grows in the rotting swamps of Sylvania. It is a noxious, deadly plant which is highly addictive and slowly kills its users, but also allows them to shrug off almost any pain. Effect: Mandrake Root makes a man almost oblivious to pain. His Toughness is increased by +1 for the duration of a battle and he treats all stunned results as knocked down instead. Mandrake Root has no effect on Undead, such as Vampires and Zombies, or on the Possessed. Side effects: Mandrake Root is highly poisonous. At the end of the battle, roll 2D6. On a roll of 2-3 the model loses 1 point of Toughness permanently", cost:"25+D6", rarity:"Rare 8")
+Equipment.create(name:"Crimson Shade", description:"Crimson Shade is the name given by Old Worlders to the leaves of the blood oak of Estalia. It is an extremely addictive drug, but grants its users inhuman quickness and strength. Effect: A model using Crimson Shade has their Initiative increased by +D3 points, and Movement and Strength by +1 (this effect lasts for one game). Crimson Shade has no effect on Undead such as Vampires and Zombies, or the Possessed. Side effects: After the battle, roll 2D6. On a roll of 2-3, the model becomes addicted and you must try to buy him a new batch of Crimson Shade before every battle from now on. If you fail to buy any, he will leave your warband. On a roll of 12 the model’s Initiative is increased permanently by +1.", cost:"35+D6", rarity:"Rare 8")
+Equipment.create(name:"Mandrake Root", description:"The man-shaped Mandrake Root grows in the rotting swamps of Sylvania. It is a noxious, deadly plant which is highly addictive and slowly kills its users, but also allows them to shrug off almost any pain. Effect: Mandrake Root makes a man almost oblivious to pain. Their Toughness is increased by +1 for the duration of a battle and he treats all stunned results as knocked down instead. Mandrake Root has no effect on Undead, such as Vampires and Zombies, or on the Possessed. Side effects: Mandrake Root is highly poisonous. At the end of the battle, roll 2D6. On a roll of 2-3 the model loses 1 point of Toughness permanently", cost:"25+D6", rarity:"Rare 8")
 Equipment.create(name:"Lucky charm", description:"These take many shapes, but the most common are symbolic hammers that a pious Sigmarite Priest has touched, or carved heads of ancient Dwarf gods. The first time a model with a lucky charm is hit in a battle they roll a D6. On a 4+ the hit is discarded and no damage is suffered. Owning two or more charms does not confer any extra benefits, the model may still only try to discard the first hit.", cost:"10", rarity:"Rare 6")
 Equipment.create(name:"Blessed water", description:"The priests of Ulric, Sigmar, Mórr and Manann hold great power over evil. Pure water from a clear fountain, blessed by one of these priests, is said to burn things of darkness and evil. A vial of blessed water contains enough liquid for just one use, and has a thrown range of twice the thrower’s Strength in inches. Roll to hit using the model’s BS. No modifiers for range or moving apply. Blessed water causes 1 wound on Undead, Daemon or Possessed models automatically. There is no armour save. Undead or Possessed models may not use blessed water.", cost:"10+3D6", rarity:"Rare 6 (Common for Warrior-Priests and Sisters of Sigmar; May not be bought by Undead)")
-Equipment.create(name:"Elven cloak", description:"Made from the hair of Elven maidens and interwoven with living tree leaves, an Elven cloak is a wonder to behold. A warrior wearing such a cloak will blend into the shadows, making it very difficult to shoot at them with missile weapons. Elven cloaks rarely come up for sale, but are sometimes recovered from dead warriors or offered by Elves as rewards to men who have served them in some way. A warrior aiming a missile weapon at a warrior wearing an Elven cloak suffers -1 on his to hit roll.", cost:"100+D6x10", rarity:"Rare 12")
-Equipment.create(name:"Hunting Arrows", description:"The best hunting arrows are made by the hunters of Drakwald forest. They have sharp, barbed arrowheads which cause excruciating pain when they hit their target. A skilled archer can severely injure his target with a single arrow. A model using a short bow, bow, long bow or Elf bow may use these arrows. They add +1 to all Injury rolls.", cost:"25+D6", rarity:"Rare 8")
+Equipment.create(name:"Elven cloak", description:"Made from the hair of Elven maidens and interwoven with living tree leaves, an Elven cloak is a wonder to behold. A warrior wearing such a cloak will blend into the shadows, making it very difficult to shoot at them with missile weapons. Elven cloaks rarely come up for sale, but are sometimes recovered from dead warriors or offered by Elves as rewards to men who have served them in some way. A warrior aiming a missile weapon at a warrior wearing an Elven cloak suffers -1 on their to hit roll.", cost:"100+D6x10", rarity:"Rare 12")
+Equipment.create(name:"Hunting Arrows", description:"The best hunting arrows are made by the hunters of Drakwald forest. They have sharp, barbed arrowheads which cause excruciating pain when they hit their target. A skilled archer can severely injure their target with a single arrow. A model using a short bow, bow, long bow or Elf bow may use these arrows. They add +1 to all Injury rolls.", cost:"25+D6", rarity:"Rare 8")
 Equipment.create(name:"Garlic", description:"Garlic is a common herb grown in most gardens of the Empire. It is said to ward off Vampires and other denizens of the dark. A Vampire must pass a Leadership test or it will be unable to charge a model carrying a clove of garlic. Garlic lasts for the duration of one battle only, whether it is used or not", cost:"1", rarity:"Common (May not be bought by the Undead)")
-Equipment.create(name:"Net", description:"Steel nets, such as those used by Pit Fighters, can be used in battles. Once per game, the net may be thrown in the shooting phase instead of the model shooting a missile weapon. Treat the net as a missile weapon in all respects with a range of 8\". Use the model’s BS to determine whether the net hits or not – there are no movement or range penalties. If it hits, the target must immediately roll a D6. If the result is equal to, or lower than his Strength, he rips the net apart. If the result is higher, he may not move, shoot or cast spells in his next turn, although he is not otherwise affected. In either case the net is lost.", cost:"5", rarity:"Common")
+Equipment.create(name:"Net", description:"Steel nets, such as those used by Pit Fighters, can be used in battles. Once per game, the net may be thrown in the shooting phase instead of the model shooting a missile weapon. Treat the net as a missile weapon in all respects with a range of 8\". Use the model’s BS to determine whether the net hits or not – there are no movement or range penalties. If it hits, the target must immediately roll a D6. If the result is equal to, or lower than their Strength, they rip the net apart. If the result is higher, he may not move, shoot or cast spells in their next turn, although they are not otherwise affected. In either case the net is lost.", cost:"5", rarity:"Common")
 Equipment.create(name:"Bugman’s ale", description:"Of all the Dwarf brewmasters, Josef Bugman is the most famous. His ale is known throughout the Old World, and widely regarded as the best. A warband that drinks a barrel of Bugman’s before a battle will be immune to fear for the whole of the battle. Elves may not drink Bugman’s ale as they are far too delicate to cope with its effects. There is only enough ale to supply the warband for one battle.", cost:"50+3D6", rarity:"Rare 9")
-Equipment.create(name:"Tome of Magic", description:"Sometimes books of forbidden lore are offered for sale in the markets and dark alleys of the settlements around Mordheim. If a warband includes a wizard, he will gain an extra spell from the tome, permanently. He may randomly generate this new spell from his own list or the Lesser Magic list. See the Magic section for details. The benefits from each Tome of Magic apply to only one model.", cost:"200+D6X25", rarity:"Rare 12 (Not available to Witch Hunters or Sisters of Sigmar)")
-Equipment.create(name:"Holy tome", description:"Books of prayers and descriptions of the holy deeds of religious heroes like Sigmar Heldenhammer are copied by hand in the scriptoriums of Sigmar and Ulric, and given or sold to the faithful. Of these tomes, the Deus Sigmar is the most common and well known, but other texts such as the Scriptures of Sigmar are also sold to those who follow the faith. A holy man can recite his prayers from such a book, strengthening his faith and belief. A Warrior Priest or Sister of Sigmar with a holy tome can add +1 to the score when determining whether he (or she) can recite a spell successfully or not.", cost:"100+D6x10", rarity:"Rare 8 (Only available to Warrior-Priests and Sisters of Sigmar)")
+Equipment.create(name:"Tome of Magic", description:"Sometimes books of forbidden lore are offered for sale in the markets and dark alleys of the settlements around Mordheim. If a warband includes a wizard, he will gain an extra spell from the tome, permanently. They may randomly generate this new spell from their own list or the Lesser Magic list. See the Magic section for details. The benefits from each Tome of Magic apply to only one model.", cost:"200+D6X25", rarity:"Rare 12 (Not available to Witch Hunters or Sisters of Sigmar)")
+Equipment.create(name:"Holy tome", description:"Books of prayers and descriptions of the holy deeds of religious heroes like Sigmar Heldenhammer are copied by hand in the scriptoriums of Sigmar and Ulric, and given or sold to the faithful. Of these tomes, the Deus Sigmar is the most common and well known, but other texts such as the Scriptures of Sigmar are also sold to those who follow the faith. A holy person can recite their prayers from such a book, strengthening their faith and belief. A Warrior Priest or Sister of Sigmar with a holy tome can add +1 to the score when determining whether they can recite a spell successfully or not.", cost:"100+D6x10", rarity:"Rare 8 (Only available to Warrior-Priests and Sisters of Sigmar)")
 Equipment.create(name:"Halfling cookbook", description:"All Halfling chefs have their own secret recipes, and these are recorded in tomes handwritten in Mootland, the home country of the Halflings. Food prepared according to these recipes will attract warriors during these lean times. The maximum number of warriors allowed in your warband is increased by +1 (note that neither an Undead warband nor a Carnival of Chaos warband can use this item).", cost:"30+3D6", rarity:"Rare 7")
 
-Equipment.create(name:"Healing herbs", description:"Certain plants that grow on the banks of the River Stir have curative properties. Herbalists collect their roots and leaves and use them to treat the sick and wounded. A Hero with healing herbs can use them at the beginning of any of his recovery phases as long as he is not engaged in hand-to-hand combat. This restores all wounds he has previously lost during the game.", cost:"20+2D6", rarity:"Rare 8")
+Equipment.create(name:"Healing herbs", description:"Certain plants that grow on the banks of the River Stir have curative properties. Herbalists collect their roots and leaves and use them to treat the sick and wounded. A Hero with healing herbs can use them at the beginning of any of their recovery phases as long as they are not engaged in hand-to-hand combat. This restores all wounds they have previously lost during the game.", cost:"20+2D6", rarity:"Rare 8")
 Equipment.create(name:"Holy (Unholy) relic", description:"In this age of superstition and religious fanaticism, holy objects are an important part of life. Relics abound in the Old World: hairs of Sigmar, pieces from Ulric’s hammer, teeth of Daemon Princes, all are sold to men needing encouragement before battle and as charms against sorcery. A model with a holy relic will automatically pass the first Leadership test he is required to make in the game. If worn by the leader, it will allow him to automatically pass the first Rout test if he has not taken any Leadership tests before. You can only ignore the first Leadership test in any single game – owning two or more holy relics will not allow you to ignore second and subsequent tests.", cost:"15+3D6", rarity:"Rare 8 (Rare 6 for Warrior-Priests and Sisters of Sigmar)")
 Equipment.create(name:"Lantern", description:"A model that is in possession of a lantern may add +4\" to the distance from which he is able to spot hidden enemies.", cost:"10", rarity:"Common")
 Equipment.create(name:"Superior blackpowder", description:"The model has acquired a better quality of blackpowder than is normally available. This new batch adds +1 Strength to all blackpowder weapons that the model has. There is enough superior blackpowder to last for one game.", cost:"30", rarity:"Rare 11")
@@ -219,7 +219,7 @@ Spell.create(number:"5", school: "Prayers of Sigmar", name: "Healing Hand", diff
 description: "Laying hands upon a wounded comrade, the servant of Sigmar calls upon their Lord to heal the
 warrior’s wounds.
 Any one model within 2\" of the Priest (including themself) may be healed. The warrior is restored
-to his full quota of Wounds. In addition, if any friendly models within 2\" are stunned or knocked
+to their full quota of Wounds. In addition, if any friendly models within 2\" are stunned or knocked
 down, they immediately come to their senses, stand up, and continue fighting as normal.")
 
 Spell.create(number:"6", school: "Prayers of Sigmar", name: "Armour of Righteousness", difficulty: "9",
@@ -233,7 +233,7 @@ Shooting phase.")
 Spell.create(number:"1", name:"Lifestealer", difficulty: "10", school:"Necromancy", description: "The Necromancer sucks out the very essence of life from their victim, stealing its vigour for themself.
 You may choose a single model within 6\". The target suffers a wound (no save allowed) and the
 Necromancer gains an extra wound for the duration of the battle. This may take the Necromancer’s
-Wounds above his original maximum value. This spell will not affect the Possessed or any Undead
+Wounds above their original maximum value. This spell will not affect the Possessed or any Undead
 models.")
 
 Spell.create(number:"2", name:"Re-Animation", difficulty: "5", school:"Necromancy", description: "At the spoken command of the Necromancer, the dead rise to fight again.
@@ -241,7 +241,7 @@ One Zombie that went out of action during the last hand-to-hand combat or Shooti
 immediately returns to the battle. Place the model within 6\" of the Necromancer. The model
 cannot be placed straight into hand-to-hand combat with an enemy model.")
 
-Spell.create(number:"3", name:"Death vision", difficulty: "6", school:"Necromancy", description: "The Necromancer calls on the power of Necromancy to reveal the moment of his enemies’ death.
+Spell.create(number:"3", name:"Death vision", difficulty: "6", school:"Necromancy", description: "The Necromancer calls on the power of Necromancy to reveal the moment of their enemies death.
 The Necromancer causes fear in their enemies for the duration of the battle.")
 
 Spell.create(number:"4", name:"Spell of Doom", difficulty: "9", school:"Necromancy", description: "The Necromancer whispers to the sleeping dead to rise up from the ground and seize their enemies.
@@ -277,11 +277,11 @@ D6 Result
 1 The wrath of the gods descends upon the target. The model is taken
 He does not have to roll on the Serious Injury chart after the battle though.
 out of action immediately.
-2-5 The model gains +1 to any one of his characteristics during this battle (chosen by the player who
+2-5 The model gains +1 to any one of their characteristics during this battle (chosen by the player who
 cast the spell).
 6 The model gains +1 to all of its characteristics for the duration of the battle.")
 
-Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and his blood spurts out, burning flesh and armour.
+Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and their blood spurts out, burning flesh and armour.
 This attack has a range of 8\" and causes D3 S5 hits. It hits the first model in its path. After using
 this spell the Chaos Mage must roll on the Injury table for himself to see how dangerous the
 wound is, though treat the out of action result as stunned instead.")
@@ -325,7 +325,7 @@ them. If they flee, they must test at the start of each of their own movement ph
 flee until they pass a test. Note that this spell does not affect Undead or any model immune to
 fear.")
 Spell.create(number: "4", school: "Lesser magic",  name: "Silver Arrows of Arha", difficulty: "7", description:
-"Silvery arrows appear from thin air and circle around the wizard, shooting out to strike his foes.
+"Silvery arrows appear from thin air and circle around the wizard, shooting out to strike their foes.
 Unlike other spells, this cannot be cast whilst in hand-to-hand combat. The spell summons D6+2
 arrows which the wizard can use to shoot against one enemy model. The arrows have a range of
 24\". Use the wizard’s own Ballistic Skill to determine whether they hit or not, but ignore movement,
@@ -335,7 +335,7 @@ Spell.create(number: "5",  school: "Lesser magic",
 name: "Luck of Shemtek", difficulty: "6", description:
 "The wizard summons the fickle power of magic to manipulate chance.
 The wizard may re-roll all their failed dice rolls, though the second results
-stand. The effect lasts until the beginning of his own next turn.")
+stand. The effect lasts until the beginning of their own next turn.")
 
 Spell.create(number: "6", school: "Lesser magic", 
 name: "Sword of Rezhebel", difficulty: "8", description:
@@ -433,21 +433,21 @@ weapons that are normally only used if the firer has
 not moved. Note that this skill cannot be combined
 with the Quick Shot skill.")
 Skill.create( type: "shooting", name: "Trick Shooter.", description: "The warrior can shoot through the
-tiniest gap without it affecting his aim. They ignore all
+tiniest gap without it affecting their aim. They ignore all
 modifiers for cover when using missile weapons.")
-Skill.create( type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting his
+Skill.create( type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting their
 weapon loaded and ready. They may fire each turn with
 a handgun or Hochland long rifle.")
 Skill.create( type: "shooting", name: "Knife-Fighter.", description: "The warrior is an unrivalled expert at
 using throwing knives and throwing stars. They can
 throw a maximum of three of these missiles in their
-shooting phase and may divide his shots between any
+shooting phase and may divide their shots between any
 targets within range as they wish. Note that this skill
 cannot be combined with the Quick Shot skill.")
 
 
 Skill.create( type: "academic", name: "Battle Tongue.", description: "This skill may only be chosen by a
-leader. The warrior has drilled his warband to follow
+leader. The warrior has drilled their warband to follow
 short barked commands. This increases the range of
 their Leader ability by 6\". Note that Undead leaders may
 not use this skill.")
@@ -478,7 +478,7 @@ spellcasters. The mental powers of the wizard allow
 them to wear armour and cast spells.")
 
 
-Skill.create(type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use his
+Skill.create(type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use their
 strength to maximum effect and has a +1 Strength
 bonus in close combat (excluding pistols). As their
 Strength is used for close combat weapons, the bonus
@@ -486,7 +486,7 @@ applies to all such weapons.")
 Skill.create(type: "strength", name:"Pit Fighter.", description: "The warrior has learned how to fight in
 enclosed spaces from their time in the dangerous
 fighting pits of the Empire. They are an expert at fighting
-in confined areas and adds +1 to his WS and +1 to
+in confined areas and adds +1 to their WS and +1 to
 their Attacks if they are fighting inside buildings or ruins.
 It’s a good idea to define which bits of your terrain
 collection count as ‘buildings or ruins’ at the start of
@@ -501,5 +501,5 @@ strength. They may use a double-handed weapon
 without the usual penalty of always striking last. Work
 out order of battle as you would with other weapons.")
 Skill.create(type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
-is almost impossible to halt. They add +1 to his
+is almost impossible to halt. They add +1 to their
 Weapon Skill when charging.")
