@@ -444,3 +444,62 @@ throw a maximum of three of these missiles in their
 shooting phase and may divide his shots between any
 targets within range as they wish. Note that this skill
 cannot be combined with the Quick Shot skill.")
+
+
+Skill.create( type: "academic", name: "Battle Tongue.", description: "This skill may only be chosen by a
+leader. The warrior has drilled his warband to follow
+short barked commands. This increases the range of
+their Leader ability by 6\". Note that Undead leaders may
+not use this skill.")
+Skill.create( type: "academic", name: "Sorcery.", description: "This skill may only be taken by Heroes
+capable of casting spells. A warrior with this skill gains
++1 to their rolls to see whether they can cast spells
+successfully or not. Note that Sisters of Sigmar and
+Warrior-Priests may not use this skill.")
+Skill.create( type: "academic", name: "Streetwise.", description: "A warrior with this skill has good contacts
+and knows where to purchase rare items. They may add
++2 to the roll that determines their chance of finding
+such items (see the Trading section).")
+Skill.create( type: "academic", name: "Haggle.", description: "The warrior knows all the tricks of
+bargaining and haggling. They may deduct 2D6 gold
+crowns from the price of any single item (to a
+minimum cost of 1gc) once per post battle sequence.")
+Skill.create( type: "academic", name: "Arcane Lore.", description: "Witch Hunters, Sisters of Sigmar and
+Warrior-Priests may not have this skill. Any warrior
+with this skill may learn Lesser Magic if they own a
+Tome of Magic.")
+Skill.create( type: "academic", name: "Wyrdstone Hunter.", description: "The warrior has an uncanny
+ability to find hidden shards of wyrdstone. If a Hero
+with this skill is searching the ruins in the exploration
+phase you may re-roll one dice when rolling on the
+Exploration chart. The second result stands.")
+Skill.create( type: "academic", name: "Warrior Wizard.", description: "This skill may only be taken by
+spellcasters. The mental powers of the wizard allow
+them to wear armour and cast spells.")
+
+
+Skill.create(type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use his
+strength to maximum effect and has a +1 Strength
+bonus in close combat (excluding pistols). As their
+Strength is used for close combat weapons, the bonus
+applies to all such weapons.")
+Skill.create(type: "strength", name:"Pit Fighter.", description: "The warrior has learned how to fight in
+enclosed spaces from their time in the dangerous
+fighting pits of the Empire. They are an expert at fighting
+in confined areas and adds +1 to his WS and +1 to
+their Attacks if they are fighting inside buildings or ruins.
+It’s a good idea to define which bits of your terrain
+collection count as ‘buildings or ruins’ at the start of
+a battle to avoid confusion later.")
+Skill.create(type: "strength", name:"Resilient.", description: "The warrior is covered in battle scars.
+Deduct -1 Strength from all hits against them in close
+combat. This does not affect armour save modifiers.")
+Skill.create(type: "strength", name:"Fearsome.", description: "Such is the reputation and physique of the
+model that they cause fear in opposing models.")
+Skill.create(type: "strength", name:"Strongman.", description: "The warrior is capable of great feats of
+strength. They may use a double-handed weapon
+without the usual penalty of always striking last. Work
+out order of battle as you would with other weapons.")
+Skill.create(type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
+is almost impossible to halt. They add +1 to his
+Weapon Skill when charging.")
