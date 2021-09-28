@@ -378,3 +378,69 @@ Horned One.
 The spell has a range of 12\" and affects a single model within range. The target must re-roll
 any successful armour saves and to hit rolls during the Skaven hand-to-hand phase and his
 own next shooting and hand-to-hand combat phases.")
+
+# Skill.create( type: "", name: "", description, "")
+
+
+Skill.create( type: "combat", name: "Strike to Injure.", description: "The warrior can land their blows with
+uncanny accuracy. Add +1 to all injury rolls caused by
+the model in hand-to-hand combat.")
+Skill.create( type: "combat", name: "Combat Master.", description: "The warrior is able to take on
+several opponents at once. If they fight against more
+than one enemy at a time, they gain an extra Attack in
+each hand-to-hand combat phase as long as they are
+fighting two or more enemy models. In addition, the
+warrior is immune to ‘All Alone’ tests.")
+Skill.create( type: "combat", name: "Weapons Training.", description: "A warrior with this skill is adept
+at using many different weapons. They may use any
+hand-to-hand combat weapon they comes across, not
+just those in their equipment options.")
+Skill.create( type: "combat", name: "Web of Steel. Few can match the ability of this
+warrior. They fight with great skill, weaving a web of
+steel around them. The model gains +1 to all their rolls
+on Critical Hit tables in hand-to-hand combat.")
+Skill.create( type: "combat", name: "Expert Swordsman.", description: "This warrior has been expertly
+taught in the art of swordsmanship. They may re-roll all
+missed attacks if he is using a sword in the hand-to-hand phase of the turn that they charge. Note that this
+only applies when they are armed with normal
+swords or weeping blades, and not with doublehanded swords or any other weapons.")
+Skill.create( type: "combat", name: "Step Aside.", description: "The warrior has a natural ability to avoid
+injury in combat. Each time they suffer a wound in
+close combat they may make an additional saving throw
+of 5+. This save is never modified and is taken after
+all other armour saves.")
+
+
+
+Skill.create( type: "shooting", name: "Quick Shot.", description: "The warrior may shoot twice per turn
+with a bow or crossbow (but not a crossbow pistol).")
+Skill.create( type: "shooting", name: "Pistolier.", description: "The warrior is an expert at using all kinds
+of pistols. If they are equipped with a brace of pistols of
+any type (including crossbow pistols), they may fire
+twice in the Shooting phase (though note that normal
+reloading rules apply). If they have a single pistol then they
+may fire it in the same turn it was reloaded.")
+Skill.create( type: "shooting", name: "Eagle Eyes.", description: "The warrior’s sight is exceptionally keen.
+He adds +6\" to the range of any missile weapon they are
+using.")
+Skill.create( type: "shooting", name: "Weapons Expert.", description: "The warrior has been trained to
+use some of the more unusual weapons of the known
+world. They may use any missile weapon they come
+across, not just the weapons available from their
+warband’s list.")
+Skill.create( type: "shooting", name: "Nimble.", description: "The warrior may move and fire with
+weapons that are normally only used if the firer has
+not moved. Note that this skill cannot be combined
+with the Quick Shot skill.")
+Skill.create( type: "shooting", name: "Trick Shooter.", description: "The warrior can shoot through the
+tiniest gap without it affecting his aim. They ignore all
+modifiers for cover when using missile weapons.")
+Skill.create( type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting his
+weapon loaded and ready. They may fire each turn with
+a handgun or Hochland long rifle.")
+Skill.create( type: "shooting", name: "Knife-Fighter.", description: "The warrior is an unrivalled expert at
+using throwing knives and throwing stars. They can
+throw a maximum of three of these missiles in their
+shooting phase and may divide his shots between any
+targets within range as they wish. Note that this skill
+cannot be combined with the Quick Shot skill.")
