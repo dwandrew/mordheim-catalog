@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :scenarios
   resources :mutations
   resources :skills
   resources :spells

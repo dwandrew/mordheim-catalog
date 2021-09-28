@@ -1,0 +1,62 @@
+<%= form_with(model: scenario) do |form| %>
+  <% if scenario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(scenario.errors.count, "error") %> prohibited this scenario from being saved:</h2>
+
+      <ul>
+        <% scenario.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :terrain %>
+    <%= form.text_field :terrain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :warbands %>
+    <%= form.text_field :warbands %>
+  </div>
+
+  <div class="field">
+    <%= form.label :starting %>
+    <%= form.text_field :starting %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ending %>
+    <%= form.text_field :ending %>
+  </div>
+
+  <div class="field">
+    <%= form.label :experience %>
+    <%= form.text_field :experience %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wyrdstone %>
+    <%= form.text_field :wyrdstone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :special_rules %>
+    <%= form.text_field :special_rules %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

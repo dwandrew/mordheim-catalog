@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @scenario.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @scenario.description %>
+</p>
+
+<p>
+  <strong>Terrain:</strong>
+  <%= @scenario.terrain %>
+</p>
+
+<p>
+  <strong>Warbands:</strong>
+  <%= @scenario.warbands %>
+</p>
+
+<p>
+  <strong>Starting:</strong>
+  <%= @scenario.starting %>
+</p>
+
+<p>
+  <strong>Ending:</strong>
+  <%= @scenario.ending %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @scenario.experience %>
+</p>
+
+<p>
+  <strong>Wyrdstone:</strong>
+  <%= @scenario.wyrdstone %>
+</p>
+
+<p>
+  <strong>Special rules:</strong>
+  <%= @scenario.special_rules %>
+</p>
+
+<%= link_to 'Edit', edit_scenario_path(@scenario) %> |
+<%= link_to 'Back', scenarios_path %>

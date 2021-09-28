@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  terrain: MyString
+  warbands: MyString
+  starting: MyString
+  ending: MyString
+  experience: MyString
+  wyrdstone: MyString
+  special_rules: MyString
+
+two:
+  name: MyString
+  description: MyString
+  terrain: MyString
+  warbands: MyString
+  starting: MyString
+  ending: MyString
+  experience: MyString
+  wyrdstone: MyString
+  special_rules: MyString

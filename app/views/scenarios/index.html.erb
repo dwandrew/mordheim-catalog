@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Scenarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Terrain</th>
+      <th>Warbands</th>
+      <th>Starting</th>
+      <th>Ending</th>
+      <th>Experience</th>
+      <th>Wyrdstone</th>
+      <th>Special rules</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scenarios.each do |scenario| %>
+      <tr>
+        <td><%= scenario.name %></td>
+        <td><%= scenario.description %></td>
+        <td><%= scenario.terrain %></td>
+        <td><%= scenario.warbands %></td>
+        <td><%= scenario.starting %></td>
+        <td><%= scenario.ending %></td>
+        <td><%= scenario.experience %></td>
+        <td><%= scenario.wyrdstone %></td>
+        <td><%= scenario.special_rules %></td>
+        <td><%= link_to 'Show', scenario %></td>
+        <td><%= link_to 'Edit', edit_scenario_path(scenario) %></td>
+        <td><%= link_to 'Destroy', scenario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Scenario', new_scenario_path %>
