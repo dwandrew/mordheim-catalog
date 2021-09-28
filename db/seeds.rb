@@ -503,3 +503,51 @@ out order of battle as you would with other weapons.")
 Skill.create(type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
 is almost impossible to halt. They add +1 to their
 Weapon Skill when charging.")
+
+
+Skill.create(type: "speed", name:"Leap.", description: "The warrior may leap D6\" in the movement
+phase in addition to his normal movement. They may
+move and leap, run and leap, or charge and leap, but
+they can only leap once per turn.
+A leaping warrior may jump over opposing man-sized
+models, including enemies, and obstacles 1\" high,
+without penalty.
+The leap may also be used to leap over gaps, but in
+this case you must commit the warrior to making the
+leap before rolling the dice to see how far they jump.
+If they fail to make it all the way across, they fall
+through the gap (see page 28).")
+Skill.create(type: "speed", name:"Sprint.", description: "The warrior may triple their Movement rate
+when they run or charge, rather than doubling it as
+normal.")
+Skill.create(type: "speed", name:"Acrobat.", description: "The warrior is incredibly supple and agile.
+They may fall or jump from a height of up to 12\"
+without taking any damage if they pass a single
+Initiative test, and can re-roll failed Diving Charge
+rolls. They can still only make a diving charge from a
+height of up to 6\".")
+Skill.create(type: "speed", name:"Lightning Reflexes.", description: "If the warrior is charged they will
+‘strike first’ against those that charged that turn. As
+the charger(s) will also normally ‘strike first’ (for
+charging), the order of attack between the charger(s)
+and the warrior with this skill will be determined by
+comparing Initiative values.")
+Skill.create(type: "speed", name:"Jump Up.", description: "The warrior can regain their footing in an
+instant, springing to their feet immediately if they are
+knocked down. The warrior may ignore knocked
+down results when rolling for injuries, unless they are
+knocked down because of a successful save from
+wearing a helmet or because they have the No Pain
+special rule.")
+Skill.create(type: "speed", name:"Dodge.", description: "A warrior with this skill is nimble and as fast
+as quicksilver. They can avoid any hits from a missile
+weapon on a D6 roll of 5+. Note that this roll is taken
+against missiles as soon as a hit is scored to see
+whether the warrior dodges it or not, before rolling to
+wound, and before any effects from other skills or
+equipment (such as lucky charms).")
+Skill.create(type: "speed", name:"Scale Sheer Surfaces.", description: "A warrior with this skill can
+scale even the highest wall or fence with ease. They can
+climb up or down a height equal to twice his normal
+Movement, and does not need to make Initiative tests
+when doing so.")
