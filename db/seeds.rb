@@ -748,3 +748,36 @@ Skaven Hero is within 6\" of it.")
 Skill.create(skill_type: "generic", name: "Large Target", description: "This model is a Large Target as defined
 in the shooting rules.")
 
+
+Mutation.create(name: "Daemon soul",  description: "A Daemon lives within the mutant’s soul. This gives
+them a 4+ save against the effects of spells or prayers.", cost: "20")
+Mutation.create(name: "Great claw", description: "One of the mutant’s arms ends in a great, crab-like
+claw. They may carry no weapons in this arm, but gains
+an extra attack in hand-to-hand combat with a +1
+Strength bonus.", cost: "50")
+Mutation.create(name: "Cloven hoofs", description: "The warrior gains +1
+Movement.", cost: "40")
+Mutation.create(name: "Tentacle", description: "One of the mutant’s arms ends in a tentacle. They may
+grapple their opponent in close combat to reduce their
+attacks by -1, down to a minimum of 1. The mutant
+may decide which attack his opponent loses.", cost: "35")    
+Mutation.create(name: "Blackblood", description: "If the model loses a wound in close combat, anyone
+in base contact with the model suffers a Strength 3 hit
+(no critical hits) from the spurting corrosive blood.", cost: "30")    
+Mutation.create(name: "Spines", description: "Any model in base contact with the mutant suffers an
+automatic Strength 1 hit at the beginning of each
+close combat phase. Spines will never cause critical
+hits.", cost: "35")    
+Mutation.create(name: "Scorpion tail", description: "The mutant has a long barbed tail with a venomed tip,
+allowing them to make an extra Strength 5 attack in
+each hand-to-hand combat phase. If the model hit by
+the tail is immune to poison, the Strength of
+the hit is reduced to 2.", cost: "40")    
+Mutation.create(name: "Extra arm", description: "The mutant may use any single-handed weapon
+in the extra arm, giving them +1 attack when fighting
+in hand-to-hand combat. Alternatively, they may carry a
+shield or a buckler in the extra arm. If a Possessed
+chooses to do this, they gain an extra attack but still
+cannot carry a weapon.", cost: "40")    
+Mutation.create(name: "Hideous", description: "The mutant causes fear. See the Psychology section
+for details.", cost: "40")
