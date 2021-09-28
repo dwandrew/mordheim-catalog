@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mutations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mutations.each do |mutation| %>
+      <tr>
+        <td><%= mutation.name %></td>
+        <td><%= mutation.cost %></td>
+        <td><%= mutation.description %></td>
+        <td><%= link_to 'Show', mutation %></td>
+        <td><%= link_to 'Edit', edit_mutation_path(mutation) %></td>
+        <td><%= link_to 'Destroy', mutation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mutation', new_mutation_path %>
