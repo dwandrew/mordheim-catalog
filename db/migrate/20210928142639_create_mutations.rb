@@ -5,7 +5,6 @@ class CreateMutations < ActiveRecord::Migration[6.1]
       t.string :cost
       t.string :description
 
-      t.timestamps
     end
   end
 end
