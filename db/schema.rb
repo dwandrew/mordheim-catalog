@@ -33,10 +33,8 @@ ActiveRecord::Schema.define(version: 2021_09_28_113658) do
 
   create_table "skills", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "skill_type"
     t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "special_rules", force: :cascade do |t|

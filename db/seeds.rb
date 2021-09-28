@@ -23,6 +23,66 @@ SpecialRule.create(name:"Cavalry bonus", description:"This weapon is well build 
 SpecialRule.create(name:"Strike last", description:"This weapon is slow and cumbersome, therefore any attacks with it strike last in combat even when charging (unless a special rule/ability states otherwise)")
 SpecialRule.create(name:"Lance bonus", description:"This weapon is well build for use as a cavalry weapon. The model gets a +2 str bonus with attacks made by this weapon if mounted and has charged this round")
 SpecialRule.create(name:"Cavalry weapon", description:"This weapon can only be used when mounted.")
+SpecialRule.create(name:"Holy", description:"Each warhammer is blessed by
+the High Matriarch herself before it is handed to
+the Sisters. The warhammer has a +1 bonus on
+all to wound rolls against any Possessed or
+Undead models. Note that you will still need to
+score a 6 before any modifiers in order to cause
+a critical hit. Only Matriarchs and Sister
+Superiors may carry two Sigmarite
+warhammers.")
+SpecialRule.create(name:"Whipcrack", description:"When the wielder charges they gain
++1A for that turn. This bonus attack is added
+after any other modifications. When the wielder
+is charged they gain +1A that they may only use
+against the charger. This additional attack will
+‘strike first’. If the wielder is simultaneously
+charged by two or more opponents they will
+still only receive a total of +1A. If the wielder is
+using two whips at the same time then they get
++1A for the additional hand weapon, but only
+the first whip gets the whipcrack +1A.")
+SpecialRule.create(name:"Cannot be parried", description:"The steel whip is a flexible
+weapon and the Priestesses use it with great
+expertise. Attempts to parry its strikes are futile.
+A model attacked by a steel whip may not make
+parries with swords or bucklers.")
+SpecialRule.create(name:"Poison", description:"The needles fired by
+a blowpipe are coated in a
+venom very similar in its
+effects to the Black Lotus (if
+you roll a 6 on the To Hit
+roll, the victim is
+automatically wounded). A blowpipe cannot cause
+critical hits. This weapon has a positive armour save
+modifier, so a model that normally has a save of 5+
+will get a save of 4+ against a blowpipe dart. Even
+models that normally do not have an armour save
+will get a 6+ save to take into account protection
+offered by clothes, fur or the like.")
+SpecialRule.create(name:"Stealthy", description:"A Skaven armed with a blowpipe can fire
+while hidden without revealing his position to the
+enemy. The target model can take an Initiative test in
+order to try to spot the firing Skaven. If the test is
+successful, the Skaven no longer counts as hidden.")
+
+SpecialRule.create(name:"Climb", description:": A Skaven equipped with Fighting Claws can
+add +1 to his Initiative when making Climbing tests.")
+SpecialRule.create(name:"Pair", description:" These weapons are traditionally used in pairs,
+one in each hand. A warrior armed with these weapons gets an additional attack, but must one of these weapons in each hand.")
+SpecialRule.create(name:"Claw parry", description:" A Skaven armed with Fighting Claws may parry
+blows and can re-roll a failed attempt once, in the
+same way as a model armed with a sword and buckler.")
+SpecialRule.create(name:"Cumbersome", description:"A model armed with Fighting Claws
+may not use any other weapons in the entire battle.")
+SpecialRule.create(name:"Venomous", description:" The venom of Weeping Blades will enter
+the blood of the victim and ravage his organs and
+muscles. These weapons count as being permanently
+coated in black lotus (see the Equipment section). No
+additional poison may be applied to Weeping Blades.")
+
+
 
 SpecialRule.create(name:"Move or fire", description:"You may not move and fire this weapon in the same turn other than to pivot on the spot or stand up (unless a special rule/ability states otherwise)")
 SpecialRule.create(name:"Fire twice at half range", description:"You may fire twice in the shooting phase if you do not move in the movement phase and your target is at half range or less. If you fire twice both shots are at -1 to hit")
@@ -61,6 +121,17 @@ Weapon.create(name:"Double handed weapon", range:"Close Combat", cost:"15", stre
 Weapon.create(name:"Gromril weapon", rarity: "Rare 11", range:"Close Combat", cost: "4 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Gromril weapon")
 Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", cost: "3 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Ithilmar weapon")
 
+Weapon.create(name:"Sigmarite warhammer",range:"Close Combat", rarity: "Common (Sisters of Sigmar only)", cost:"15", strength:"As user +1" ).special_rules<< [SpecialRule.find_by_name("Concussion"), SpecialRule.find_by_name("Holy")]
+Weapon.create(name:"Fighting Claws",range:"Close Combat", rarity: "Rare 7 (Skaven only)", cost:"35 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Climb"), SpecialRule.find_by_name("Claw parry"), SpecialRule.find_by_name("Cumbersome")]
+Weapon.create(name:"Weeping blades",range:"Close Combat", rarity: "Rare 9 (Skaven only)", cost:"50 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Venomous"), SpecialRule.find_by_name("Parry")]
+
+
+
+Weapon.create(name:"Steel whip", cost:"10", rarity: "Common (Sisters of Sigmar only).", strength: "As user", range: "Close combat").special_rules<< [SpecialRule.find_by_name("Whipcrack"), SpecialRule.find_by_name("Cannot be parried")]
+
+
+Weapon.create(name:"Blowpipe", range:"8\"", cost:"25", strength:"1", rarity: "Rare 7 (skaven only)").special_rules << [SpecialRule.find_by_name("Poison"), SpecialRule.find_by_name("Stealthy"), SpecialRule.find_by_name("+1 Enemy Armour saving_throw")]
+
 
 Weapon.create(name:"Short bow", range:"16\"", cost:"5", strength:"3")
 Weapon.create(name:"Bow", range:"24\"", cost:"10", strength:"3")
@@ -73,6 +144,7 @@ Weapon.create(name:"Repeater crossbow", rarity: "Rare 8", range:"24\"", cost:"40
 Weapon.create(name:"Crossbow pistol", rarity: "Rare 9", range:"10\"", cost:"35", strength:"4").special_rules<< SpecialRule.find_by_name("Shoot in close combat")
 
 Weapon.create(name:"Pistol", rarity: "Rare 8", range:"6\"", cost:"15/30", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
+Weapon.create(name:"Warplock Pistol", rarity: "Rare 11 (Skaven only)", range:"8\"", cost:"35/70", strength:"5").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
 Weapon.create(name:"Duelling pistol",rarity: "Rare 10", range:"10\"", cost:"30/60", strength:"4").special_rules<< [SpecialRule.find_by_name("Accuracy"), SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
 Weapon.create(name:"Blunderbuss", rarity: "Rare 9", range:"Special\"", cost:"30", strength:"3").special_rules<< [SpecialRule.find_by_name("Shot"), SpecialRule.find_by_name("Fire once")]
 Weapon.create(name:"Handgun", rarity: "Rare 8", range:"24\"", cost:"35", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("Move or fire"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw")]
@@ -382,29 +454,29 @@ own next shooting and hand-to-hand combat phases.")
 # Skill.create( type: "", name: "", description, "")
 
 
-Skill.create( type: "combat", name: "Strike to Injure.", description: "The warrior can land their blows with
+Skill.create( skill_type: "combat", name: "Strike to Injure.", description: "The warrior can land their blows with
 uncanny accuracy. Add +1 to all injury rolls caused by
 the model in hand-to-hand combat.")
-Skill.create( type: "combat", name: "Combat Master.", description: "The warrior is able to take on
+Skill.create( skill_type: "combat", name: "Combat Master.", description: "The warrior is able to take on
 several opponents at once. If they fight against more
 than one enemy at a time, they gain an extra Attack in
 each hand-to-hand combat phase as long as they are
 fighting two or more enemy models. In addition, the
 warrior is immune to ‘All Alone’ tests.")
-Skill.create( type: "combat", name: "Weapons Training.", description: "A warrior with this skill is adept
+Skill.create( skill_type: "combat", name: "Weapons Training.", description: "A warrior with this skill is adept
 at using many different weapons. They may use any
 hand-to-hand combat weapon they comes across, not
 just those in their equipment options.")
-Skill.create( type: "combat", name: "Web of Steel. Few can match the ability of this
+Skill.create( skill_type: "combat", name: "Web of Steel. Few can match the ability of this
 warrior. They fight with great skill, weaving a web of
 steel around them. The model gains +1 to all their rolls
 on Critical Hit tables in hand-to-hand combat.")
-Skill.create( type: "combat", name: "Expert Swordsman.", description: "This warrior has been expertly
+Skill.create( skill_type: "combat", name: "Expert Swordsman.", description: "This warrior has been expertly
 taught in the art of swordsmanship. They may re-roll all
 missed attacks if he is using a sword in the hand-to-hand phase of the turn that they charge. Note that this
 only applies when they are armed with normal
 swords or weeping blades, and not with doublehanded swords or any other weapons.")
-Skill.create( type: "combat", name: "Step Aside.", description: "The warrior has a natural ability to avoid
+Skill.create( skill_type: "combat", name: "Step Aside.", description: "The warrior has a natural ability to avoid
 injury in combat. Each time they suffer a wound in
 close combat they may make an additional saving throw
 of 5+. This save is never modified and is taken after
@@ -412,33 +484,33 @@ all other armour saves.")
 
 
 
-Skill.create( type: "shooting", name: "Quick Shot.", description: "The warrior may shoot twice per turn
+Skill.create( skill_type: "shooting", name: "Quick Shot.", description: "The warrior may shoot twice per turn
 with a bow or crossbow (but not a crossbow pistol).")
-Skill.create( type: "shooting", name: "Pistolier.", description: "The warrior is an expert at using all kinds
+Skill.create( skill_type: "shooting", name: "Pistolier.", description: "The warrior is an expert at using all kinds
 of pistols. If they are equipped with a brace of pistols of
 any type (including crossbow pistols), they may fire
 twice in the Shooting phase (though note that normal
 reloading rules apply). If they have a single pistol then they
 may fire it in the same turn it was reloaded.")
-Skill.create( type: "shooting", name: "Eagle Eyes.", description: "The warrior’s sight is exceptionally keen.
+Skill.create( skill_type: "shooting", name: "Eagle Eyes.", description: "The warrior’s sight is exceptionally keen.
 He adds +6\" to the range of any missile weapon they are
 using.")
-Skill.create( type: "shooting", name: "Weapons Expert.", description: "The warrior has been trained to
+Skill.create( skill_type: "shooting", name: "Weapons Expert.", description: "The warrior has been trained to
 use some of the more unusual weapons of the known
 world. They may use any missile weapon they come
 across, not just the weapons available from their
 warband’s list.")
-Skill.create( type: "shooting", name: "Nimble.", description: "The warrior may move and fire with
+Skill.create( skill_type: "shooting", name: "Nimble.", description: "The warrior may move and fire with
 weapons that are normally only used if the firer has
 not moved. Note that this skill cannot be combined
 with the Quick Shot skill.")
-Skill.create( type: "shooting", name: "Trick Shooter.", description: "The warrior can shoot through the
+Skill.create( skill_type: "shooting", name: "Trick Shooter.", description: "The warrior can shoot through the
 tiniest gap without it affecting their aim. They ignore all
 modifiers for cover when using missile weapons.")
-Skill.create( type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting their
+Skill.create( skill_type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting their
 weapon loaded and ready. They may fire each turn with
 a handgun or Hochland long rifle.")
-Skill.create( type: "shooting", name: "Knife-Fighter.", description: "The warrior is an unrivalled expert at
+Skill.create( skill_type: "shooting", name: "Knife-Fighter.", description: "The warrior is an unrivalled expert at
 using throwing knives and throwing stars. They can
 throw a maximum of three of these missiles in their
 shooting phase and may divide their shots between any
@@ -446,44 +518,44 @@ targets within range as they wish. Note that this skill
 cannot be combined with the Quick Shot skill.")
 
 
-Skill.create( type: "academic", name: "Battle Tongue.", description: "This skill may only be chosen by a
+Skill.create( skill_type: "academic", name: "Battle Tongue.", description: "This skill may only be chosen by a
 leader. The warrior has drilled their warband to follow
 short barked commands. This increases the range of
 their Leader ability by 6\". Note that Undead leaders may
 not use this skill.")
-Skill.create( type: "academic", name: "Sorcery.", description: "This skill may only be taken by Heroes
+Skill.create( skill_type: "academic", name: "Sorcery.", description: "This skill may only be taken by Heroes
 capable of casting spells. A warrior with this skill gains
 +1 to their rolls to see whether they can cast spells
 successfully or not. Note that Sisters of Sigmar and
 Warrior-Priests may not use this skill.")
-Skill.create( type: "academic", name: "Streetwise.", description: "A warrior with this skill has good contacts
+Skill.create( skill_type: "academic", name: "Streetwise.", description: "A warrior with this skill has good contacts
 and knows where to purchase rare items. They may add
 +2 to the roll that determines their chance of finding
 such items (see the Trading section).")
-Skill.create( type: "academic", name: "Haggle.", description: "The warrior knows all the tricks of
+Skill.create( skill_type: "academic", name: "Haggle.", description: "The warrior knows all the tricks of
 bargaining and haggling. They may deduct 2D6 gold
 crowns from the price of any single item (to a
 minimum cost of 1gc) once per post battle sequence.")
-Skill.create( type: "academic", name: "Arcane Lore.", description: "Witch Hunters, Sisters of Sigmar and
+Skill.create( skill_type: "academic", name: "Arcane Lore.", description: "Witch Hunters, Sisters of Sigmar and
 Warrior-Priests may not have this skill. Any warrior
 with this skill may learn Lesser Magic if they own a
 Tome of Magic.")
-Skill.create( type: "academic", name: "Wyrdstone Hunter.", description: "The warrior has an uncanny
+Skill.create( skill_type: "academic", name: "Wyrdstone Hunter.", description: "The warrior has an uncanny
 ability to find hidden shards of wyrdstone. If a Hero
 with this skill is searching the ruins in the exploration
 phase you may re-roll one dice when rolling on the
 Exploration chart. The second result stands.")
-Skill.create( type: "academic", name: "Warrior Wizard.", description: "This skill may only be taken by
+Skill.create( skill_type: "academic", name: "Warrior Wizard.", description: "This skill may only be taken by
 spellcasters. The mental powers of the wizard allow
 them to wear armour and cast spells.")
 
 
-Skill.create(type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use their
+Skill.create(skill_type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use their
 strength to maximum effect and has a +1 Strength
 bonus in close combat (excluding pistols). As their
 Strength is used for close combat weapons, the bonus
 applies to all such weapons.")
-Skill.create(type: "strength", name:"Pit Fighter.", description: "The warrior has learned how to fight in
+Skill.create(skill_type: "strength", name:"Pit Fighter.", description: "The warrior has learned how to fight in
 enclosed spaces from their time in the dangerous
 fighting pits of the Empire. They are an expert at fighting
 in confined areas and adds +1 to their WS and +1 to
@@ -491,21 +563,21 @@ their Attacks if they are fighting inside buildings or ruins.
 It’s a good idea to define which bits of your terrain
 collection count as ‘buildings or ruins’ at the start of
 a battle to avoid confusion later.")
-Skill.create(type: "strength", name:"Resilient.", description: "The warrior is covered in battle scars.
+Skill.create(skill_type: "strength", name:"Resilient.", description: "The warrior is covered in battle scars.
 Deduct -1 Strength from all hits against them in close
 combat. This does not affect armour save modifiers.")
-Skill.create(type: "strength", name:"Fearsome.", description: "Such is the reputation and physique of the
+Skill.create(skill_type: "strength", name:"Fearsome.", description: "Such is the reputation and physique of the
 model that they cause fear in opposing models.")
-Skill.create(type: "strength", name:"Strongman.", description: "The warrior is capable of great feats of
+Skill.create(skill_type: "strength", name:"Strongman.", description: "The warrior is capable of great feats of
 strength. They may use a double-handed weapon
 without the usual penalty of always striking last. Work
 out order of battle as you would with other weapons.")
-Skill.create(type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
+Skill.create(skill_type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
 is almost impossible to halt. They add +1 to their
 Weapon Skill when charging.")
 
 
-Skill.create(type: "speed", name:"Leap.", description: "The warrior may leap D6\" in the movement
+Skill.create(skill_type: "speed", name:"Leap.", description: "The warrior may leap D6\" in the movement
 phase in addition to his normal movement. They may
 move and leap, run and leap, or charge and leap, but
 they can only leap once per turn.
@@ -517,36 +589,36 @@ this case you must commit the warrior to making the
 leap before rolling the dice to see how far they jump.
 If they fail to make it all the way across, they fall
 through the gap (see page 28).")
-Skill.create(type: "speed", name:"Sprint.", description: "The warrior may triple their Movement rate
+Skill.create(skill_type: "speed", name:"Sprint.", description: "The warrior may triple their Movement rate
 when they run or charge, rather than doubling it as
 normal.")
-Skill.create(type: "speed", name:"Acrobat.", description: "The warrior is incredibly supple and agile.
+Skill.create(skill_type: "speed", name:"Acrobat.", description: "The warrior is incredibly supple and agile.
 They may fall or jump from a height of up to 12\"
 without taking any damage if they pass a single
 Initiative test, and can re-roll failed Diving Charge
 rolls. They can still only make a diving charge from a
 height of up to 6\".")
-Skill.create(type: "speed", name:"Lightning Reflexes.", description: "If the warrior is charged they will
+Skill.create(skill_type: "speed", name:"Lightning Reflexes.", description: "If the warrior is charged they will
 ‘strike first’ against those that charged that turn. As
 the charger(s) will also normally ‘strike first’ (for
 charging), the order of attack between the charger(s)
 and the warrior with this skill will be determined by
 comparing Initiative values.")
-Skill.create(type: "speed", name:"Jump Up.", description: "The warrior can regain their footing in an
+Skill.create(skill_type: "speed", name:"Jump Up.", description: "The warrior can regain their footing in an
 instant, springing to their feet immediately if they are
 knocked down. The warrior may ignore knocked
 down results when rolling for injuries, unless they are
 knocked down because of a successful save from
 wearing a helmet or because they have the No Pain
 special rule.")
-Skill.create(type: "speed", name:"Dodge.", description: "A warrior with this skill is nimble and as fast
+Skill.create(skill_type: "speed", name:"Dodge.", description: "A warrior with this skill is nimble and as fast
 as quicksilver. They can avoid any hits from a missile
 weapon on a D6 roll of 5+. Note that this roll is taken
 against missiles as soon as a hit is scored to see
 whether the warrior dodges it or not, before rolling to
 wound, and before any effects from other skills or
 equipment (such as lucky charms).")
-Skill.create(type: "speed", name:"Scale Sheer Surfaces.", description: "A warrior with this skill can
+Skill.create(skill_type: "speed", name:"Scale Sheer Surfaces.", description: "A warrior with this skill can
 scale even the highest wall or fence with ease. They can
 climb up or down a height equal to twice his normal
 Movement, and does not need to make Initiative tests
@@ -554,28 +626,28 @@ when doing so.")
 
 
 
-Skill.create(type: "skaven", name:"Black hunger" description:
+Skill.create(skill_type: "skaven", name:"Black hunger", description:
 "The Skaven can draw upon the dreaded Black Hunger, the fighting frenzy which gives him
 unnatural strength and speed but can ravage him from inside. The Skaven Hero may
 declare at the beginning of his turn that he is using this skill. The Hero may add +1
 attack and +D3\" to the total move to his profile for the duration of his own turn
 but will suffer D3 S3 hits with no armour save possible at the end of the
 turn.")
-Skill.create(type: "skaven", name:"Tail fighting" description:
+Skill.create(skill_type: "skaven", name:"Tail fighting", description:
 "The Skaven may wield a shield, knife or a sword with its tail. The
 model gains an extra attack with the appropriate weapon or a +1
 bonus to its armour save.")
-Skill.create(type: "skaven", name:"Wall runner" description:
+Skill.create(skill_type: "skaven", name:"Wall runner", description:
 "The Skaven does not need to take an Initiative test when
 climbing up walls and other sheer surfaces.")
-Skill.create(type: "skaven", name:"Infiltration", description:
+Skill.create(skill_type: "skaven", name:"Infiltration", description:
 "A Skaven with this skill is always placed on the battlefield
 after the opposing warband and can be placed anywhere
 on the table as long as it is out of sight of the opposing
 warband and more than 12\" away from any enemy model.
 If both players have models which infiltrate, roll a D6 for
 each, and the lowest roll sets up first.")
-Skill.create(type: "skaven", name:"Art of silent death" description:
+Skill.create(skill_type: "skaven", name:"Art of silent death", description:
 "The Skaven has patiently mastered the deadly art of
 open-hand fighting, as taught by the mystics of Cathay in
 the temples of the far East. In hand-to-hand combat, the
@@ -587,25 +659,25 @@ just 6. This skill may be used in conjunction with the
 Eshin Fighting Claws (+2 Attacks instead of +1)")
 
 
-Skill.create(type: "sisters of sigmar", name: "Sign of Sigmar", description:
+Skill.create(skill_type: "sisters of sigmar", name: "Sign of Sigmar", description:
 "The Sister is favoured by the great god Sigmar.
 Possessed or Undead opponents lose their first attack
 against the Priestess in the first round of hand-to-hand
 combat (down to a minimum of 1).")
-Skill.create(type: "sisters of sigmar", name: "Protection of Sigmar", description:
+Skill.create(skill_type: "sisters of sigmar", name: "Protection of Sigmar", description:
 "The Sister has been blessed by the High Matriarch.
 Any spell which would affect her is nullified on a D6
 roll of 4+. Note that if the spell is nullified it will not
 affect any other models either.")
-Skill.create(type: "sisters of sigmar", name: "Utter Determination", description:
+Skill.create(skill_type: "sisters of sigmar", name: "Utter Determination", description:
 "Only the Matriarch may have this skill, which allows
 her to re-roll any failed Rout tests.")
-Skill.create(type: "sisters of sigmar", name: "Righteous Fury", description:
+Skill.create(skill_type: "sisters of sigmar", name: "Righteous Fury", description:
 "The Sister feels cold fury and utter contempt towards
 any evil that pollutes the soil of the holy Empire with
 its presence. The model hates all Skaven, Undead or
 Possessed warbands and all models in them.")
-Skill.create(type: "sisters of sigmar", name: "Absolute Faith", description:
+Skill.create(skill_type: "sisters of sigmar", name: "Absolute Faith", description:
 "The Sister puts her faith in Sigmar, and faces dangers
 unflinchingly. She may re-roll any Fear tests and does
 not have to test if she is fighting alone against several
@@ -613,17 +685,66 @@ opponents.")
 
 
 
-Skill.create(type: "generic", name:"Leader", description: "Any models in the warband within 6\" of the
+Skill.create(skill_type: "generic", name:"Leader", description: "Any models in the warband within 6\" of the
 leader may use his Leadership instead of their own.")
-Skill.create(type: "generic", name:"Wizard", desctiption: "The character is a wizard and uses the magic of their warband. See the Magic section for details")
-Skill.create(type: "generic", name:"Prayers", desctiption: "The character is a servant of sigmar and may use the prayers of sigmar. See the Magic section for details")
-Skill.create(type: "generic", name:"Fear", desctiption: "They model causes fear. See they psychology section for details")
-Skill.create(type: "possessed", name:"Mutations", desctiption: "The model may start the game with one or
+Skill.create(skill_type: "generic", name:"Wizard", description: "The character is a wizard and uses the magic of their warband. See the Magic section for details")
+Skill.create(skill_type: "generic", name:"Animal", description: "This model is an animal and thus does not gain experience")
+Skill.create(skill_type: "generic", name:"Prayers", description: "The character is a servant of sigmar and may use the prayers of sigmar. See the Magic section for details")
+Skill.create(skill_type: "generic", name:"Fear", description: "They model causes fear. See they psychology section for details")
+Skill.create(skill_type: "possessed", name:"Mutations", description: "The model may start the game with one or
 more mutations each. See the Mutations list at the end of the possessed warband for costs.")
 
-Skill.create(type: "witch hunters", name:"Burn the Witch!", description:
+Skill.create(skill_type: "witch hunters", name:"Burn the Witch!", description:
 "This model hates
 all models
 who can
 cast
 spells.")
+Skill.create(skill_type: "witch hunters", name:"Fanatical", description: "Flagellants are convinced that the end of
+the world is nigh, and nothing in this world holds any
+terror for them. Flagellants automatically pass all
+Leadership-based tests they are required to take. A
+Flagellant may never become a warband leader.")
+
+Skill.create(skill_type: "sisters of sigmar", name: "Blessed Sight", description: "An Augur can re-roll any failed
+characteristic tests (climbing, resisting spells or any
+other reason), and any rolls to hit in close combat or
+shooting. You must accept the second result.
+In addition, an Augur can use her Blessed Sight to
+help the Sisterhood when they are searching the
+city for wyrdstone. If the Augur is not put out of
+action in the battle, you may roll two dice for
+her in the exploration phase and pick either
+dice as the result.")
+
+Skill.create(skill_type: "undead", name: "Immune to Psychology", description:"This model is not
+affected by psychology (such as fear) and
+never leave combat.")
+
+Skill.create(skill_type: "undead", name: "Immune to Poison", description:"This model is
+not affected
+by any
+poison.")
+Skill.create(skill_type: "undead", name: "No Pain", description:"This model treats a ‘stunned’ result on the Injury chart as ‘knocked down’.")
+Skill.create(skill_type: "undead", name: "May not Run", description: "This model is slow to react and may
+not run (but may charge normally).")
+
+Skill.create(skill_type: "undead", name: "Dire Charge", description:"Dire Wolves are slavering creatures that
+overpower their opponents when they charge. Dire
+Wolves fight with 2 attacks instead of 1 during the
+turn they charge.")
+
+Skill.create(skill_type: "undead", name: "No Brain", description: "This model never gain experience. They do
+    not learn from their mistakes. What did you expect?")
+
+Skill.create(skill_type: "skaven", name: "Perfect Killer", description: "An Assassin Adept always has an extra
+-1 modifier to any armour save the enemy has to take
+against wounds they inflicted (both with shooting and
+close combat weapons).")
+
+Skill.create(skill_type: "skaven", name: "Rat ogre stupidity", description: "A Rat Ogre is subject to stupidity unless a
+Skaven Hero is within 6\" of it.")
+
+Skill.create(skill_type: "generic", name: "Large Target", description: "This model is a Large Target as defined
+in the shooting rules.")
+
