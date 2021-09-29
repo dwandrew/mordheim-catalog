@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_28_152424) do
+ActiveRecord::Schema.define(version: 2021_09_29_132821) do
 
   create_table "armour_special_rules", force: :cascade do |t|
     t.integer "armour_id"
@@ -65,6 +65,29 @@ ActiveRecord::Schema.define(version: 2021_09_28_152424) do
     t.string "name"
     t.string "difficulty"
     t.string "description"
+    t.string "number"
+  end
+
+  create_table "warrior_skills", force: :cascade do |t|
+    t.integer "warrior_id"
+    t.integer "skill_id"
+  end
+
+  create_table "warriors", force: :cascade do |t|
+    t.integer "move"
+    t.integer "weapon_skill"
+    t.integer "ballistic_skill"
+    t.integer "strength"
+    t.integer "toughness"
+    t.integer "wounds"
+    t.integer "initiative"
+    t.integer "attacks"
+    t.integer "leadership"
+    t.string "name"
+    t.string "warrior_type"
+    t.string "warband"
+    t.string "description"
+    t.string "cost"
     t.string "number"
   end
 

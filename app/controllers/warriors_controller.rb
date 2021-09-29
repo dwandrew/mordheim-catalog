@@ -4,12 +4,12 @@ class WarriorsController < ApplicationController
   # GET /warriors or /warriors.json
   def index
     @warriors = Warrior.all
-    render :json => @warriors
+    render :json => @warriors, :include => :skills
   end
 
   # GET /warriors/1 or /warriors/1.json
   def show
-    render :json => @warrior
+    render :json => @warrior, :include => :skills
   end
 
   # GET /warriors/new

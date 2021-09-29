@@ -1229,3 +1229,46 @@ Scenario.create(
     reinforcements for that turn arrive from the same
     edge and may charge on the turn in which they arrive."
     )
+
+    # Warrior.create(
+    #     name:"",
+    #     warrior_type:"",
+    #     warband:"",
+    #     description:"",
+    #     cost:"",
+    #     number:"",
+    #     move:0,
+    #     weapon_skill:0,
+    #     ballistic_skill:0,
+    #     strength:0,
+    #     toughness:0,
+    #     wounds:0,
+    #     initiative:0,
+    #     attacks:0,
+    #     leadership:0,
+  
+    # )
+    Warrior.create(
+        name:"Mercenary captain",
+        warrior_type:"hero",
+        warband:"Mercenaries",
+        description:"A Mercenary Captain is a tough professional warrior,
+        a man who will fight for anyone or against anything so
+        long as the price is right. Mordheim offers such a man
+        the chance to become rich beyond his dreams,
+        though at great risk. But as ruthlessness and lack of
+        mercy and pity are the hallmarks of a successful
+        Mercenary Captain, it is no wonder that they flock to
+        Mordheim.",
+        cost:"60",
+        number:"1",
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:8,
+    ).skills << Skill.find_by_name("Leader")
