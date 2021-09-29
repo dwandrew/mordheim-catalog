@@ -706,6 +706,12 @@ terror for them. Flagellants automatically pass all
 Leadership-based tests they are required to take. A
 Flagellant may never become a warband leader.")
 
+Skill.create(skill_type: "cult of the possessed", name:"Crazed", description: "Darksouls have been driven insane by
+daemonic possession and know no fear. They
+automatically pass any Leadership tests they are
+required to take.")
+
+
 Skill.create(skill_type: "sisters of sigmar", name: "Blessed Sight", description: "An Augur can re-roll any failed
 characteristic tests (climbing, resisting spells or any
 other reason), and any rolls to hit in close combat or
@@ -1390,3 +1396,154 @@ Scenario.create(
         leadership:7,
   
     ).skills << Skill.find_by_name("Expert Swordsman")
+
+
+    Warrior.create(
+        name:"Magister",
+        warrior_type:"Hero",
+        warband:"Cult of the possessed",
+        description:"Magisters lead the covens of the Possessed. They have
+        been granted magical powers by their patron gods.
+        They are fanatical followers of the Dark gods, utterly
+        dedicated to bringing Chaos to the world.",
+        cost:"70",
+        number:"1",
+        experience: 20,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:8,
+  
+    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Wizard")]
+
+    Warrior.create(
+        name:"Possessed",
+        warrior_type:"Hero",
+        warband:"Cult of the possessed",
+        description:"The Possessed have committed the greatest of
+        heresies: they have given their bodies to Daemons. As
+        a result, they are nightmarish creatures, a melding of
+        flesh, metal and black magic. Inside them lives a
+        supernatural thing of evil, a Daemon from the dark
+        reaches of the Realm of Chaos.
+        The powerful spirit of a Daemon can meld several
+        creatures together, be they men or animals, into a
+        multi-faceted horror. These monstrous Possessed are
+        perhaps the most dangerous of the creatures of
+        Mordheim, and certainly the most loathsome and
+        dreadful.",
+        cost:"90",
+        number:"0-2",
+        experience: 8,
+        move:5,
+        weapon_skill:4,
+        ballistic_skill:0,
+        strength:4,
+        toughness:4,
+        wounds:2,
+        initiative:4,
+        attacks:2,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Mutations"), Skill.find_by_name("Fear")]
+    Warrior.create(
+        name:"Mutant",
+        warrior_type:"Hero",
+        warband:"Cult of the possessed",
+        description:"Mutants are revered as the favoured ones of the Dark
+        gods, their physical disfigurements marking out the
+        vileness of their soul. They come in many shapes
+        and sizes, each more bizarre than the next.",
+        cost:"25",
+        number:"0-2",
+        experience: 0,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Mutations")]
+    Warrior.create(
+        name:"Darksoul",
+        warrior_type:"Henchman",
+        warband:"Cult of the possessed",
+        description:"Darksouls are men who have been driven insane by
+        the daemonic possession which became all too
+        common after the destruction of Mordheim. The
+        Daemons have left the bodies of these men, but their
+        minds have been scarred by the horror of the
+        experience.
+        Their insane strength makes Darksouls dangerous
+        fighters. The Cultists regard them as holy men, and let
+        them work out their unreasoning rage in battle. In
+        their tortured minds the Darksouls believe
+        themselves to be Daemons. They wear leering
+        daemonic masks and garb themselves in armour and
+        clothing resembling the scaled skin of Daemons.",
+        cost:"35",
+        number:"0-5",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:4,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:6,
+  
+    ).skills << [Skill.find_by_name("Crazed")]
+    Warrior.create(
+        name:"Brethren",
+        warrior_type:"Henchman",
+        warband:"Cult of the possessed",
+        description:"",
+        cost:"25",
+        number:"",
+        experience: 0,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
+    Warrior.create(
+        name:"Beastmen",
+        warrior_type:"Henchman",
+        warband:"Cult of the possessed",
+        description:"Beastmen are mutated monstrosities that infest
+        the forests of the Empire: massive horned creatures
+        with an inhuman resistance to pain. The destruction
+        of Mordheim brought many Beastmen into the ruined
+        city to prey upon the survivors. They readily ally with
+        the Magisters of the Possessed warbands.",
+        cost:"45",
+        number:"0-3",
+        experience: 0,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:3,
+        strength:3,
+        toughness:4,
+        wounds:2,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
