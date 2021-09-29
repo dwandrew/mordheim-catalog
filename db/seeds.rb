@@ -1841,3 +1841,191 @@ Scenario.create(
         leadership:6,
   
     ).skills << []
+
+    Warrior.create(
+        name:"Vampire",
+        warrior_type:"Hero",
+        warband:"The Undead",
+        description:"Vampires lead the Undead in their search for the
+        magical stones that will give their master the power to
+        conquer the Empire.
+        Although but pale shadows when compared to the
+        dread Vampire Lords, the immortal servants of Vlad
+        are still some of the most powerful creatures who
+        fight in Mordheim. Most of them serve the undying
+        count of Sylvania, but some have found the city to
+        their liking, and have become independent.",
+        cost:"110",
+        number:"1",
+        experience: 20,
+        move:6,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:4,
+        toughness:4,
+        wounds:2,
+        initiative:5,
+        attacks:2,
+        leadership:8,
+  
+    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Fear"), Skill.find_by_name("Immune to Psychology"), Skill.find_by_name("Immune to Poison"), Skill.find_by_name("No Pain"),]
+
+    Warrior.create(
+        name:"Necromancer",
+        warrior_type:"Hero",
+        warband:"The Undead",
+        description:"Necromancers are evil wizards, studying the corrupt
+        art of Necromancy. Many of them are acolytes and
+        servants of Vlad von Carstein, and follow the agents of
+        their master to the city of the Damned. Others are
+        recruited from amongst wizards and warlocks who
+        have come under the suspicion of the various agents
+        of Sigmar and have fled to Mordheim to avoid
+        persecution.",
+        cost:"35",
+        number:"0-1",
+        experience: 8,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Wizard")]
+
+    Warrior.create(
+        name:"Dreg",
+        warrior_type:"Hero",
+        warband:"The Undead",
+        description:"Dregs are the most miserable human
+        survivors of the demise of Mordheim.
+        They are deformed and rejected
+        individuals, shunned even by the other men and
+        women who still live in the ruins and catacombs of
+        the city.
+        Vampires often recruit Dregs as their servants and
+        treat them with surprising kindness. As a result, Dregs
+        are often fanatically loyal to their Undead overlords
+        and will do anything to protect and serve them.
+        Dregs are very useful to their masters as they can be
+        sent to buy equipment, weapons and supplies from
+        the settlements around Mordheim which would often
+        not welcome Necromancers or where Vampires
+        would fall under the suspicion of the Witch Hunters.
+        They can also do the bidding of their vampiric master
+        during daylight, when the Vampires must rest in their
+        coffins.",
+        cost:"20",
+        number:"0-3",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
+
+    Warrior.create(
+        name:"Zombie",
+        warrior_type:"Henchman",
+        warband:"The Undead",
+        description:"Zombies are the most common of the Undead:
+        creatures animated by the will of their Necromantic
+        masters.",
+        cost:"15",
+        number:"",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:0,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:1,
+        attacks:1,
+        leadership:5,
+  
+    ).skills << [
+        Skill.find_by_name("Fear"),
+        Skill.find_by_name("Immune to Psychology"), 
+        Skill.find_by_name("Immune to Poison"), 
+        Skill.find_by_name("No Pain"), 
+        Skill.find_by_name("No Brain"), 
+        Skill.find_by_name("May not Run")]
+
+    Warrior.create(
+        name:"Dire Wolf",
+        warrior_type:"Henchman",
+        warband:"The Undead",
+        description:"Dire Wolves are slavering Undead hounds, the
+        animated remains of the giant wolves of the Worlds
+        Edge Mountains. Their chilling howls can strike fear
+        into the hearts of even the bravest warriors or most
+        ruthless Dwarf mercenaries. They prowl the streets of
+        Mordheim like shadows, and many men have died
+        with the cold jaws of a Dire Wolf around their neck.",
+        cost:"50",
+        number:"0-5",
+        experience: 0,
+        move:9,
+        weapon_skill:3,
+        ballistic_skill:0,
+        strength:4,
+        toughness:3,
+        wounds:1,
+        initiative:2,
+        attacks:1,
+        leadership:4,
+  
+    ).skills << [
+        Skill.find_by_name("Fear"),
+        Skill.find_by_name("Immune to Psychology"), 
+        Skill.find_by_name("Immune to Poison"), 
+        Skill.find_by_name("No Pain"), 
+        Skill.find_by_name("No Brain"), 
+        Skill.find_by_name("May not Run"),
+        Skill.find_by_name("Dire Charge"),
+    ]
+
+    Warrior.create(
+        name:"Ghoul",
+        warrior_type:"Hero",
+        warband:"The Undead",
+        description:"Ghouls are the descendants of evil and insane men
+        who ate the flesh of the dead. When the lean and
+        hungry times of famine come upon the Old World, the
+        most depraved and destitute took to feasting on
+        corpses to survive.
+        Driven by their unspeakable craving for the meat of
+        their fellow men, these creatures have given up their
+        human life and dwell near graveyards, crypts and
+        tombs, digging up the rotting corpses of the recently
+        buried and consuming the cold flesh with their bare
+        teeth and claws.
+        The destruction of Mordheim attracted many Ghoul
+        clans from the north, and now they have taken up
+        permanent residence in the crypts and cemeteries of
+        the ruined city.",
+        cost:"20",
+        number:"",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:4,
+        wounds:1,
+        initiative:3,
+        attacks:2,
+        leadership:5,
+  
+    ).skills << []
