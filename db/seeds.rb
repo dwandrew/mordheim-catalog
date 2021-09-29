@@ -454,29 +454,29 @@ own next shooting and hand-to-hand combat phases.")
 # Skill.create( type: "", name: "", description, "")
 
 
-Skill.create( skill_type: "combat", name: "Strike to Injure.", description: "The warrior can land their blows with
+Skill.create( skill_type: "combat", name: "Strike to Injure", description: "The warrior can land their blows with
 uncanny accuracy. Add +1 to all injury rolls caused by
 the model in hand-to-hand combat.")
-Skill.create( skill_type: "combat", name: "Combat Master.", description: "The warrior is able to take on
+Skill.create( skill_type: "combat", name: "Combat Master", description: "The warrior is able to take on
 several opponents at once. If they fight against more
 than one enemy at a time, they gain an extra Attack in
 each hand-to-hand combat phase as long as they are
 fighting two or more enemy models. In addition, the
 warrior is immune to ‘All Alone’ tests.")
-Skill.create( skill_type: "combat", name: "Weapons Training.", description: "A warrior with this skill is adept
+Skill.create( skill_type: "combat", name: "Weapons Training", description: "A warrior with this skill is adept
 at using many different weapons. They may use any
 hand-to-hand combat weapon they comes across, not
 just those in their equipment options.")
-Skill.create( skill_type: "combat", name: "Web of Steel. Few can match the ability of this
+Skill.create( skill_type: "combat", name: "Web of Steel", description: "Few can match the ability of this
 warrior. They fight with great skill, weaving a web of
 steel around them. The model gains +1 to all their rolls
 on Critical Hit tables in hand-to-hand combat.")
-Skill.create( skill_type: "combat", name: "Expert Swordsman.", description: "This warrior has been expertly
+Skill.create( skill_type: "combat", name: "Expert Swordsman", description: "This warrior has been expertly
 taught in the art of swordsmanship. They may re-roll all
 missed attacks if he is using a sword in the hand-to-hand phase of the turn that they charge. Note that this
 only applies when they are armed with normal
 swords or weeping blades, and not with doublehanded swords or any other weapons.")
-Skill.create( skill_type: "combat", name: "Step Aside.", description: "The warrior has a natural ability to avoid
+Skill.create( skill_type: "combat", name: "Step Aside", description: "The warrior has a natural ability to avoid
 injury in combat. Each time they suffer a wound in
 close combat they may make an additional saving throw
 of 5+. This save is never modified and is taken after
@@ -484,33 +484,33 @@ all other armour saves.")
 
 
 
-Skill.create( skill_type: "shooting", name: "Quick Shot.", description: "The warrior may shoot twice per turn
+Skill.create( skill_type: "shooting", name: "Quick Shot", description: "The warrior may shoot twice per turn
 with a bow or crossbow (but not a crossbow pistol).")
-Skill.create( skill_type: "shooting", name: "Pistolier.", description: "The warrior is an expert at using all kinds
+Skill.create( skill_type: "shooting", name: "Pistolier", description: "The warrior is an expert at using all kinds
 of pistols. If they are equipped with a brace of pistols of
 any type (including crossbow pistols), they may fire
 twice in the Shooting phase (though note that normal
 reloading rules apply). If they have a single pistol then they
 may fire it in the same turn it was reloaded.")
-Skill.create( skill_type: "shooting", name: "Eagle Eyes.", description: "The warrior’s sight is exceptionally keen.
+Skill.create( skill_type: "shooting", name: "Eagle Eyes", description: "The warrior’s sight is exceptionally keen.
 He adds +6\" to the range of any missile weapon they are
 using.")
-Skill.create( skill_type: "shooting", name: "Weapons Expert.", description: "The warrior has been trained to
+Skill.create( skill_type: "shooting", name: "Weapons Expert", description: "The warrior has been trained to
 use some of the more unusual weapons of the known
 world. They may use any missile weapon they come
 across, not just the weapons available from their
 warband’s list.")
-Skill.create( skill_type: "shooting", name: "Nimble.", description: "The warrior may move and fire with
+Skill.create( skill_type: "shooting", name: "Nimble", description: "The warrior may move and fire with
 weapons that are normally only used if the firer has
 not moved. Note that this skill cannot be combined
 with the Quick Shot skill.")
-Skill.create( skill_type: "shooting", name: "Trick Shooter.", description: "The warrior can shoot through the
+Skill.create( skill_type: "shooting", name: "Trick Shooter", description: "The warrior can shoot through the
 tiniest gap without it affecting their aim. They ignore all
 modifiers for cover when using missile weapons.")
-Skill.create( skill_type: "shooting", name: "Hunter.", description: "The warrior is an expert at getting their
+Skill.create( skill_type: "shooting", name: "Hunter", description: "The warrior is an expert at getting their
 weapon loaded and ready. They may fire each turn with
 a handgun or Hochland long rifle.")
-Skill.create( skill_type: "shooting", name: "Knife-Fighter.", description: "The warrior is an unrivalled expert at
+Skill.create( skill_type: "shooting", name: "Knife-Fighter", description: "The warrior is an unrivalled expert at
 using throwing knives and throwing stars. They can
 throw a maximum of three of these missiles in their
 shooting phase and may divide their shots between any
@@ -518,44 +518,44 @@ targets within range as they wish. Note that this skill
 cannot be combined with the Quick Shot skill.")
 
 
-Skill.create( skill_type: "academic", name: "Battle Tongue.", description: "This skill may only be chosen by a
+Skill.create( skill_type: "academic", name: "Battle Tongue", description: "This skill may only be chosen by a
 leader. The warrior has drilled their warband to follow
 short barked commands. This increases the range of
 their Leader ability by 6\". Note that Undead leaders may
 not use this skill.")
-Skill.create( skill_type: "academic", name: "Sorcery.", description: "This skill may only be taken by Heroes
+Skill.create( skill_type: "academic", name: "Sorcery", description: "This skill may only be taken by Heroes
 capable of casting spells. A warrior with this skill gains
 +1 to their rolls to see whether they can cast spells
 successfully or not. Note that Sisters of Sigmar and
 Warrior-Priests may not use this skill.")
-Skill.create( skill_type: "academic", name: "Streetwise.", description: "A warrior with this skill has good contacts
+Skill.create( skill_type: "academic", name: "Streetwise", description: "A warrior with this skill has good contacts
 and knows where to purchase rare items. They may add
 +2 to the roll that determines their chance of finding
 such items (see the Trading section).")
-Skill.create( skill_type: "academic", name: "Haggle.", description: "The warrior knows all the tricks of
+Skill.create( skill_type: "academic", name: "Haggle", description: "The warrior knows all the tricks of
 bargaining and haggling. They may deduct 2D6 gold
 crowns from the price of any single item (to a
 minimum cost of 1gc) once per post battle sequence.")
-Skill.create( skill_type: "academic", name: "Arcane Lore.", description: "Witch Hunters, Sisters of Sigmar and
+Skill.create( skill_type: "academic", name: "Arcane Lore", description: "Witch Hunters, Sisters of Sigmar and
 Warrior-Priests may not have this skill. Any warrior
 with this skill may learn Lesser Magic if they own a
 Tome of Magic.")
-Skill.create( skill_type: "academic", name: "Wyrdstone Hunter.", description: "The warrior has an uncanny
+Skill.create( skill_type: "academic", name: "Wyrdstone Hunter", description: "The warrior has an uncanny
 ability to find hidden shards of wyrdstone. If a Hero
 with this skill is searching the ruins in the exploration
 phase you may re-roll one dice when rolling on the
 Exploration chart. The second result stands.")
-Skill.create( skill_type: "academic", name: "Warrior Wizard.", description: "This skill may only be taken by
+Skill.create( skill_type: "academic", name: "Warrior Wizard", description: "This skill may only be taken by
 spellcasters. The mental powers of the wizard allow
 them to wear armour and cast spells.")
 
 
-Skill.create(skill_type: "strength", name:"Mighty Blow.", description: "The warrior knows how to use their
+Skill.create(skill_type: "strength", name:"Mighty Blow", description: "The warrior knows how to use their
 strength to maximum effect and has a +1 Strength
 bonus in close combat (excluding pistols). As their
 Strength is used for close combat weapons, the bonus
 applies to all such weapons.")
-Skill.create(skill_type: "strength", name:"Pit Fighter.", description: "The warrior has learned how to fight in
+Skill.create(skill_type: "strength", name:"Pit Fighter", description: "The warrior has learned how to fight in
 enclosed spaces from their time in the dangerous
 fighting pits of the Empire. They are an expert at fighting
 in confined areas and adds +1 to their WS and +1 to
@@ -563,21 +563,21 @@ their Attacks if they are fighting inside buildings or ruins.
 It’s a good idea to define which bits of your terrain
 collection count as ‘buildings or ruins’ at the start of
 a battle to avoid confusion later.")
-Skill.create(skill_type: "strength", name:"Resilient.", description: "The warrior is covered in battle scars.
+Skill.create(skill_type: "strength", name:"Resilient", description: "The warrior is covered in battle scars.
 Deduct -1 Strength from all hits against them in close
 combat. This does not affect armour save modifiers.")
-Skill.create(skill_type: "strength", name:"Fearsome.", description: "Such is the reputation and physique of the
+Skill.create(skill_type: "strength", name:"Fearsome", description: "Such is the reputation and physique of the
 model that they cause fear in opposing models.")
-Skill.create(skill_type: "strength", name:"Strongman.", description: "The warrior is capable of great feats of
+Skill.create(skill_type: "strength", name:"Strongman", description: "The warrior is capable of great feats of
 strength. They may use a double-handed weapon
 without the usual penalty of always striking last. Work
 out order of battle as you would with other weapons.")
-Skill.create(skill_type: "strength", name:"Unstoppable Charge.", description: "When they charge, the warrior
+Skill.create(skill_type: "strength", name:"Unstoppable Charge", description: "When they charge, the warrior
 is almost impossible to halt. They add +1 to their
 Weapon Skill when charging.")
 
 
-Skill.create(skill_type: "speed", name:"Leap.", description: "The warrior may leap D6\" in the movement
+Skill.create(skill_type: "speed", name:"Leap", description: "The warrior may leap D6\" in the movement
 phase in addition to his normal movement. They may
 move and leap, run and leap, or charge and leap, but
 they can only leap once per turn.
@@ -589,36 +589,36 @@ this case you must commit the warrior to making the
 leap before rolling the dice to see how far they jump.
 If they fail to make it all the way across, they fall
 through the gap (see page 28).")
-Skill.create(skill_type: "speed", name:"Sprint.", description: "The warrior may triple their Movement rate
+Skill.create(skill_type: "speed", name:"Sprint", description: "The warrior may triple their Movement rate
 when they run or charge, rather than doubling it as
 normal.")
-Skill.create(skill_type: "speed", name:"Acrobat.", description: "The warrior is incredibly supple and agile.
+Skill.create(skill_type: "speed", name:"Acrobat", description: "The warrior is incredibly supple and agile.
 They may fall or jump from a height of up to 12\"
 without taking any damage if they pass a single
 Initiative test, and can re-roll failed Diving Charge
 rolls. They can still only make a diving charge from a
 height of up to 6\".")
-Skill.create(skill_type: "speed", name:"Lightning Reflexes.", description: "If the warrior is charged they will
+Skill.create(skill_type: "speed", name:"Lightning Reflexes", description: "If the warrior is charged they will
 ‘strike first’ against those that charged that turn. As
 the charger(s) will also normally ‘strike first’ (for
 charging), the order of attack between the charger(s)
 and the warrior with this skill will be determined by
 comparing Initiative values.")
-Skill.create(skill_type: "speed", name:"Jump Up.", description: "The warrior can regain their footing in an
+Skill.create(skill_type: "speed", name:"Jump Up", description: "The warrior can regain their footing in an
 instant, springing to their feet immediately if they are
 knocked down. The warrior may ignore knocked
 down results when rolling for injuries, unless they are
 knocked down because of a successful save from
 wearing a helmet or because they have the No Pain
 special rule.")
-Skill.create(skill_type: "speed", name:"Dodge.", description: "A warrior with this skill is nimble and as fast
+Skill.create(skill_type: "speed", name:"Dodge", description: "A warrior with this skill is nimble and as fast
 as quicksilver. They can avoid any hits from a missile
 weapon on a D6 roll of 5+. Note that this roll is taken
 against missiles as soon as a hit is scored to see
 whether the warrior dodges it or not, before rolling to
 wound, and before any effects from other skills or
 equipment (such as lucky charms).")
-Skill.create(skill_type: "speed", name:"Scale Sheer Surfaces.", description: "A warrior with this skill can
+Skill.create(skill_type: "speed", name:"Scale Sheer Surfaces", description: "A warrior with this skill can
 scale even the highest wall or fence with ease. They can
 climb up or down a height equal to twice his normal
 Movement, and does not need to make Initiative tests
@@ -1247,10 +1247,10 @@ Scenario.create(
     #     attacks:0,
     #     leadership:0,
   
-    # )
+    # ).skills << []
     Warrior.create(
         name:"Mercenary captain",
-        warrior_type:"hero",
+        warrior_type:"Hero",
         warband:"Mercenaries",
         description:"A Mercenary Captain is a tough professional warrior,
         a man who will fight for anyone or against anything so
@@ -1272,3 +1272,117 @@ Scenario.create(
         attacks:1,
         leadership:8,
     ).skills << Skill.find_by_name("Leader")
+
+    Warrior.create(
+        name:"Champion",
+        warrior_type:"Hero",
+        warband:"Mercenaries",
+        description:"In any Mercenary warband there is one warrior who is
+        bigger, stronger (and often uglier) than his comrades.
+        These men are called Champions (or berserkers, first
+        swordsmen and various other names). Champions are
+        amongst the toughest and the best fighters in the
+        warband. They often answer challenges issued to the
+        warband and, after the Captain, they get the pick of
+        any equipment and loot.",
+        cost:"35",
+        number:"0-2",
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+    )
+
+    Warrior.create(
+        name:"Youngbloods",
+        warrior_type:"Hero",
+        warband:"Mercenaries",
+        description:"These are young fighters who are still inexperienced,
+        but eager to win their spurs in the savage fighting in
+        and around the ruins of Mordheim.",
+        cost:"15",
+        number:"0-2",
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:6,
+  
+    )
+
+    Warrior.create(
+        name:"Warriors",
+        warrior_type:"Henchman",
+        warband:"Mercenaries",
+        description:"These dogs of war are grim, seasoned fighters,
+        fearing no man as long as they have their weapons
+        and armour. They form the core of any Mercenary
+        warband.",
+        cost:"25",
+        number:"",
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    )
+
+    Warrior.create(
+        name:"Marksmen",
+        warrior_type:"Henchman",
+        warband:"Mercenaries",
+        description:"The archers and hunters of the Old World are famed
+        for their skill, and it is said that they can hit a coin
+        from 300 paces with a long bow. In the savage street
+        fights of Mordheim they snipe at the enemy from the
+        windows of ruined buildings and pick out enemy
+        leaders with their arrows.",
+        cost:"25",
+        number:"0-7",
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    )
+
+    Warrior.create(
+        name:"Swordsmen",
+        warrior_type:"Henchman",
+        warband:"Mercenaries",
+        description:"Swordsmen are professional warriors, experts at
+        taking on and beating several opponents at once.
+        They are much sought after by warband leaders, as
+        their skills are ideally suited for fighting in Mordheim.",
+        cost:"35",
+        number:"0-5",
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << Skill.find_by_name("Expert Swordsman")
