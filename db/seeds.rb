@@ -2015,7 +2015,7 @@ Scenario.create(
         clans from the north, and now they have taken up
         permanent residence in the crypts and cemeteries of
         the ruined city.",
-        cost:"20",
+        cost:"40",
         number:"",
         experience: 0,
         move:4,
@@ -2029,3 +2029,170 @@ Scenario.create(
         leadership:5,
   
     ).skills << []
+
+    Warrior.create(
+        name:"Assassin Adept",
+        warrior_type:"Henchman",
+        warband:"Skaven",
+        description:"The Nightmaster of Clan Eshin has sent the Assassin
+        to collect precious wyrdstone. Success means many
+        breeders, wealth and a better position amongst the
+        clan. Failure, on the other hand, is best not
+        contemplated…",
+        cost:"60",
+        number:"1",
+        experience: 20,
+        move:6,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:4,
+        toughness:3,
+        wounds:1,
+        initiative:5,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Perfect Killer")]
+    
+    Warrior.create(
+        name:"Black Skaven",
+        warrior_type:"Hero",
+        warband:"Skaven",
+        description:"Black Skaven are the most powerful fighters of Clan
+        Eshin: black-furred killers trained in the martial arts of
+        their clan. In Mordheim they excel at ambushing and
+        assassinating man-things.",
+        cost:"40",
+        number:"0-2",
+        experience: 8,
+        move:6,
+        weapon_skill:4,
+        ballistic_skill:3,
+        strength:4,
+        toughness:3,
+        wounds:1,
+        initiative:5,
+        attacks:1,
+        leadership:6,
+  
+    ).skills << []
+    
+    Warrior.create(
+        name:"Eshin sorcerer",
+        warrior_type:"Hero",
+        warband:"Skaven",
+        description:"The Sorcerers of Clan Eshin are black magicians who
+        manufacture the enchanted weapons of the Assassins.
+        Though their power is slight compared to the
+        Warlocks of Clan Skryre or the mighty Grey Seer, their
+        black sorcery is still potent.",
+        cost:"45",
+        number:"0-1",
+        experience: 8,
+        move:5,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:6,
+  
+    ).skills << [Skill.find_by_name("Wizard")]
+    
+    Warrior.create(
+        name:"Night runners",
+        warrior_type:"Hero",
+        warband:"Skaven",
+        description:"Night Runners are the young apprentices of Clan
+        Eshin. Recently initiated into the secrets of the clan,
+        they make up for their lack of knowledge with their
+        ambition and energy. ",
+        cost:"20",
+        number:"0-2",
+        experience: 0,
+        move:6,
+        weapon_skill:2,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:4,
+  
+    ).skills << []
+    
+    Warrior.create(
+        name:"Verminkin",
+        warrior_type:"Henchman",
+        warband:"Skaven",
+        description:"Verminkin are the Clanrats of Clan Eshin. The
+        strongest amongst them are initiated into the secrets
+        of the clans and begin their training to become
+        Assassins, the most feared warriors of the Skaven
+        warbands. All the Clanrats of Clan Eshin dream of
+        rising to the status of an Assassin one day.",
+        cost:"20",
+        number:"",
+        experience: 0,
+        move:5,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:5,
+  
+    ).skills << []
+    
+    Warrior.create(
+        name:"Giant Rat",
+        warrior_type:"Henchman",
+        warband:"Skaven",
+        description:"Giant Rats are creations of the twisted genius of the
+        Skaven. They are mutated monstrosities the size of
+        dogs. They fight alongside the Skaven, overpowering
+        any opponents by sheer weight of numbers. ",
+        cost:"15",
+        number:"",
+        experience: 0,
+        move:6,
+        weapon_skill:2,
+        ballistic_skill:0,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:4,
+  
+    ).skills << [Skill.find_by_name("Animal")]
+    Warrior.create(
+        name:"Rat ogre",
+        warrior_type:"Henchman",
+        warband:"Skaven",
+        description:"These horrible monsters are much in demand as
+        bodyguards to important Skaven.",
+        cost:"210",
+        number:"0-1",
+        experience: 0,
+        move:6,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:5,
+        toughness:5,
+        wounds:3,
+        initiative:4,
+        attacks:3,
+        leadership:4,
+  
+    ).skills << [
+        Skill.find_by_name("Animal"),
+        Skill.find_by_name("Rat ogre stupidity"),
+        Skill.find_by_name("Large Target"),
+        Skill.find_by_name("Fear"),
+    ]
