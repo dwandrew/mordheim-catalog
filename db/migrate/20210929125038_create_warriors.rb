@@ -1,6 +1,7 @@
 class CreateWarriors < ActiveRecord::Migration[6.1]
   def change
     create_table :warriors do |t|
+      t.integer :experience, :default => 0
       t.integer :move
       t.integer :weapon_skill
       t.integer :ballistic_skill

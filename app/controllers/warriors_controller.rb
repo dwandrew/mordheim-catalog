@@ -66,6 +66,6 @@ class WarriorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def warrior_params
-      params.require(:warrior).permit(:move, :weapon_skill, :ballistic_skill, :strength, :toughness, :wwounds, :initiative, :attacks, :leadership, :name, :warrior_type, :warband, :description, :cost, :number)
+      params.require(:warrior).permit(:move, :weapon_skill, :ballistic_skill, :strength, :toughness, :wwounds, :initiative, :attacks, :leadership, :name, :warrior_type, :warband, :description, :cost, :number, :experience)
     end
 end

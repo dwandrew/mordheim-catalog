@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 2021_09_29_132821) do
   end
 
   create_table "warriors", force: :cascade do |t|
+    t.integer "experience", default: 0
     t.integer "move"
     t.integer "weapon_skill"
     t.integer "ballistic_skill"
