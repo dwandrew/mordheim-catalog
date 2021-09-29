@@ -117,7 +117,7 @@ Weapon.create(name:"Morning star", range:"Close Combat", cost:"15", strength:"As
 Weapon.create(name:"Halberd", range:"Close Combat", cost:"10", strength:"As user +1").special_rules<< SpecialRule.find_by_name("Two-handed")
 Weapon.create(name:"Spear", range:"Close Combat", cost:"10", strength:"As user").special_rules<< [SpecialRule.find_by_name("Unwieldy"), SpecialRule.find_by_name("Strike first"), SpecialRule.find_by_name("Cavalry bonus")]
 Weapon.create(name:"Lance", rarity: "Rare 8", range:"Close Combat", cost:"40", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Heavy"), SpecialRule.find_by_name("Cavalry weapon"), SpecialRule.find_by_name("Lance bonus")]
-Weapon.create(name:"Double handed weapon", range:"Close Combat", cost:"15", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Strike last"), SpecialRule.find_by_name("Two-handed")]
+Weapon.create(name:"Double-handed weapon", range:"Close Combat", cost:"15", strength:"As user +2").special_rules<< [SpecialRule.find_by_name("Strike last"), SpecialRule.find_by_name("Two-handed")]
 Weapon.create(name:"Gromril weapon", rarity: "Rare 11", range:"Close Combat", cost: "4 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Gromril weapon")
 Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", cost: "3 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Ithilmar weapon")
 
@@ -2196,3 +2196,55 @@ Scenario.create(
         Skill.find_by_name("Large Target"),
         Skill.find_by_name("Fear"),
     ]
+
+mercenary_list = EquipmentList.create(
+    name:"Mercenary list",
+    warband:"Mercenaries"
+)
+mercenary_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Morning star"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Spear"),
+Weapon.find_by_name("Halberd"),
+Weapon.find_by_name("Crossbow"),
+Weapon.find_by_name("Pistol"),
+Weapon.find_by_name("Duelling pistol"),
+Weapon.find_by_name("Bow"),
+]
+mercenary_list.armours << [
+ Armour.find_by_name("Light armour"),
+ Armour.find_by_name("Heavy armour"),
+ Armour.find_by_name("Shield"),
+ Armour.find_by_name("Buckler"),
+ Armour.find_by_name("Helmet"),
+]
+mercenary_list.save
+
+marksman_list = EquipmentList.create(
+    name:"Marksman list",
+    warband:"Mercenaries"
+)
+marksman_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Crossbow"),
+Weapon.find_by_name("Pistol"),
+Weapon.find_by_name("Bow"),
+Weapon.find_by_name("Long bow"),
+Weapon.find_by_name("Blunderbuss"),
+Weapon.find_by_name("Handgun"),
+Weapon.find_by_name("Hochland long rifle"),
+
+]
+marksman_list.armours << [
+ Armour.find_by_name("Light armour"),
+ Armour.find_by_name("Shield"),
+ Armour.find_by_name("Helmet"),
+]
+marksman_list.save

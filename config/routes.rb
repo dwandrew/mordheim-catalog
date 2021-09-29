@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :equipment_lists
   resources :warriors
   resources :scenarios
   resources :mutations

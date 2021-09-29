@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @equipment_list.name %>
+</p>
+
+<p>
+  <strong>Warband:</strong>
+  <%= @equipment_list.warband %>
+</p>
+
+<%= link_to 'Edit', edit_equipment_list_path(@equipment_list) %> |
+<%= link_to 'Back', equipment_lists_path %>
