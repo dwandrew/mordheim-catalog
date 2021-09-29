@@ -1709,3 +1709,135 @@ Scenario.create(
         leadership:5,
   
     ).skills << [Skill.find_by_name("Animal")]
+
+    Warrior.create(
+        name:"Sigmarite matriach",
+        warrior_type:"Hero",
+        warband:"Sisters of Sigmar",
+        description:"The Sigmarite Matriarchs, of whom there is an inner
+        circle of twelve, are answerable to the High Matriarch
+        of the temple. Each must lead a warband of Sisters in
+        frequent searches of the city in order to purge the
+        ruins. Matriarchs are driven by a zealous devotion to
+        the Cult of Sigmar and a relentless determination to
+        redeem the Sisterhood in His eyes.",
+        cost:"70",
+        number:"1",
+        experience: 20,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:8,
+  
+    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Prayers")]
+    
+    Warrior.create(
+        name:"Sister superior",
+        warrior_type:"Hero",
+        warband:"Sisters of Sigmar",
+        description:"Each of the Sisters Superior is a long-serving priestess
+        of the Cult of Sigmar, well versed in the rituals of the
+        temple and an example to the younger Sisters and
+        Novices. The Sisters Superior are entrusted with
+        maintaining the faith and fervour of the order. Any
+        peril or foe that may lurk in the ruins of Mordheim is
+        as nothing compared to the wrath of a Sister Superior.",
+        cost:"35",
+        number:"0-3",
+        experience: 8,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
+    
+    Warrior.create(
+        name:"Augur",
+        warrior_type:"Hero",
+        warband:"Sisters of Sigmar",
+        description:"The blind Augurs of the Sisterhood are blessed
+        beyond their comrades. By giving up their sight they
+        have gained something far more, second sight – a gift
+        from their patron god. Only a very few are marked
+        this way, and they are greatly revered by the
+        Sisterhood. Unlike the rest of the priestesses, they
+        shave their heads, save for a single long braid.",
+        cost:"25",
+        number:"0-1",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Blessed Sight")]
+
+    Warrior.create(
+        name:"Sigmarite sister",
+        warrior_type:"Henchman",
+        warband:"Sisters of Sigmar",
+        description:"Sigmarite Sisters know that their entire order is
+        shamed in the eyes of their Lord Sigmar. Every one of
+        them is sworn upon His altar to pacify the city and
+        thereby redeem themselves. Whatever the perils and
+        horrors that stand in their way, they will be overcome!",
+        cost:"25",
+        number:"",
+        experience: 0,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
+
+
+    Warrior.create(
+        name:"Novice",
+        warrior_type:"Henchman",
+        warband:"Sisters of Sigmar",
+        description:"By tradition, the Sisters draw their recruits only from
+        the most noble houses of the Empire, and families
+        consider it a great honour to have their daughter
+        accepted into the order. Only maidens of noble
+        lineage can be relied upon to have the devotion to
+        duty and innate sense of honour. Few though the
+        recruits may be, they must endure several years as
+        Novices during which time their devotion will be
+        tested to the full. All are eager to prove themselves
+        worthy to be the handmaidens of Sigmar.",
+        cost:"15",
+        number:"0-10",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:6,
+  
+    ).skills << []
