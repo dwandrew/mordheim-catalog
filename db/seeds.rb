@@ -1547,3 +1547,165 @@ Scenario.create(
         leadership:7,
   
     ).skills << []
+
+    Warrior.create(
+        name:"Witch hunter captain",
+        warrior_type:"Hero",
+        warband:"Witch hunters",
+        description:"Driven by fanaticism, Witch Hunter Captains are
+        obsessed with cleansing Mordheim and bringing the
+        justice of Sigmar to all. Carrying the edict of the
+        Grand Theogonist himself, they have the divine right
+        to judge and execute warlocks, witches, Chaos
+        worshippers… in fact all who dare to oppose them.",
+        cost:"60",
+        number:"1",
+        experience: 20,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:4,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:8,
+  
+    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Burn the Witch!")]
+    Warrior.create(
+        name:"Witch hunter",
+        warrior_type:"Hero",
+        warband:"Witch hunters",
+        description:"Witch Hunters are members of the grim Order of
+        Witch Hunters, dedicated to eradicating Chaos and all
+        its minions. Usually they prowl the Old World
+        individually trying and executing the enemies of
+        Sigmar, but the situation in Mordheim requires them
+        to band together.",
+        cost:"25",
+        number:"0-2",
+        experience: 8,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << [Skill.find_by_name("Burn the Witch!")]
+    Warrior.create(
+        name:"Warrior-priest",
+        warrior_type:"Hero",
+        warband:"Witch hunters",
+        description:"Many powerful fighting men have come from the
+        ranks of the faithful. The Priests of Sigmar are no
+        exception, and the military wing of the cult is feared
+        and respected throughout the Empire.
+        The Grand Theogonist himself has granted the
+        Warrior-Priests an edict to cleanse Mordheim of Chaos
+        filth. With fire burning in their eyes, the WarriorPriests stride into battle, chanting aloud the Deus
+        Sigmar, the praise of the patron god of the Empire",
+        cost:"40",
+        number:"0-1",
+        experience: 12,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:8,
+  
+    ).skills << [Skill.find_by_name("Prayers")]
+
+    Warrior.create(
+        name:"Flagellants",
+        warrior_type:"Henchman",
+        warband:"Witch hunters",
+        description:"Flagellants are fanatics and madmen obsessed with
+        the end of the world. They are often men who have
+        lost their families to war or the ravages of nature, and
+        have also lost their minds. With insane persistence,
+        they travel the length and breadth of the Empire,
+        preaching their view of the end of the world. With
+        their rousing speeches, Witch Hunters can muster
+        these dangerous lunatics to fight in the streets of
+        Mordheim, where no sane man dares tread.
+        Flagellants are extremely dangerous opponents in
+        close combat, for they have the strength of madmen,
+        and their bodies have become inured to pain because
+        of self-mutilation.",
+        cost:"40",
+        number:"0-5",
+        experience: 0,
+        move:4,
+        weapon_skill:3,
+        ballistic_skill:3,
+        strength:4,
+        toughness:4,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:10,
+  
+    ).skills << [Skill.find_by_name("Fanatical")]
+
+    Warrior.create(
+        name:"Zealots",
+        warrior_type:"Henchman",
+        warband:"Witch hunters",
+        description:"When a man loses his family, home and all he cared
+        for, religion is often the last refuge left to him. Such
+        men become wandering pilgrims, bitter and
+        dangerous fanatics who are prepared to avenge their
+        loss at any cost. These men are called Zealots.
+        Zealots have forsaken their former lives and exist only
+        to destroy evil and the minions of Chaos. Whilst they
+        might have been peasants and craftsmen before, and
+        thus may not be as dangerous in a fight as seasoned
+        mercenaries, their determination and fanaticism
+        should not be underestimated. Witch Hunters find
+        ready allies in their ranks, and many a band of Zealots
+        is led by Witch Hunters.",
+        cost:"20",
+        number:"",
+        experience: 0,
+        move:4,
+        weapon_skill:2,
+        ballistic_skill:2,
+        strength:3,
+        toughness:3,
+        wounds:1,
+        initiative:3,
+        attacks:1,
+        leadership:7,
+  
+    ).skills << []
+
+    Warrior.create(
+        name:"Warhound",
+        warrior_type:"Henchman",
+        warband:"Witch hunters",
+        description:"Witch Hunters often keep packs of ferocious hunting
+        dogs. With their huge jaws and powerful bite, they are
+        perfect for hunting down (and tearing apart) any
+        heretics, mutants, deviants and witches.",
+        cost:"15",
+        number:"0-5",
+        experience: 0,
+        move:4,
+        weapon_skill:4,
+        ballistic_skill:0,
+        strength:4,
+        toughness:3,
+        wounds:1,
+        initiative:4,
+        attacks:1,
+        leadership:5,
+  
+    ).skills << [Skill.find_by_name("Animal")]
