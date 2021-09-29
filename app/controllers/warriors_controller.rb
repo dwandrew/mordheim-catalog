@@ -4,10 +4,12 @@ class WarriorsController < ApplicationController
   # GET /warriors or /warriors.json
   def index
     @warriors = Warrior.all
+    render :json => @warriors
   end
 
   # GET /warriors/1 or /warriors/1.json
   def show
+    render :json => @warrior
   end
 
   # GET /warriors/new
