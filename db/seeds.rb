@@ -2248,3 +2248,46 @@ marksman_list.armours << [
  Armour.find_by_name("Helmet"),
 ]
 marksman_list.save
+
+possessed_list = EquipmentList.create(
+    name:"Possessed list",
+    warband:"Cult of the Possessed"
+)
+possessed_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Spear"),
+
+Weapon.find_by_name("Short bow"),
+Weapon.find_by_name("Bow"),
+]
+possessed_list.armours << [
+ Armour.find_by_name("Light armour"),
+ Armour.find_by_name("Heavy armour"),
+ Armour.find_by_name("Shield"),
+ Armour.find_by_name("Helmet"),
+]
+possessed_list.save
+
+dark_soul_list = EquipmentList.create(
+    name:"Dark Soul list",
+    warband:"Cult of the Possessed"
+)
+dark_soul_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Flail"),
+]
+dark_soul_list.armours << [
+ Armour.find_by_name("Light armour"),
+ Armour.find_by_name("Heavy armour"),
+ Armour.find_by_name("Shield"),
+ Armour.find_by_name("Helmet"),
+]
+dark_soul_list.save
