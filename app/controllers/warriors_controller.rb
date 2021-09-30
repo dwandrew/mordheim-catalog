@@ -4,12 +4,34 @@ class WarriorsController < ApplicationController
   # GET /warriors or /warriors.json
   def index
     @warriors = Warrior.all
-    render :json => @warriors, :include => :skills
+    render :json => @warriors, :include => [:skills, :equipment_lists,]
+
   end
+
+  # def published
+  #   immortals = Immortal.all
+  #   @journals = @immortals.map{|immortal| immortal.journals}
+  #   render json: {
+  #     immortals: @immortals,
+  #     journals: @journals,
+  #     status: 200}
+  # end
 
   # GET /warriors/1 or /warriors/1.json
   def show
-    render :json => @warrior, :include => :skills
+    @skills = @warrior.skills
+    @equipment_list = @warrior.equipment_lists
+    @equipment = @warrior.equipments
+    @armours = @warrior.armours
+    @weapons = @warrior.weapons
+    # render :json => @warrior, :include => [:skills, :equipment_lists, :equipments, :armours, :weapons]
+    render json: {
+      warrior: @warrior,
+      skills: @skills,
+      equipment: @equipment,
+      weapons: @weapons,
+      armours: @armours,
+      status: 200}
   end
 
   # GET /warriors/new

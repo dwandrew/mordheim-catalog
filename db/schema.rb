@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_30_115451) do
+ActiveRecord::Schema.define(version: 2021_09_30_132712) do
 
   create_table "armour_special_rules", force: :cascade do |t|
     t.integer "armour_id"
@@ -110,6 +110,11 @@ ActiveRecord::Schema.define(version: 2021_09_30_115451) do
     t.string "description"
     t.string "cost"
     t.string "number"
+  end
+
+  create_table "warriors_equipment_lists", force: :cascade do |t|
+    t.integer "warrior_id"
+    t.integer "equipment_list_id"
   end
 
   create_table "weapon_special_rules", force: :cascade do |t|

@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+require 'pry'
 
 
 # SpecialRule.create(name:"", description:"")
@@ -1236,6 +1236,260 @@ Scenario.create(
     edge and may charge on the turn in which they arrive."
     )
 
+
+    mercenary_list = EquipmentList.create(
+        name:"Mercenary list",
+        warband:"Mercenaries"
+    )
+    mercenary_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Morning star"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Spear"),
+    Weapon.find_by_name("Halberd"),
+    Weapon.find_by_name("Crossbow"),
+    Weapon.find_by_name("Pistol"),
+    Weapon.find_by_name("Duelling pistol"),
+    Weapon.find_by_name("Bow"),
+    ]
+    mercenary_list.armours << [
+     Armour.find_by_name("Light armour"),
+     Armour.find_by_name("Heavy armour"),
+     Armour.find_by_name("Shield"),
+     Armour.find_by_name("Buckler"),
+     Armour.find_by_name("Helmet"),
+    ]
+    mercenary_list.save
+    
+    marksman_list = EquipmentList.create(
+        name:"Marksman list",
+        warband:"Mercenaries"
+    )
+    marksman_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Crossbow"),
+    Weapon.find_by_name("Pistol"),
+    Weapon.find_by_name("Bow"),
+    Weapon.find_by_name("Long bow"),
+    Weapon.find_by_name("Blunderbuss"),
+    Weapon.find_by_name("Handgun"),
+    Weapon.find_by_name("Hochland long rifle"),
+    
+    ]
+    marksman_list.armours << [
+     Armour.find_by_name("Light armour"),
+     Armour.find_by_name("Shield"),
+     Armour.find_by_name("Helmet"),
+    ]
+    marksman_list.save
+    
+    possessed_list = EquipmentList.create(
+        name:"Possessed list",
+        warband:"Cult of the Possessed"
+    )
+    possessed_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Spear"),
+    
+    Weapon.find_by_name("Short bow"),
+    Weapon.find_by_name("Bow"),
+    ]
+    possessed_list.armours << [
+     Armour.find_by_name("Light armour"),
+     Armour.find_by_name("Heavy armour"),
+     Armour.find_by_name("Shield"),
+     Armour.find_by_name("Helmet"),
+    ]
+    possessed_list.save
+    
+    dark_soul_list = EquipmentList.create(
+        name:"Dark Soul list",
+        warband:"Cult of the Possessed"
+    )
+    dark_soul_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Flail"),
+    ]
+    dark_soul_list.armours << [
+     Armour.find_by_name("Light armour"),
+     Armour.find_by_name("Heavy armour"),
+     Armour.find_by_name("Shield"),
+     Armour.find_by_name("Helmet"),
+    ]
+    dark_soul_list.save
+    
+    witch_hunter_list = EquipmentList.create(
+        name:"Witch Hunter list",
+        warband:"Witch Hunters"
+    )
+    witch_hunter_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Crossbow"),
+    Weapon.find_by_name("Pistol"),
+    Weapon.find_by_name("Crossbow pistol"),
+    ]
+    witch_hunter_list.armours << [
+     Armour.find_by_name("Light armour"),
+     Armour.find_by_name("Heavy armour"),
+     Armour.find_by_name("Shield"),
+     Armour.find_by_name("Helmet"),
+     Armour.find_by_name("Buckler"),
+    ]
+    witch_hunter_list.save
+    
+    zealot_list = EquipmentList.create(
+        name:"Zealot list",
+        warband:"Witch Hunters"
+    )
+    zealot_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Spear"),
+    Weapon.find_by_name("Short bow"),
+    Weapon.find_by_name("Bow"),
+    
+    ]
+    zealot_list.armours << [
+        Armour.find_by_name("Light armour"),
+        Armour.find_by_name("Shield"),
+        Armour.find_by_name("Helmet"),
+    ]
+    zealot_list.save
+    
+    flagellant_list = EquipmentList.create(
+        name:"Flagellant list",
+        warband:"Witch Hunters"
+    )
+    flagellant_list.weapons << [
+    Weapon.find_by_name("Morning star"),
+    Weapon.find_by_name("Flail"),
+    Weapon.find_by_name("Double-handed weapon"),
+    
+    ]
+    flagellant_list.armours << [
+    
+    ]
+    flagellant_list.save
+    
+    
+    sisters_list = EquipmentList.create(
+        name:"Sisters of Sigmar list",
+        warband:"Sisters of Sigmar"
+    )
+    sisters_list.weapons << [
+        Weapon.find_by_name("Dagger"),
+        Weapon.find_by_name("Hammer, staff, mace or club"),
+        Weapon.find_by_name("Sigmarite warhammer"),
+        Weapon.find_by_name("Flail"),
+        Weapon.find_by_name("Double-handed weapon"),
+        Weapon.find_by_name("Steel whip"),
+        Weapon.find_by_name("Sling"),
+    ]
+    sisters_list.armours << [
+        Armour.find_by_name("Light armour"),
+        Armour.find_by_name("Heavy armour"),
+        Armour.find_by_name("Shield"),
+        Armour.find_by_name("Buckler"),
+        Armour.find_by_name("Helmet"),
+    ]
+    sisters_list.equipments << [
+        Equipment.find_by_name("Holy tome"),
+        Equipment.find_by_name("Blessed water"),
+        Equipment.find_by_name("Holy (Unholy) relic"),
+    
+    ]
+    sisters_list.save
+    
+    undead_list = EquipmentList.create(
+        name:"Undead list",
+        warband:"The Undead"
+    )
+    undead_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Axe or pick"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Halberd"),
+    Weapon.find_by_name("Spear"),
+    Weapon.find_by_name("Short bow"),
+    Weapon.find_by_name("Bow"),
+    
+    ]
+    undead_list.armours << [
+        Armour.find_by_name("Light armour"),
+        Armour.find_by_name("Heavy armour"),
+        Armour.find_by_name("Shield"),
+        Armour.find_by_name("Helmet"),
+    ]
+    undead_list.save
+    
+    skaven_hero_list = EquipmentList.create(
+        name:"Skaven hero list",
+        warband:"Skaven"
+    )
+    skaven_hero_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Flail"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Halberd"),
+    Weapon.find_by_name("Weeping blades"),
+    Weapon.find_by_name("Fighting claws"),
+    Weapon.find_by_name("Spear"),
+    Weapon.find_by_name("Sling"),
+    Weapon.find_by_name("Blowpipe"),
+    Weapon.find_by_name("Throwing star/knife"),
+    Weapon.find_by_name("Warplock Pistol"),
+    
+    ]
+    skaven_hero_list.armours << [
+        Armour.find_by_name("Light armour"),
+        Armour.find_by_name("Shield"),
+        Armour.find_by_name("Helmet"),
+    ]
+    skaven_hero_list.save
+    
+    skaven_henchman_list = EquipmentList.create(
+        name:"Skaven henchman list",
+        warband:"Skaven"
+    )
+    skaven_henchman_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Sword"),
+    Weapon.find_by_name("Spear"),
+    Weapon.find_by_name("Sling"),
+    ]
+    skaven_henchman_list.armours << [
+        Armour.find_by_name("Light armour"),
+        Armour.find_by_name("Shield"),
+        Armour.find_by_name("Helmet"),
+    ]
+    skaven_henchman_list.save
+
+
+
     # Warrior.create(
     #     name:"",
     #     warrior_type:"",
@@ -1255,7 +1509,9 @@ Scenario.create(
     #     leadership:0,
   
     # ).skills << []
-    Warrior.create(
+   
+
+    captain = Warrior.create(
         name:"Mercenary captain",
         warrior_type:"Hero",
         warband:"Mercenaries",
@@ -1279,7 +1535,10 @@ Scenario.create(
         initiative:4,
         attacks:1,
         leadership:8,
-    ).skills << Skill.find_by_name("Leader")
+        )
+    captain.skills << Skill.find_by_name("Leader")
+    captain.equipment_lists << EquipmentList.find_by_name("Mercenary list")
+    captain.save
 
     Warrior.create(
         name:"Champion",
@@ -2196,254 +2455,3 @@ Scenario.create(
         Skill.find_by_name("Large Target"),
         Skill.find_by_name("Fear"),
     ]
-
-mercenary_list = EquipmentList.create(
-    name:"Mercenary list",
-    warband:"Mercenaries"
-)
-mercenary_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Morning star"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Spear"),
-Weapon.find_by_name("Halberd"),
-Weapon.find_by_name("Crossbow"),
-Weapon.find_by_name("Pistol"),
-Weapon.find_by_name("Duelling pistol"),
-Weapon.find_by_name("Bow"),
-]
-mercenary_list.armours << [
- Armour.find_by_name("Light armour"),
- Armour.find_by_name("Heavy armour"),
- Armour.find_by_name("Shield"),
- Armour.find_by_name("Buckler"),
- Armour.find_by_name("Helmet"),
-]
-mercenary_list.save
-
-marksman_list = EquipmentList.create(
-    name:"Marksman list",
-    warband:"Mercenaries"
-)
-marksman_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Crossbow"),
-Weapon.find_by_name("Pistol"),
-Weapon.find_by_name("Bow"),
-Weapon.find_by_name("Long bow"),
-Weapon.find_by_name("Blunderbuss"),
-Weapon.find_by_name("Handgun"),
-Weapon.find_by_name("Hochland long rifle"),
-
-]
-marksman_list.armours << [
- Armour.find_by_name("Light armour"),
- Armour.find_by_name("Shield"),
- Armour.find_by_name("Helmet"),
-]
-marksman_list.save
-
-possessed_list = EquipmentList.create(
-    name:"Possessed list",
-    warband:"Cult of the Possessed"
-)
-possessed_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Spear"),
-
-Weapon.find_by_name("Short bow"),
-Weapon.find_by_name("Bow"),
-]
-possessed_list.armours << [
- Armour.find_by_name("Light armour"),
- Armour.find_by_name("Heavy armour"),
- Armour.find_by_name("Shield"),
- Armour.find_by_name("Helmet"),
-]
-possessed_list.save
-
-dark_soul_list = EquipmentList.create(
-    name:"Dark Soul list",
-    warband:"Cult of the Possessed"
-)
-dark_soul_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Flail"),
-]
-dark_soul_list.armours << [
- Armour.find_by_name("Light armour"),
- Armour.find_by_name("Heavy armour"),
- Armour.find_by_name("Shield"),
- Armour.find_by_name("Helmet"),
-]
-dark_soul_list.save
-
-witch_hunter_list = EquipmentList.create(
-    name:"Witch Hunter list",
-    warband:"Witch Hunters"
-)
-witch_hunter_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Crossbow"),
-Weapon.find_by_name("Pistol"),
-Weapon.find_by_name("Crossbow pistol"),
-]
-witch_hunter_list.armours << [
- Armour.find_by_name("Light armour"),
- Armour.find_by_name("Heavy armour"),
- Armour.find_by_name("Shield"),
- Armour.find_by_name("Helmet"),
- Armour.find_by_name("Buckler"),
-]
-witch_hunter_list.save
-
-zealot_list = EquipmentList.create(
-    name:"Zealot list",
-    warband:"Witch Hunters"
-)
-zealot_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Spear"),
-Weapon.find_by_name("Short bow"),
-Weapon.find_by_name("Bow"),
-
-]
-zealot_list.armours << [
-    Armour.find_by_name("Light armour"),
-    Armour.find_by_name("Shield"),
-    Armour.find_by_name("Helmet"),
-]
-zealot_list.save
-
-flagellant_list = EquipmentList.create(
-    name:"Flagellant list",
-    warband:"Witch Hunters"
-)
-flagellant_list.weapons << [
-Weapon.find_by_name("Morning star"),
-Weapon.find_by_name("Flail"),
-Weapon.find_by_name("Double-handed weapon"),
-
-]
-flagellant_list.armours << [
-
-]
-flagellant_list.save
-
-
-sisters_list = EquipmentList.create(
-    name:"Sisters of Sigmar list",
-    warband:"Sisters of Sigmar"
-)
-sisters_list.weapons << [
-    Weapon.find_by_name("Dagger"),
-    Weapon.find_by_name("Hammer, staff, mace or club"),
-    Weapon.find_by_name("Sigmarite warhammer"),
-    Weapon.find_by_name("Flail"),
-    Weapon.find_by_name("Double-handed weapon"),
-    Weapon.find_by_name("Steel whip"),
-    Weapon.find_by_name("Sling"),
-]
-sisters_list.armours << [
-    Armour.find_by_name("Light armour"),
-    Armour.find_by_name("Heavy armour"),
-    Armour.find_by_name("Shield"),
-    Armour.find_by_name("Buckler"),
-    Armour.find_by_name("Helmet"),
-]
-sisters_list.equipments << [
-    Equipment.find_by_name("Holy tome"),
-    Equipment.find_by_name("Blessed water"),
-    Equipment.find_by_name("Holy (Unholy) relic"),
-
-]
-sisters_list.save
-
-undead_list = EquipmentList.create(
-    name:"Undead list",
-    warband:"The Undead"
-)
-undead_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Axe or pick"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Double-handed weapon"),
-Weapon.find_by_name("Halberd"),
-Weapon.find_by_name("Spear"),
-Weapon.find_by_name("Short bow"),
-Weapon.find_by_name("Bow"),
-
-]
-undead_list.armours << [
-    Armour.find_by_name("Light armour"),
-    Armour.find_by_name("Heavy armour"),
-    Armour.find_by_name("Shield"),
-    Armour.find_by_name("Helmet"),
-]
-undead_list.save
-
-skaven_hero_list = EquipmentList.create(
-    name:"Skaven hero list",
-    warband:"Skaven"
-)
-skaven_hero_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Flail"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Halberd"),
-Weapon.find_by_name("Weeping blades"),
-Weapon.find_by_name("Fighting claws"),
-Weapon.find_by_name("Spear"),
-Weapon.find_by_name("Sling"),
-Weapon.find_by_name("Blowpipe"),
-Weapon.find_by_name("Throwing star/knife"),
-Weapon.find_by_name("Warplock Pistol"),
-
-]
-skaven_hero_list.armours << [
-    Armour.find_by_name("Light armour"),
-    Armour.find_by_name("Shield"),
-    Armour.find_by_name("Helmet"),
-]
-skaven_hero_list.save
-
-skaven_henchman_list = EquipmentList.create(
-    name:"Skaven henchman list",
-    warband:"Skaven"
-)
-skaven_henchman_list.weapons << [
-Weapon.find_by_name("Dagger"),
-Weapon.find_by_name("Hammer, staff, mace or club"),
-Weapon.find_by_name("Sword"),
-Weapon.find_by_name("Spear"),
-Weapon.find_by_name("Sling"),
-]
-skaven_henchman_list.armours << [
-    Armour.find_by_name("Light armour"),
-    Armour.find_by_name("Shield"),
-    Armour.find_by_name("Helmet"),
-]
-skaven_henchman_list.save
