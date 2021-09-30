@@ -1,5 +1,5 @@
 class WarriorsController < ApplicationController
-  before_action :set_warrior, only: %i[ show edit update destroy ]
+  before_action :set_warrior, only: %i[ show ]
 
   # GET /warriors or /warriors.json
   def index
@@ -23,6 +23,32 @@ class WarriorsController < ApplicationController
       weapons: @weapons,
       armours: @armours,
       status: 200}
+  end
+  # GET /warriors/name/:name 
+  def name
+    name = params["name"]
+    array = name.split(" ")
+    capitals = array.map{|n| n.capitalize}.join(" ")
+    @warrior = Warrior.find_by_name(capitals)
+    if @warrior
+    @skills = @warrior.skills
+    @equipment_list = @warrior.equipment_lists
+    @equipment = @warrior.equipments
+    @armours = @warrior.armours
+    @weapons = @warrior.weapons
+    # render :json => @warrior, :include => [:skills, :equipment_lists, :equipments, :armours, :weapons]
+    render json: {
+      warrior: @warrior,
+      skills: @skills,
+      equipment: @equipment,
+      weapons: @weapons,
+      armours: @armours,
+      status: 200}
+    else
+      render json: {
+      warrior: "no warrior by that name",
+      status: 404}
+    end
   end
 
   # GET /warriors/new

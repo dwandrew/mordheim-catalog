@@ -1512,7 +1512,7 @@ Scenario.create(
    
 
     captain = Warrior.create(
-        name:"Mercenary captain",
+        name:"Mercenary Captain",
         warrior_type:"Hero",
         warband:"Mercenaries",
         description:"A Mercenary Captain is a tough professional warrior,
@@ -1569,7 +1569,7 @@ Scenario.create(
     champion.save
 
     yblood = Warrior.create(
-        name:"Youngbloods",
+        name:"Youngblood",
         warrior_type:"Hero",
         warband:"Mercenaries",
         description:"These are young fighters who are still inexperienced,
@@ -1593,7 +1593,7 @@ Scenario.create(
     yblood.save
 
     merc = Warrior.create(
-        name:"Warriors",
+        name:"Warrior",
         warrior_type:"Henchman",
         warband:"Mercenaries",
         description:"These dogs of war are grim, seasoned fighters,
@@ -1837,7 +1837,7 @@ Scenario.create(
     beastman.save
 
     witch_hunter_capn = Warrior.create(
-        name:"Witch hunter captain",
+        name:"Witch Hunter Captain",
         warrior_type:"Hero",
         warband:"Witch hunters",
         description:"Driven by fanaticism, Witch Hunter Captains are
@@ -1866,7 +1866,7 @@ Scenario.create(
     
     
     witch_hunter = Warrior.create(
-        name:"Witch hunter",
+        name:"Witch Hunter",
         warrior_type:"Hero",
         warband:"Witch hunters",
         description:"Witch Hunters are members of the grim Order of
@@ -1896,7 +1896,7 @@ Scenario.create(
     
     
     warrior_priest = Warrior.create(
-        name:"Warrior-priest",
+        name:"Warrior Priest",
         warrior_type:"Hero",
         warband:"Witch hunters",
         description:"Many powerful fighting men have come from the
@@ -2018,7 +2018,7 @@ Scenario.create(
     ).skills << [Skill.find_by_name("Animal")]
 
     matriach = Warrior.create(
-        name:"Sigmarite matriach",
+        name:"Sigmarite Matriach",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
         description:"The Sigmarite Matriarchs, of whom there is an inner
@@ -2047,7 +2047,7 @@ Scenario.create(
     matriach.save
     
     superior = Warrior.create(
-        name:"Sister superior",
+        name:"Sister Superior",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
         description:"Each of the Sisters Superior is a long-serving priestess
@@ -2104,7 +2104,7 @@ Scenario.create(
     auger.save
 
     sister = Warrior.create(
-        name:"Sigmarite sister",
+        name:"Sigmarite Sister",
         warrior_type:"Henchman",
         warband:"Sisters of Sigmar",
         description:"Sigmarite Sisters know that their entire order is
@@ -2411,7 +2411,7 @@ Scenario.create(
     black_skaven.save
     
     eshin_sorc = Warrior.create(
-        name:"Eshin sorcerer",
+        name:"Eshin Sorcerer",
         warrior_type:"Hero",
         warband:"Skaven",
         description:"The Sorcerers of Clan Eshin are black magicians who
@@ -2438,7 +2438,7 @@ Scenario.create(
     eshin_sorc.save
     
     Warrior.create(
-        name:"Night runners",
+        name:"Night Runner",
         warrior_type:"Hero",
         warband:"Skaven",
         description:"Night Runners are the young apprentices of Clan
@@ -2508,7 +2508,7 @@ Scenario.create(
   
     ).skills << [Skill.find_by_name("Animal")]
     Warrior.create(
-        name:"Rat ogre",
+        name:"Rat Ogre",
         warrior_type:"Henchman",
         warband:"Skaven",
         description:"These horrible monsters are much in demand as

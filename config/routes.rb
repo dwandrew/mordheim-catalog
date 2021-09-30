@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/warriors/name/:name', to: 'warriors#name'
   resources :equipment_lists
   resources :warriors
   resources :scenarios
