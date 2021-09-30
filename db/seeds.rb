@@ -2352,3 +2352,32 @@ flagellant_list.armours << [
 ]
 flagellant_list.save
 
+
+sisters_list = EquipmentList.create(
+    name:"Sisters of Sigmar list",
+    warband:"Sisters of Sigmar"
+)
+sisters_list.weapons << [
+    Weapon.find_by_name("Dagger"),
+    Weapon.find_by_name("Hammer, staff, mace or club"),
+    Weapon.find_by_name("Sigmarite warhammer"),
+    Weapon.find_by_name("Flail"),
+    Weapon.find_by_name("Double-handed weapon"),
+    Weapon.find_by_name("Steel whip"),
+    Weapon.find_by_name("Sling"),
+]
+sisters_list.armours << [
+    Armour.find_by_name("Light armour"),
+    Armour.find_by_name("Heavy armour"),
+    Armour.find_by_name("Shield"),
+    Armour.find_by_name("Buckler"),
+    Armour.find_by_name("Helmet"),
+]
+sisters_list.equipments << [
+    Equipment.find_by_name("Holy tome"),
+    Equipment.find_by_name("Blessed water"),
+    Equipment.find_by_name("Holy (Unholy) relic"),
+
+]
+sisters_list.save
+

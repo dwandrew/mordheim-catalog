@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_29_153455) do
+ActiveRecord::Schema.define(version: 2021_09_30_115451) do
 
   create_table "armour_special_rules", force: :cascade do |t|
     t.integer "armour_id"
@@ -34,6 +34,11 @@ ActiveRecord::Schema.define(version: 2021_09_29_153455) do
   create_table "equipment_list_armours", force: :cascade do |t|
     t.integer "armour_id"
     t.integer "equipment_list_id"
+  end
+
+  create_table "equipment_list_equipments", force: :cascade do |t|
+    t.integer "equipment_list_id"
+    t.integer "equipment_id"
   end
 
   create_table "equipment_list_weapons", force: :cascade do |t|

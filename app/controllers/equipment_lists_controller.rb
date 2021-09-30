@@ -4,12 +4,12 @@ class EquipmentListsController < ApplicationController
   # GET /equipment_lists or /equipment_lists.json
   def index
     @equipment_lists = EquipmentList.all
-    render :json => @equipment_lists, :include => [:weapons, :armours]
+    render :json => @equipment_lists, :include => [:weapons, :armours, :equipments]
   end
 
   # GET /equipment_lists/1 or /equipment_lists/1.json
   def show
-    render :json => @equipment_list, :include => [:weapons, :armours]
+    render :json => @equipment_list, :include => [:weapons, :armours, :equipments]
   end
 
   # GET /equipment_lists/new
