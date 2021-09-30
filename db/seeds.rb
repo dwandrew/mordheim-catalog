@@ -1836,7 +1836,7 @@ Scenario.create(
     beastman.equipment_lists << EquipmentList.find_by_name("Darksoul list")
     beastman.save
 
-    Warrior.create(
+    witch_hunter_capn = Warrior.create(
         name:"Witch hunter captain",
         warrior_type:"Hero",
         warband:"Witch hunters",
@@ -1859,8 +1859,13 @@ Scenario.create(
         attacks:1,
         leadership:8,
   
-    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Burn the Witch!")]
-    Warrior.create(
+    )
+    witch_hunter_capn.skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Burn the Witch!")]
+    witch_hunter_capn.equipment_lists << EquipmentList.find_by_name("Witch Hunter list")
+    witch_hunter_capn.save
+    
+    
+    witch_hunter = Warrior.create(
         name:"Witch hunter",
         warrior_type:"Hero",
         warband:"Witch hunters",
@@ -1883,8 +1888,14 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << [Skill.find_by_name("Burn the Witch!")]
-    Warrior.create(
+    )
+    
+    witch_hunter.skills << [Skill.find_by_name("Burn the Witch!")]
+    witch_hunter.equipment_lists << EquipmentList.find_by_name("Witch Hunter list")
+    witch_hunter.save
+    
+    
+    warrior_priest = Warrior.create(
         name:"Warrior-priest",
         warrior_type:"Hero",
         warband:"Witch hunters",
@@ -1909,9 +1920,12 @@ Scenario.create(
         attacks:1,
         leadership:8,
   
-    ).skills << [Skill.find_by_name("Prayers")]
+    )
+    warrior_priest.skills << [Skill.find_by_name("Prayers")]
+    warrior_priest.equipment_lists << EquipmentList.find_by_name("Witch Hunter list")
+    warrior_priest.save
 
-    Warrior.create(
+    flag = Warrior.create(
         name:"Flagellants",
         warrior_type:"Henchman",
         warband:"Witch hunters",
@@ -1941,9 +1955,12 @@ Scenario.create(
         attacks:1,
         leadership:10,
   
-    ).skills << [Skill.find_by_name("Fanatical")]
+    )
+    flag.skills << [Skill.find_by_name("Fanatical")]
+    flag.equipment_lists << EquipmentList.find_by_name("Flagellant list")
+    flag.save
 
-    Warrior.create(
+    zealot = Warrior.create(
         name:"Zealots",
         warrior_type:"Henchman",
         warband:"Witch hunters",
@@ -1973,7 +1990,9 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
+    )
+    zealot.equipment_lists << EquipmentList.find_by_name("Zealot list")
+    zealot.save
 
     Warrior.create(
         name:"Warhound",
@@ -1998,7 +2017,7 @@ Scenario.create(
   
     ).skills << [Skill.find_by_name("Animal")]
 
-    Warrior.create(
+    matriach = Warrior.create(
         name:"Sigmarite matriach",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
@@ -2022,9 +2041,12 @@ Scenario.create(
         attacks:1,
         leadership:8,
   
-    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Prayers")]
+    )
+    matriach.skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Prayers")]
+    matriach.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
+    matriach.save
     
-    Warrior.create(
+    superior = Warrior.create(
         name:"Sister superior",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
@@ -2048,9 +2070,11 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
+    )
+    superior.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
+    superior.save
     
-    Warrior.create(
+    auger = Warrior.create(
         name:"Augur",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
@@ -2074,9 +2098,12 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << [Skill.find_by_name("Blessed Sight")]
+    )
+    auger.skills << [Skill.find_by_name("Blessed Sight")]
+    auger.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
+    auger.save
 
-    Warrior.create(
+    sister = Warrior.create(
         name:"Sigmarite sister",
         warrior_type:"Henchman",
         warband:"Sisters of Sigmar",
@@ -2098,10 +2125,12 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
+    )
+    sister.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
+    sister.save
 
 
-    Warrior.create(
+    novice =Warrior.create(
         name:"Novice",
         warrior_type:"Henchman",
         warband:"Sisters of Sigmar",
@@ -2128,7 +2157,9 @@ Scenario.create(
         attacks:1,
         leadership:6,
   
-    ).skills << []
+    )
+    novice.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
+    novice.save
 
     Warrior.create(
         name:"Vampire",
