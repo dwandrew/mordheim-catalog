@@ -2291,3 +2291,64 @@ dark_soul_list.armours << [
  Armour.find_by_name("Helmet"),
 ]
 dark_soul_list.save
+
+witch_hunter_list = EquipmentList.create(
+    name:"Witch Hunter list",
+    warband:"Witch Hunters"
+)
+witch_hunter_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Crossbow"),
+Weapon.find_by_name("Pistol"),
+Weapon.find_by_name("Crossbow pistol"),
+]
+witch_hunter_list.armours << [
+ Armour.find_by_name("Light armour"),
+ Armour.find_by_name("Heavy armour"),
+ Armour.find_by_name("Shield"),
+ Armour.find_by_name("Helmet"),
+ Armour.find_by_name("Buckler"),
+]
+witch_hunter_list.save
+
+zealot_list = EquipmentList.create(
+    name:"Zealot list",
+    warband:"Witch Hunters"
+)
+zealot_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Spear"),
+Weapon.find_by_name("Short bow"),
+Weapon.find_by_name("Bow"),
+
+]
+zealot_list.armours << [
+    Armour.find_by_name("Light armour"),
+    Armour.find_by_name("Shield"),
+    Armour.find_by_name("Helmet"),
+]
+zealot_list.save
+
+flagellant_list = EquipmentList.create(
+    name:"Flagellant list",
+    warband:"Witch Hunters"
+)
+flagellant_list.weapons << [
+Weapon.find_by_name("Morning star"),
+Weapon.find_by_name("Flail"),
+Weapon.find_by_name("Double-handed weapon"),
+
+]
+flagellant_list.armours << [
+
+]
+flagellant_list.save
+
