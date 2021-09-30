@@ -2161,7 +2161,7 @@ Scenario.create(
     novice.equipment_lists << EquipmentList.find_by_name("Sisters of Sigmar list")
     novice.save
 
-    Warrior.create(
+    vamp = Warrior.create(
         name:"Vampire",
         warrior_type:"Hero",
         warband:"The Undead",
@@ -2187,9 +2187,12 @@ Scenario.create(
         attacks:2,
         leadership:8,
   
-    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Fear"), Skill.find_by_name("Immune to Psychology"), Skill.find_by_name("Immune to Poison"), Skill.find_by_name("No Pain"),]
+    )
+    vamp.skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Fear"), Skill.find_by_name("Immune to Psychology"), Skill.find_by_name("Immune to Poison"), Skill.find_by_name("No Pain"),]
+    vamp.equipment_lists << EquipmentList.find_by_name("Undead list")
+    vamp.save
 
-    Warrior.create(
+    necro = Warrior.create(
         name:"Necromancer",
         warrior_type:"Hero",
         warband:"The Undead",
@@ -2214,9 +2217,12 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << [Skill.find_by_name("Wizard")]
+    )
+    necro.skills << [Skill.find_by_name("Wizard")]
+    necro.equipment_lists << EquipmentList.find_by_name("Undead list")
+    necro.save
 
-    Warrior.create(
+    dreg = Warrior.create(
         name:"Dreg",
         warrior_type:"Hero",
         warband:"The Undead",
@@ -2251,7 +2257,10 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
+    )
+    dreg.equipment_lists << EquipmentList.find_by_name("Undead list")
+    dreg.save
+
 
     Warrior.create(
         name:"Zombie",
@@ -2349,7 +2358,7 @@ Scenario.create(
   
     ).skills << []
 
-    Warrior.create(
+    adept = Warrior.create(
         name:"Assassin Adept",
         warrior_type:"Henchman",
         warband:"Skaven",
@@ -2371,9 +2380,12 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Perfect Killer")]
+    )
+    adept.skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Perfect Killer")]
+    adept.equipment_lists << EquipmentList.find_by_name("Skaven hero list")
+    adept.save
     
-    Warrior.create(
+    black_skaven = Warrior.create(
         name:"Black Skaven",
         warrior_type:"Hero",
         warband:"Skaven",
@@ -2394,9 +2406,11 @@ Scenario.create(
         attacks:1,
         leadership:6,
   
-    ).skills << []
+    )
+    black_skaven.equipment_lists << EquipmentList.find_by_name("Skaven hero list")
+    black_skaven.save
     
-    Warrior.create(
+    eshin_sorc = Warrior.create(
         name:"Eshin sorcerer",
         warrior_type:"Hero",
         warband:"Skaven",
@@ -2418,7 +2432,10 @@ Scenario.create(
         attacks:1,
         leadership:6,
   
-    ).skills << [Skill.find_by_name("Wizard")]
+    )
+    eshin_sorc.skills << [Skill.find_by_name("Wizard")]
+    eshin_sorc.equipment_lists << EquipmentList.find_by_name("Skaven hero list")
+    eshin_sorc.save
     
     Warrior.create(
         name:"Night runners",
@@ -2441,7 +2458,7 @@ Scenario.create(
         attacks:1,
         leadership:4,
   
-    ).skills << []
+    ).equipment_lists << EquipmentList.find_by_name("Skaven henchman list")
     
     Warrior.create(
         name:"Verminkin",
@@ -2466,7 +2483,7 @@ Scenario.create(
         attacks:1,
         leadership:5,
   
-    ).skills << []
+    ).equipment_lists << EquipmentList.find_by_name("Skaven henchman list")
     
     Warrior.create(
         name:"Giant Rat",
