@@ -8,15 +8,6 @@ class WarriorsController < ApplicationController
 
   end
 
-  # def published
-  #   immortals = Immortal.all
-  #   @journals = @immortals.map{|immortal| immortal.journals}
-  #   render json: {
-  #     immortals: @immortals,
-  #     journals: @journals,
-  #     status: 200}
-  # end
-
   # GET /warriors/1 or /warriors/1.json
   def show
     @skills = @warrior.skills

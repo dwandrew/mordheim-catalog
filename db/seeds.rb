@@ -1313,7 +1313,7 @@ Scenario.create(
     possessed_list.save
     
     dark_soul_list = EquipmentList.create(
-        name:"Dark Soul list",
+        name:"Darksoul list",
         warband:"Cult of the Possessed"
     )
     dark_soul_list.weapons << [
@@ -1540,7 +1540,7 @@ Scenario.create(
     captain.equipment_lists << EquipmentList.find_by_name("Mercenary list")
     captain.save
 
-    Warrior.create(
+    champion = Warrior.create(
         name:"Champion",
         warrior_type:"Hero",
         warband:"Mercenaries",
@@ -1565,8 +1565,10 @@ Scenario.create(
         attacks:1,
         leadership:7,
     )
+    champion.equipment_lists << EquipmentList.find_by_name("Mercenary list")
+    champion.save
 
-    Warrior.create(
+    yblood = Warrior.create(
         name:"Youngbloods",
         warrior_type:"Hero",
         warband:"Mercenaries",
@@ -1587,8 +1589,10 @@ Scenario.create(
         leadership:6,
   
     )
+    yblood.equipment_lists << EquipmentList.find_by_name("Mercenary list")
+    yblood.save
 
-    Warrior.create(
+    merc = Warrior.create(
         name:"Warriors",
         warrior_type:"Henchman",
         warband:"Mercenaries",
@@ -1609,8 +1613,10 @@ Scenario.create(
         leadership:7,
   
     )
+    merc.equipment_lists << EquipmentList.find_by_name("Mercenary list")
+    merc.save
 
-    Warrior.create(
+    marksman = Warrior.create(
         name:"Marksmen",
         warrior_type:"Henchman",
         warband:"Mercenaries",
@@ -1633,8 +1639,10 @@ Scenario.create(
         leadership:7,
   
     )
+    marksman.equipment_lists << EquipmentList.find_by_name("Marksman list")
+    marksman.save
 
-    Warrior.create(
+    swordsman = Warrior.create(
         name:"Swordsmen",
         warrior_type:"Henchman",
         warband:"Mercenaries",
@@ -1654,10 +1662,13 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << Skill.find_by_name("Expert Swordsman")
+    )
+    swordsman.skills << Skill.find_by_name("Expert Swordsman")
+    swordsman.equipment_lists << EquipmentList.find_by_name("Mercenary list")
+    swordsman.save
 
 
-    Warrior.create(
+    magister =Warrior.create(
         name:"Magister",
         warrior_type:"Hero",
         warband:"Cult of the possessed",
@@ -1678,7 +1689,10 @@ Scenario.create(
         attacks:1,
         leadership:8,
   
-    ).skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Wizard")]
+    )
+    magister.skills << [Skill.find_by_name("Leader"), Skill.find_by_name("Wizard")]
+    magister.equipment_lists << EquipmentList.find_by_name("Possessed list")
+    magister.save
 
     Warrior.create(
         name:"Possessed",
@@ -1710,7 +1724,8 @@ Scenario.create(
         leadership:7,
   
     ).skills << [Skill.find_by_name("Mutations"), Skill.find_by_name("Fear")]
-    Warrior.create(
+    
+    mutant =Warrior.create(
         name:"Mutant",
         warrior_type:"Hero",
         warband:"Cult of the possessed",
@@ -1731,8 +1746,13 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << [Skill.find_by_name("Mutations")]
-    Warrior.create(
+    )
+    mutant.skills << [Skill.find_by_name("Mutations")]
+    mutant.equipment_lists << EquipmentList.find_by_name("Possessed list")
+    mutant.save
+
+
+    darksoul = Warrior.create(
         name:"Darksoul",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
@@ -1762,8 +1782,12 @@ Scenario.create(
         attacks:1,
         leadership:6,
   
-    ).skills << [Skill.find_by_name("Crazed")]
-    Warrior.create(
+    )
+    darksoul.skills << [Skill.find_by_name("Crazed")]
+    darksoul.equipment_lists << EquipmentList.find_by_name("Darksoul list")
+    darksoul.save
+
+    brethren = Warrior.create(
         name:"Brethren",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
@@ -1781,8 +1805,11 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
-    Warrior.create(
+    )
+    brethren.equipment_lists << EquipmentList.find_by_name("Possessed list")
+    brethren.save
+    
+    beastman = Warrior.create(
         name:"Beastmen",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
@@ -1805,7 +1832,9 @@ Scenario.create(
         attacks:1,
         leadership:7,
   
-    ).skills << []
+    )
+    beastman.equipment_lists << EquipmentList.find_by_name("Darksoul list")
+    beastman.save
 
     Warrior.create(
         name:"Witch hunter captain",
