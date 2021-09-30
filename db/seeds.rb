@@ -122,7 +122,7 @@ Weapon.create(name:"Gromril weapon", rarity: "Rare 11", range:"Close Combat", co
 Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", cost: "3 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Ithilmar weapon")
 
 Weapon.create(name:"Sigmarite warhammer",range:"Close Combat", rarity: "Common (Sisters of Sigmar only)", cost:"15", strength:"As user +1" ).special_rules<< [SpecialRule.find_by_name("Concussion"), SpecialRule.find_by_name("Holy")]
-Weapon.create(name:"Fighting Claws",range:"Close Combat", rarity: "Rare 7 (Skaven only)", cost:"35 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Climb"), SpecialRule.find_by_name("Claw parry"), SpecialRule.find_by_name("Cumbersome")]
+Weapon.create(name:"Fighting claws",range:"Close Combat", rarity: "Rare 7 (Skaven only)", cost:"35 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Climb"), SpecialRule.find_by_name("Claw parry"), SpecialRule.find_by_name("Cumbersome")]
 Weapon.create(name:"Weeping blades",range:"Close Combat", rarity: "Rare 9 (Skaven only)", cost:"50 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Venomous"), SpecialRule.find_by_name("Parry")]
 
 
@@ -2381,3 +2381,69 @@ sisters_list.equipments << [
 ]
 sisters_list.save
 
+undead_list = EquipmentList.create(
+    name:"Undead list",
+    warband:"The Undead"
+)
+undead_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Axe or pick"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Double-handed weapon"),
+Weapon.find_by_name("Halberd"),
+Weapon.find_by_name("Spear"),
+Weapon.find_by_name("Short bow"),
+Weapon.find_by_name("Bow"),
+
+]
+undead_list.armours << [
+    Armour.find_by_name("Light armour"),
+    Armour.find_by_name("Heavy armour"),
+    Armour.find_by_name("Shield"),
+    Armour.find_by_name("Helmet"),
+]
+undead_list.save
+
+skaven_hero_list = EquipmentList.create(
+    name:"Skaven hero list",
+    warband:"Skaven"
+)
+skaven_hero_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Flail"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Halberd"),
+Weapon.find_by_name("Weeping blades"),
+Weapon.find_by_name("Fighting claws"),
+Weapon.find_by_name("Spear"),
+Weapon.find_by_name("Sling"),
+Weapon.find_by_name("Blowpipe"),
+Weapon.find_by_name("Throwing star/knife"),
+Weapon.find_by_name("Warplock Pistol"),
+
+]
+skaven_hero_list.armours << [
+    Armour.find_by_name("Light armour"),
+    Armour.find_by_name("Shield"),
+    Armour.find_by_name("Helmet"),
+]
+skaven_hero_list.save
+
+skaven_henchman_list = EquipmentList.create(
+    name:"Skaven henchman list",
+    warband:"Skaven"
+)
+skaven_henchman_list.weapons << [
+Weapon.find_by_name("Dagger"),
+Weapon.find_by_name("Hammer, staff, mace or club"),
+Weapon.find_by_name("Sword"),
+Weapon.find_by_name("Spear"),
+Weapon.find_by_name("Sling"),
+]
+skaven_henchman_list.armours << [
+    Armour.find_by_name("Light armour"),
+    Armour.find_by_name("Shield"),
+    Armour.find_by_name("Helmet"),
+]
+skaven_henchman_list.save
