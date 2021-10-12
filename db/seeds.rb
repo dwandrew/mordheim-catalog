@@ -13,9 +13,9 @@ SpecialRule.create(name:"+1 Enemy Armour saving_throw", description:"An enemy wo
 SpecialRule.create(name:"-1 Enemy Armour saving_throw", description:"An enemy wounded by this weapon gains a -1 penalty to their armour saving_throw") 
 SpecialRule.create(name:"Concussion", description:"Bludgeoning weapons are excellent to use for striking your enemy senseless. A roll of 2-4 is treated as stunned when rolling on the injury chart when using this weapon")
 SpecialRule.create(name:"Cutting edge", description:"This weapon is built for cutting through armour. It has an extra saving_throw modifier of -1 on top of normal strength modifiers")
-SpecialRule.create(name:"Parry", description:"This weapon/armour allows for parrying. When their opponent hits (in close combat) the modal may roll a D6, if this is higher than the highest to hit score the opponent rolled that attack is discarded. You may not parry something that is double your strength, it is simply too powerful a blow to stop")
+SpecialRule.create(name:"Parry", description:"This weapon/armour allows for parrying. When their opponent hits (in close combat) the model may roll a D6, if this is higher than the highest to hit score the opponent rolled that attack is discarded. You may not parry something that is double your strength, it is simply too powerful a blow to stop")
 SpecialRule.create(name:"Heavy", description:"Any strength bonus offered by this weapon only occurs during the first turn of each combat the model is involved in")
-SpecialRule.create(name:"Two-handed", description:"This weapon requires both hands to use, the model cannot use a second hand weapon, shield or buckler during combat (unless a special rule/ability states otherwise). They may still use a shield against ranged attacks if the modal is not in combat.")   
+SpecialRule.create(name:"Two-handed", description:"This weapon requires both hands to use, the model cannot use a second hand weapon, shield or buckler during combat (unless a special rule/ability states otherwise). They may still use a shield against ranged attacks if the model is not in combat.")   
 SpecialRule.create(name:"Difficult to use", description:"This weapon is tricky to use, the model cannot use a second hand weapon or buckler, but may use a shield as normal")   
 SpecialRule.create(name:"Unwieldy", description:"This weapon is tricky to use, the model cannot use a second hand weapon, but may use a shield or buckler as normal")   
 SpecialRule.create(name:"Strike first", description:"This weapon is swift or has a longer reach, threfore any attacks with this weapon strike first in the first round of a combat")   
@@ -23,64 +23,17 @@ SpecialRule.create(name:"Cavalry bonus", description:"This weapon is well build 
 SpecialRule.create(name:"Strike last", description:"This weapon is slow and cumbersome, therefore any attacks with it strike last in combat even when charging (unless a special rule/ability states otherwise)")
 SpecialRule.create(name:"Lance bonus", description:"This weapon is well build for use as a cavalry weapon. The model gets a +2 str bonus with attacks made by this weapon if mounted and has charged this round")
 SpecialRule.create(name:"Cavalry weapon", description:"This weapon can only be used when mounted.")
-SpecialRule.create(name:"Holy", description:"Each warhammer is blessed by
-the High Matriarch herself before it is handed to
-the Sisters. The warhammer has a +1 bonus on
-all to wound rolls against any Possessed or
-Undead models. Note that you will still need to
-score a 6 before any modifiers in order to cause
-a critical hit. Only Matriarchs and Sister
-Superiors may carry two Sigmarite
-warhammers.")
-SpecialRule.create(name:"Whipcrack", description:"When the wielder charges they gain
-+1A for that turn. This bonus attack is added
-after any other modifications. When the wielder
-is charged they gain +1A that they may only use
-against the charger. This additional attack will
-‘strike first’. If the wielder is simultaneously
-charged by two or more opponents they will
-still only receive a total of +1A. If the wielder is
-using two whips at the same time then they get
-+1A for the additional hand weapon, but only
-the first whip gets the whipcrack +1A.")
-SpecialRule.create(name:"Cannot be parried", description:"The steel whip is a flexible
-weapon and the Priestesses use it with great
-expertise. Attempts to parry its strikes are futile.
-A model attacked by a steel whip may not make
-parries with swords or bucklers.")
-SpecialRule.create(name:"Poison", description:"The needles fired by
-a blowpipe are coated in a
-venom very similar in its
-effects to the Black Lotus (if
-you roll a 6 on the To Hit
-roll, the victim is
-automatically wounded). A blowpipe cannot cause
-critical hits. This weapon has a positive armour save
-modifier, so a model that normally has a save of 5+
-will get a save of 4+ against a blowpipe dart. Even
-models that normally do not have an armour save
-will get a 6+ save to take into account protection
-offered by clothes, fur or the like.")
-SpecialRule.create(name:"Stealthy", description:"A Skaven armed with a blowpipe can fire
-while hidden without revealing his position to the
-enemy. The target model can take an Initiative test in
-order to try to spot the firing Skaven. If the test is
-successful, the Skaven no longer counts as hidden.")
+SpecialRule.create(name:"Holy", description:"Each warhammer is blessed by the High Matriarch herself before it is handed to the Sisters. The warhammer has a +1 bonus on all to wound rolls against any Possessed or Undead models. Note that you will still need to score a 6 before any modifiers in order to cause a critical hit. Only Matriarchs and Sister Superiors may carry two Sigmarite warhammers.")
+SpecialRule.create(name:"Whipcrack", description:"When the wielder charges they gain +1A for that turn. This bonus attack is added after any other modifications. When the wielder is charged they gain +1A that they may only use against the charger. This additional attack will ‘strike first’. If the wielder is simultaneously charged by two or more opponents they will still only receive a total of +1A. If the wielder is using two whips at the same time then they get +1A for the additional hand weapon, but only the first whip gets the whipcrack +1A.")
+SpecialRule.create(name:"Cannot be parried", description:"The steel whip is a flexible weapon and the Priestesses use it with great expertise. Attempts to parry its strikes are futile. A model attacked by a steel whip may not make parries with swords or bucklers.")
+SpecialRule.create(name:"Poison", description:"The needles fired by a blowpipe are coated in a venom very similar in its effects to the Black Lotus (if you roll a 6 on the To Hit roll, the victim is automatically wounded). A blowpipe cannot cause critical hits. This weapon has a positive armour save modifier, so a model that normally has a save of 5+ will get a save of 4+ against a blowpipe dart. Even models that normally do not have an armour save will get a 6+ save to take into account protection offered by clothes, fur or the like.")
+SpecialRule.create(name:"Stealthy", description:"A Skaven armed with a blowpipe can fire while hidden without revealing his position to the enemy. The target model can take an Initiative test in order to try to spot the firing Skaven. If the test is successful, the Skaven no longer counts as hidden.")
 
-SpecialRule.create(name:"Climb", description:": A Skaven equipped with Fighting Claws can
-add +1 to his Initiative when making Climbing tests.")
-SpecialRule.create(name:"Pair", description:" These weapons are traditionally used in pairs,
-one in each hand. A warrior armed with these weapons gets an additional attack, but must one of these weapons in each hand.")
-SpecialRule.create(name:"Claw parry", description:" A Skaven armed with Fighting Claws may parry
-blows and can re-roll a failed attempt once, in the
-same way as a model armed with a sword and buckler.")
-SpecialRule.create(name:"Cumbersome", description:"A model armed with Fighting Claws
-may not use any other weapons in the entire battle.")
-SpecialRule.create(name:"Venomous", description:" The venom of Weeping Blades will enter
-the blood of the victim and ravage his organs and
-muscles. These weapons count as being permanently
-coated in black lotus (see the Equipment section). No
-additional poison may be applied to Weeping Blades.")
+SpecialRule.create(name:"Climb", description:": A Skaven equipped with Fighting Claws can add +1 to his Initiative when making Climbing tests.")
+SpecialRule.create(name:"Pair", description:" These weapons are traditionally used in pairs, one in each hand. A warrior armed with these weapons gets an additional attack, but must one of these weapons in each hand.")
+SpecialRule.create(name:"Claw parry", description:" A Skaven armed with Fighting Claws may parry blows and can re-roll a failed attempt once, in the same way as a model armed with a sword and buckler.")
+SpecialRule.create(name:"Cumbersome", description:"A model armed with Fighting Claws may not use any other weapons in the entire battle.")
+SpecialRule.create(name:"Venomous", description:" The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.")
 
 
 
@@ -181,214 +134,76 @@ Equipment.create(name:"Healing herbs", description:"Certain plants that grow on 
 Equipment.create(name:"Holy (Unholy) relic", description:"In this age of superstition and religious fanaticism, holy objects are an important part of life. Relics abound in the Old World: hairs of Sigmar, pieces from Ulric’s hammer, teeth of Daemon Princes, all are sold to men needing encouragement before battle and as charms against sorcery. A model with a holy relic will automatically pass the first Leadership test he is required to make in the game. If worn by the leader, it will allow him to automatically pass the first Rout test if he has not taken any Leadership tests before. You can only ignore the first Leadership test in any single game – owning two or more holy relics will not allow you to ignore second and subsequent tests.", cost:"15+3D6", rarity:"Rare 8 (Rare 6 for Warrior-Priests and Sisters of Sigmar)")
 Equipment.create(name:"Lantern", description:"A model that is in possession of a lantern may add +4\" to the distance from which he is able to spot hidden enemies.", cost:"10", rarity:"Common")
 Equipment.create(name:"Superior blackpowder", description:"The model has acquired a better quality of blackpowder than is normally available. This new batch adds +1 Strength to all blackpowder weapons that the model has. There is enough superior blackpowder to last for one game.", cost:"30", rarity:"Rare 11")
-Equipment.create(name:"Mordheim map", description:"Some survivors of the cataclysm still remain in the
-many settlements around Mordheim, and make a
-living by preparing maps of the city from memory.
-Many of these maps are faked, and even real ones are
-often crude and inaccurate.
-A map can help a warband find their way through the
-confusing maze of streets and into areas with rich
-buildings to loot.
-When you buy a map, roll a D6: \n
-1: Fake. The map is a fake, and is
-completely worthless. It leads you on
-a fool’s errand. Your opponent may
-automatically choose the next
-scenario you play.\n
-2-3: Vague. Though crude, the map is
-generally accurate (well… parts of it
-are… perhaps!). You may re-roll any
-one dice during the next exploration
-phase if you wish but you must accept
-the result of the second roll.\n
-4: Catacomb map. The map shows a
-way through the catacombs into the
-city. You may automatically choose the
-scenario next time you fight a battle.\n
-5: Accurate. The map is recently made
-and very detailed. You may re-roll up
-to three dice during the next
-exploration phase if you wish. You
-must accept the result of the second
-roll.\n
-6: Master map. This is one of the
-twelve master maps of Mordheim
-made for Count von Steinhardt of
-Ostermark. From now on you may
-always re-roll one dice when rolling
-on the Exploration chart as long as
-the Hero who possesses this map was
-not taken out of action in the battle.", cost:"20+4D6", rarity:"Rare 9")
+Equipment.create(name:"Mordheim map", description:"Some survivors of the cataclysm still remain in the many settlements around Mordheim, and make a living by preparing maps of the city from memory. Many of these maps are faked, and even real ones are often crude and inaccurate. A map can help a warband find their way through the confusing maze of streets and into areas with rich buildings to loot. When you buy a map, roll a D6: \n
+1: Fake. The map is a fake, and is completely worthless. It leads you on a fool’s errand. Your opponent may automatically choose the next scenario you play.\n
+2-3: Vague. Though crude, the map is generally accurate (well… parts of it are… perhaps!). You may re-roll any one dice during the next exploration phase if you wish but you must accept the result of the second roll.\n
+4: Catacomb map. The map shows a way through the catacombs into the city. You may automatically choose the scenario next time you fight a battle.\n
+5: Accurate. The map is recently made and very detailed. You may re-roll up to three dice during the next exploration phase if you wish. You must accept the result of the second roll.\n
+6: Master map. This is one of the twelve master maps of Mordheim made for Count von Steinhardt of Ostermark. From now on you may always re-roll one dice when rolling on the Exploration chart as long as the Hero who possesses this map was not taken out of action in the battle.", cost:"20+4D6", rarity:"Rare 9")
 Equipment.create(name:"Cathayan silk cloak", description:"Some rich warband leaders like to flaunt their wealth and purchase clothes made out of silk from distant Cathay. This silk is the most expensive fabric in the known world, and wearing such clothes is a sure way to attract attention – especially thieves and assassins!
 Any Mercenary warband whose leader is wearing silk clothes may re-roll the first failed Rout test. However, after each battle in which the leader is taken out of action, roll a D6. On a roll of 1-3 the clothes are ruined and must be discarded", cost:"50+2D6", rarity:"Rare 9")
 Equipment.create(name:"Tears of shallaya", description:"Tears of Shallaya are vials of water from the holy spring in Couronne. Shallaya is the goddess of healing and mercy and it is said that this water has curative properties and is proof against any poison.\n A model who drinks a vial of the Tears of Shallaya at the beginning of a battle will be completely immune to all poisons for the duration of combat. Undead and Possessed warriors may not use the Tears of Shallaya.\n There is enough liquid in a vial of the Tears of Shallaya to last for the duration of one battle.", cost:"10+2D6", rarity:"Rare 7")
-Equipment.create(name:"Wardog", description:"The men of the Empire have always been experts at
-raising ferocious bloodhounds to guard their cattle
-and holdings against roaming Goblins and Beastmen.
-A highly trained wardog is a dangerous opponent and
-worth its weight in gold in Mordheim.
-If you purchase a wardog, it will fight exactly like a
-member of your warband, though it is treated as part
-of the equipment of the Hero who bought it. You will
-need a model to represent it on a battlefield.
-Wardogs never gain experience, and if they are put
-out of action they have exactly the same chance of
-recovering as Henchmen (ie, 1-2: Dead; 3-6: Alive).
-Wardogs count towards the maximum number of
-warriors allowed in your warband.
+Equipment.create(name:"Wardog", description:"The men of the Empire have always been experts at raising ferocious bloodhounds to guard their cattle and holdings against roaming Goblins and Beastmen. A highly trained wardog is a dangerous opponent and worth its weight in gold in Mordheim. If you purchase a wardog, it will fight exactly like a member of your warband, though it is treated as part of the equipment of the Hero who bought it. You will need a model to represent it on a battlefield. Wardogs never gain experience, and if they are put out of action they have exactly the same chance of recovering as Henchmen (ie, 1-2: Dead; 3-6: Alive). Wardogs count towards the maximum number of warriors allowed in your warband.
 Profile M WS BS S T W I A Ld
-Wardog 6 4 0 4 3 1 4 1 5
-You could also use the profile above to represent one
-of the more exotic animals used by the warbands of
-Mordheim, such as trained bears, Chaos familiars or
-even fighting monkeys from the far-off Southlands!", cost:"25+2D6", rarity:"Rare 10 (Not available to skaven)")
-Equipment.create(name:"Horse", description:"You may mount one of your Heroes on a horse or
-warhorse in the coming battles.
-Horses and warhorses can only be used if you are
-using the optional rules for mounted models at the
-back of the book.
+Wardog  6  4 0  4 3 1 4 1 5
+You could also use the profile above to represent one of the more exotic animals used by the warbands of Mordheim, such as trained bears, Chaos familiars or even fighting monkeys from the far-off Southlands!", cost:"25+2D6", rarity:"Rare 10 (Not available to skaven)")
+Equipment.create(name:"Horse", description:"You may mount one of your Heroes on a horse or warhorse in the coming battles. Horses and warhorses can only be used if you are using the optional rules for mounted models at the back of the book.
 Only Humans can buy or use horses and warhorses.
 Profile M WS BS S T W I A Ld
-Horse 8 0 0 3 3 1 3 0 5", cost:"40", rarity:"Rare 8 (only available to Humans)")
-Equipment.create(name:"Warhorse", description:"You may mount one of your Heroes on a horse or
-warhorse in the coming battles.
-Horses and warhorses can only be used if you are
-using the optional rules for mounted models at the
-back of the book.
+Horse   8  0 0  3 3 1 3 0 5", cost:"40", rarity:"Rare 8 (only available to Humans)")
+Equipment.create(name:"Warhorse", description:"You may mount one of your Heroes on a horse or warhorse in the coming battles. Horses and warhorses can only be used if you are using the optional rules for mounted models at the back of the book.
 Only Humans can buy or use horses and warhorses.
-Profile M WS BS S T W I A Ld
-Warhorse 8 3 0 3 3 1 3 1 5", cost:"80", rarity:"Rare 11 (only available to Humans)")
+Profile  M WS BS S T W I A Ld
+Warhorse 8  3 0  3 3 1 3 1 5", cost:"80", rarity:"Rare 11 (only available to Humans)")
 
 Spell.create(number:"1", name: "The Hammer of Sigmar", difficulty: "7",
-description: "This weapon of the faithful glows with a golden light, imbued as it is with the righteous power of
-Sigmar.
-The wielder gains +2 Strength in hand-to-hand combat and all hits they inflict cause double
-damage (eg, 2 wounds instead of 1). The Priest must test each shooting phase they want to use
-the Hammer.",
+description: "This weapon of the faithful glows with a golden light, imbued as it is with the righteous power of Sigmar. The wielder gains +2 Strength in hand-to-hand combat and all hits they inflict cause double damage (eg, 2 wounds instead of 1). The Priest must test each shooting phase they want to use the Hammer.",
 school: "Prayers of Sigmar")
 
-Spell.create(number:"2", school: "Prayers of Sigmar", name: "Hearts of Steel", difficulty: "8", description: "As the three words of power are spoken, waves of glory surround the servant of Sigmar. The
-faithful are heartened by the warrior god’s presence.
-Any allied warriors within 8\" of the warrior become immune to Fear and All Alone tests. In
-addition, the whole warband gains +1 to any Rout tests they have to make. The effects of this spell
-last until the caster is knocked down, stunned or put out of action. If cast again the effects are not
-cumulative, ie, the maximum bonus to Rout tests remains +1.")
+Spell.create(number:"2", school: "Prayers of Sigmar", name: "Hearts of Steel", difficulty: "8", description: "As the three words of power are spoken, waves of glory surround the servant of Sigmar. The faithful are heartened by the warrior god’s presence. Any allied warriors within 8\" of the warrior become immune to Fear and All Alone tests. In addition, the whole warband gains +1 to any Rout tests they have to make. The effects of this spell last until the caster is knocked down, stunned or put out of action. If cast again the effects are not cumulative, ie, the maximum bonus to Rout tests remains +1.")
 
-Spell.create(number:3, school: "Prayers of Sigmar", name:"Soulfire", difficulty: "9",
-description: "The wrath of Sigmar comes to earth. Purifying flames surround the Priest and wipe out those who
-resist the righteous fury of the God-Emperor!
-All enemy models within 4\" of the servant of Sigmar suffer a Strength 3 hit. No armour saves are
-allowed. The servants of darkness and Chaos are especially susceptible to Sigmar’s holy power.
-Undead and Possessed models in range suffer a Strength 5 hit instead.")
+Spell.create(number:"3", school: "Prayers of Sigmar", name:"Soulfire", difficulty: "9",
+description: "The wrath of Sigmar comes to earth. Purifying flames surround the Priest and wipe out those who resist the righteous fury of the God-Emperor! All enemy models within 4\" of the servant of Sigmar suffer a Strength 3 hit. No armour saves are allowed. The servants of darkness and Chaos are especially susceptible to Sigmar’s holy power. Undead and Possessed models in range suffer a Strength 5 hit instead.")
 
 Spell.create(number:"4", school: "Prayers of Sigmar", name: "Shield of Faith", difficulty: "6",
-description: "A shield of pure white light appears in front of the Priest. As long as their faith remains strong the
-shield will protect them.
-The Priest is immune to all spells. Roll at the beginning of each turn in the recovery phase. On a
-roll of 1 or 2 the shield disappears.")
+description: "A shield of pure white light appears in front of the Priest. As long as their faith remains strong the shield will protect them. The Priest is immune to all spells. Roll at the beginning of each turn in the recovery phase. On a roll of 1 or 2 the shield disappears.")
 
 Spell.create(number:"5", school: "Prayers of Sigmar", name: "Healing Hand", difficulty: "5",
-description: "Laying hands upon a wounded comrade, the servant of Sigmar calls upon their Lord to heal the
-warrior’s wounds.
-Any one model within 2\" of the Priest (including themself) may be healed. The warrior is restored
-to their full quota of Wounds. In addition, if any friendly models within 2\" are stunned or knocked
-down, they immediately come to their senses, stand up, and continue fighting as normal.")
+description: "Laying hands upon a wounded comrade, the servant of Sigmar calls upon their Lord to heal the warrior’s wounds. Any one model within 2\" of the Priest (including themself) may be healed. The warrior is restored to their full quota of Wounds. In addition, if any friendly models within 2\" are stunned or knocked down, they immediately come to their senses, stand up, and continue fighting as normal.")
 
 Spell.create(number:"6", school: "Prayers of Sigmar", name: "Armour of Righteousness", difficulty: "9",
-description: "Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above
-their head.
-The Priest has an armour save of 2+ which replaces their normal armour save. In addition, they cause
-fear in their enemies and is therefore immune to fear themself.
-The power of the Armour of Righteousness lasts until the beginning of the Casters’s next
-Shooting phase.")
+description: "Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above their head. The Priest has an armour save of 2+ which replaces their normal armour save. In addition, they cause fear in their enemies and is therefore immune to fear themself. The power of the Armour of Righteousness lasts until the beginning of the Casters’s next Shooting phase.")
 
-Spell.create(number:"1", name:"Lifestealer", difficulty: "10", school:"Necromancy", description: "The Necromancer sucks out the very essence of life from their victim, stealing its vigour for themself.
-You may choose a single model within 6\". The target suffers a wound (no save allowed) and the
-Necromancer gains an extra wound for the duration of the battle. This may take the Necromancer’s
-Wounds above their original maximum value. This spell will not affect the Possessed or any Undead
-models.")
+Spell.create(number:"1", name:"Lifestealer", difficulty: "10", school:"Necromancy", description: "The Necromancer sucks out the very essence of life from their victim, stealing its vigour for themself. You may choose a single model within 6\". The target suffers a wound (no save allowed) and the Necromancer gains an extra wound for the duration of the battle. This may take the Necromancer’s Wounds above their original maximum value. This spell will not affect the Possessed or any Undead models.")
 
-Spell.create(number:"2", name:"Re-Animation", difficulty: "5", school:"Necromancy", description: "At the spoken command of the Necromancer, the dead rise to fight again.
-One Zombie that went out of action during the last hand-to-hand combat or Shooting phase
-immediately returns to the battle. Place the model within 6\" of the Necromancer. The model
-cannot be placed straight into hand-to-hand combat with an enemy model.")
+Spell.create(number:"2", name:"Re-Animation", difficulty: "5", school:"Necromancy", description: "At the spoken command of the Necromancer, the dead rise to fight again. One Zombie that went out of action during the last hand-to-hand combat or Shooting phase immediately returns to the battle. Place the model within 6\" of the Necromancer. The model cannot be placed straight into hand-to-hand combat with an enemy model.")
 
-Spell.create(number:"3", name:"Death vision", difficulty: "6", school:"Necromancy", description: "The Necromancer calls on the power of Necromancy to reveal the moment of their enemies death.
-The Necromancer causes fear in their enemies for the duration of the battle.")
+Spell.create(number:"3", name:"Death vision", difficulty: "6", school:"Necromancy", description: "The Necromancer calls on the power of Necromancy to reveal the moment of their enemies death. The Necromancer causes fear in their enemies for the duration of the battle.")
 
-Spell.create(number:"4", name:"Spell of Doom", difficulty: "9", school:"Necromancy", description: "The Necromancer whispers to the sleeping dead to rise up from the ground and seize their enemies.
-Choose one enemy model within 12\". The model must immediately roll equal to or less than their
-Strength on a D6 or the dead emerging from the earth will rend him with supernatural power. If
-they fail, you may roll on the Injury table to see what happens to the unfortunate warrior.")
+Spell.create(number:"4", name:"Spell of Doom", difficulty: "9", school:"Necromancy", description: "The Necromancer whispers to the sleeping dead to rise up from the ground and seize their enemies. Choose one enemy model within 12\". The model must immediately roll equal to or less than their Strength on a D6 or the dead emerging from the earth will rend him with supernatural power. If they fail, you may roll on the Injury table to see what happens to the unfortunate warrior.")
 
-Spell.create(number:"5", name:"Call of Vanhel", difficulty: "6", school:"Necromancy", description: "The Necromancer summons the world of the dead to invigorate their Undead servants.
-A single Zombie or Dire Wolf within 6\" of the Necromancer may immediately move again up to its
-maximum Movement distance (ie, 9\" in the case of Dire Wolves). If this moves them into base
-contact with an enemy model, they count as charging.")
+Spell.create(number:"5", name:"Call of Vanhel", difficulty: "6", school:"Necromancy", description: "The Necromancer summons the world of the dead to invigorate their Undead servants. A single Zombie or Dire Wolf within 6\" of the Necromancer may immediately move again up to its maximum Movement distance (ie, 9\" in the case of Dire Wolves). If this moves them into base contact with an enemy model, they count as charging.")
 
-Spell.create(number:"6", name:"Spell of Awakening", difficulty: "Auto", school:"Necromancy", description: "The Necromancer calls the soul of a slain Hero back to their body and enslaves them with corrupt
-magic.
-If an enemy Hero is killed (ie, your opponent rolls 11-16 on the Serious Injury chart after the
-battle) then the Necromancer may raise them to fight as a Zombie in their service.
-The dead Hero retains their characteristics and all their weapons and armour but may not use any
-other equipment or skills. They may no longer run, counts as a Henchman group on their own, and
-may not gain additional experience. This spell always succeeds (rules for Henchmen and
-experience are described later). The new Zombie follows all the normal Zombie rules (immune to
-poison, causes fear) except for retaining their profile, weapons and armour.")
+Spell.create(number:"6", name:"Spell of Awakening", difficulty: "Auto", school:"Necromancy", description: "The Necromancer calls the soul of a slain Hero back to their body and enslaves them with corrupt magic. If an enemy Hero is killed (ie, your opponent rolls 11-16 on the Serious Injury chart after the battle) then the Necromancer may raise them to fight as a Zombie in their service. The dead Hero retains their characteristics and all their weapons and armour but may not use any other equipment or skills. They may no longer run, counts as a Henchman group on their own, and may not gain additional experience. This spell always succeeds (rules for Henchmen and experience are described later). The new Zombie follows all the normal Zombie rules (immune to poison, causes fear) except for retaining their profile, weapons and armour.")
 
-Spell.create(number: "1", school:"Chaos rituals", name: "Vision of Torment", difficulty: "10", description: "The Chaos Mage summons horrible visions of the realm of Chaos, causing their enemy to recoil in
-utter horror.
-This spell has a range of 6\" and must be cast on the closest enemy model. If the Chaos Mage is in
-hand-to-hand combat, they must choose their target from those in base contact with them. The affected
-model is immediately stunned. If the model cannot be stunned it is knocked down instead.")
+Spell.create(number: "1", school:"Chaos rituals", name: "Vision of Torment", difficulty: "10", description: "The Chaos Mage summons horrible visions of the realm of Chaos, causing their enemy to recoil in utter horror. This spell has a range of 6\" and must be cast on the closest enemy model. If the Chaos Mage is in hand-to-hand combat, they must choose their target from those in base contact with them. The affected model is immediately stunned. If the model cannot be stunned it is knocked down instead.")
 
-Spell.create(number: "2", school:"Chaos rituals",  name: "Eye of God", difficulty: "7", description: "The Chaos Mage implores the Dark gods to grant a boon to their servant.
-You may use the Eye of God successfully only once per battle. Choose any single model within 6\",
-friend or foe. Roll a D6 to see what happens to the affected model.
-D6 Result
-1 The wrath of the gods descends upon the target. The model is taken
-He does not have to roll on the Serious Injury chart after the battle though.
-out of action immediately.
-2-5 The model gains +1 to any one of their characteristics during this battle (chosen by the player who
-cast the spell).
+Spell.create(number: "2", school:"Chaos rituals",  name: "Eye of God", difficulty: "7", description: "The Chaos Mage implores the Dark gods to grant a boon to their servant. You may use the Eye of God successfully only once per battle. Choose any single model within 6\", friend or foe. Roll a D6 to see what happens to the affected model. D6 Result
+1 The wrath of the gods descends upon the target. The model is taken He does not have to roll on the Serious Injury chart after the battle though. out of action immediately.
+2-5 The model gains +1 to any one of their characteristics during this battle (chosen by the player who cast the spell).
 6 The model gains +1 to all of its characteristics for the duration of the battle.")
 
-Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and their blood spurts out, burning flesh and armour.
-This attack has a range of 8\" and causes D3 S5 hits. It hits the first model in its path. After using
-this spell the Chaos Mage must roll on the Injury table for himself to see how dangerous the
-wound is, though treat the out of action result as stunned instead.")
+Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and their blood spurts out, burning flesh and armour. This attack has a range of 8\" and causes D3 S5 hits. It hits the first model in its path. After using this spell the Chaos Mage must roll on the Injury table for himself to see how dangerous the wound is, though treat the out of action result as stunned instead.")
 
+Spell.create(number: "4", school:"Chaos rituals",  name: "Lure of Chaos", difficulty: "9", description: "The Chaos Mage calls upon the taint of chaos which exists in the inner soul of all living beings. The spell has a range of 12\" and must be cast on the closest enemy model. Roll a D6 and add the Chaos Mage’s Leadership to the score. Then roll a D6 and add the target’s Leadership to the score. If the Chaos Mage beats their opponent’s score he gains control of the model until the model passes a Leadership test in their own recovery phase. The model may not commit suicide, but can attack models on their own side, and will not fight warriors from the Chaos Mage’s warband. If they were engaged in hand-to-hand combat with any warriors of the Chaos Mage’s warband, they will immediately move 1\" apart.")
 
-Spell.create(number: "4", school:"Chaos rituals",  name: "Lure of Chaos", difficulty: "9", description: "The Chaos Mage calls upon the taint of chaos which exists in the inner soul of all living beings.
-The spell has a range of 12\" and must be cast on the closest enemy model. Roll a D6 and add the
-Chaos Mage’s Leadership to the score. Then roll a D6 and add the target’s Leadership to the score.
-If the Chaos Mage beats their opponent’s score he gains control of the model until the model passes
-a Leadership test in their own recovery phase. The model may not commit suicide, but can attack
-models on their own side, and will not fight warriors from the Chaos Mage’s warband. If they were
-engaged in hand-to-hand combat with any warriors of the Chaos Mage’s warband, they will
-immediately move 1\" apart.")
+Spell.create(number: "5", school:"Chaos rituals",  name: "Wings of Darkness", difficulty: "7", description: "The Chaos Mage is lifted from the ground by two shadowy Daemons and carried wherever they want to go. The Chaos Mage may immediately move anywhere within 12\", including into base contact with an enemy, in which case they count as charging. If they engage a fleeing enemy, in the close combat phase they will score one automatic hit and then their opponent will flee again (if they survive).")
 
-Spell.create(number: "5", school:"Chaos rituals",  name: "Wings of Darkness", difficulty: "7", description: "The Chaos Mage is lifted from the ground by two shadowy Daemons and carried wherever they
-want to go.
-The Chaos Mage may immediately move anywhere within 12\", including into base contact with an
-enemy, in which case they count as charging. If they engage a fleeing enemy, in the close combat
-phase they will score one automatic hit and then their opponent will flee again (if they survive).")
+Spell.create(number: "6", school:"Chaos rituals",  name: "Word of Pain", difficulty: "7", description: "Speaking the forbidden name of their dark god, the Chaos Mage causes indescribable pain to all who hear it. All models within 3\" of the Chaos Mage, friend or foe, suffer one S3 hit. No armour saves are allowed.")
 
-Spell.create(number: "6", school:"Chaos rituals",  name: "Word of Pain", difficulty: "7", description: "Speaking the forbidden name of their dark god, the Chaos Mage causes indescribable pain to all
-who hear it.
-All models within 3\" of the Chaos Mage, friend or foe, suffer one S3 hit. No armour saves are
-allowed.")
+Spell.create(number: "1", school: "Lesser magic", name: "Fires of U’Zhul", difficulty: "7", description: "The wizard summons a fiery ball of flames and hurls it upon their enemies. The fireball has a range of 18\" and causes one Strength 4 hit. It strikes the first model in its path. Armour saves are taken as normal (ie, with -1 modifier).")
 
-Spell.create(number: "1", school: "Lesser magic", name: "Fires of U’Zhul", difficulty: "7", description:
-"The wizard summons a fiery ball of flames and hurls it upon their enemies.
-The fireball has a range of 18\" and causes one Strength 4 hit. It strikes the first model in its path.
-Armour saves are taken as normal (ie, with -1 modifier).")
-
-Spell.create(number: "2", school: "Lesser magic",  name: "Flight of Zimmeran", difficulty: "7", description:
-"Calling upon the power of the winds of magic, the wizard walks on air.
-The wizard may immediately move anywhere within 12\", including into base contact with an
-enemy, in which case they count as charging. If they engage a fleeing enemy in the close combat
-phase they will score 1 automatic hit and then their opponent will flee again (if they survive).")
+Spell.create(number: "2", school: "Lesser magic",  name: "Flight of Zimmeran", difficulty: "7", description: "Calling upon the power of the winds of magic, the wizard walks on air. The wizard may immediately move anywhere within 12\", including into base contact with an enemy, in which case they count as charging. If they engage a fleeing enemy in the close combat phase they will score 1 automatic hit and then their opponent will flee again (if they survive).")
 
 Spell.create(number: "3", school: "Lesser magic",  name: "Dread of Aramar", difficulty: "7", description:
 "The wizard places a sense of mind-numbing fear into the minds of their opponents.
