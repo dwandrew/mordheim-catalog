@@ -506,102 +506,44 @@ Skill.create(skill_type: "generic", name:"Wizard", description: "The character i
 Skill.create(skill_type: "generic", name:"Animal", description: "This model is an animal and thus does not gain experience")
 Skill.create(skill_type: "generic", name:"Prayers", description: "The character is a servant of sigmar and may use the prayers of sigmar. See the Magic section for details")
 Skill.create(skill_type: "generic", name:"Fear", description: "They model causes fear. See they psychology section for details")
-Skill.create(skill_type: "possessed", name:"Mutations", description: "The model may start the game with one or
+Skill.create(skill_type: "cult of the possessed", name:"Mutations", description: "The model may start the game with one or
 more mutations each. See the Mutations list at the end of the possessed warband for costs.")
 
 Skill.create(skill_type: "witch hunters", name:"Burn the Witch!", description:
-"This model hates
-all models
-who can
-cast
-spells.")
-Skill.create(skill_type: "witch hunters", name:"Fanatical", description: "Flagellants are convinced that the end of
-the world is nigh, and nothing in this world holds any
-terror for them. Flagellants automatically pass all
-Leadership-based tests they are required to take. A
-Flagellant may never become a warband leader.")
+"This model hates all models who can cast spells.")
+Skill.create(skill_type: "witch hunters", name:"Fanatical", description: "Flagellants are convinced that the end of the world is nigh, and nothing in this world holds any terror for them. Flagellants automatically pass all Leadership-based tests they are required to take. A Flagellant may never become a warband leader.")
 
-Skill.create(skill_type: "cult of the possessed", name:"Crazed", description: "Darksouls have been driven insane by
-daemonic possession and know no fear. They
-automatically pass any Leadership tests they are
-required to take.")
+Skill.create(skill_type: "cult of the possessed", name:"Crazed", description: "Darksouls have been driven insane by daemonic possession and know no fear. They automatically pass any Leadership tests they are required to take.")
 
 
-Skill.create(skill_type: "sisters of sigmar", name: "Blessed Sight", description: "An Augur can re-roll any failed
-characteristic tests (climbing, resisting spells or any
-other reason), and any rolls to hit in close combat or
-shooting. You must accept the second result.
-In addition, an Augur can use her Blessed Sight to
-help the Sisterhood when they are searching the
-city for wyrdstone. If the Augur is not put out of
-action in the battle, you may roll two dice for
-her in the exploration phase and pick either
-dice as the result.")
+Skill.create(skill_type: "sisters of sigmar", name: "Blessed Sight", description: "An Augur can re-roll any failed characteristic tests (climbing, resisting spells or any other reason), and any rolls to hit in close combat or shooting. You must accept the second result. In addition, an Augur can use her Blessed Sight to help the Sisterhood when they are searching the city for wyrdstone. If the Augur is not put out of action in the battle, you may roll two dice for her in the exploration phase and pick either dice as the result.")
 
-Skill.create(skill_type: "undead", name: "Immune to Psychology", description:"This model is not
-affected by psychology (such as fear) and
-never leave combat.")
+Skill.create(skill_type: "undead", name: "Immune to Psychology", description:"This model is not affected by psychology (such as fear) and never leave combat.")
 
-Skill.create(skill_type: "undead", name: "Immune to Poison", description:"This model is
-not affected
-by any
-poison.")
+Skill.create(skill_type: "undead", name: "Immune to Poison", description:"This model is not affected by any poison.")
 Skill.create(skill_type: "undead", name: "No Pain", description:"This model treats a ‘stunned’ result on the Injury chart as ‘knocked down’.")
-Skill.create(skill_type: "undead", name: "May not Run", description: "This model is slow to react and may
-not run (but may charge normally).")
+Skill.create(skill_type: "undead", name: "May not Run", description: "This model is slow to react and may not run (but may charge normally).")
 
-Skill.create(skill_type: "undead", name: "Dire Charge", description:"Dire Wolves are slavering creatures that
-overpower their opponents when they charge. Dire
-Wolves fight with 2 attacks instead of 1 during the
-turn they charge.")
+Skill.create(skill_type: "undead", name: "Dire Charge", description:"Dire Wolves are slavering creatures that overpower their opponents when they charge. Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.")
 
-Skill.create(skill_type: "undead", name: "No Brain", description: "This model never gain experience. They do
-    not learn from their mistakes. What did you expect?")
+Skill.create(skill_type: "undead", name: "No Brain", description: "This model never gain experience. They do not learn from their mistakes. What did you expect?")
 
-Skill.create(skill_type: "skaven", name: "Perfect Killer", description: "An Assassin Adept always has an extra
--1 modifier to any armour save the enemy has to take
-against wounds they inflicted (both with shooting and
-close combat weapons).")
+Skill.create(skill_type: "skaven", name: "Perfect Killer", description: "An Assassin Adept always has an extra -1 modifier to any armour save the enemy has to take against wounds they inflicted (both with shooting and close combat weapons).")
 
-Skill.create(skill_type: "skaven", name: "Rat ogre stupidity", description: "A Rat Ogre is subject to stupidity unless a
-Skaven Hero is within 6\" of it.")
+Skill.create(skill_type: "skaven", name: "Rat ogre stupidity", description: "A Rat Ogre is subject to stupidity unless a Skaven Hero is within 6\" of it.")
 
-Skill.create(skill_type: "generic", name: "Large Target", description: "This model is a Large Target as defined
-in the shooting rules.")
+Skill.create(skill_type: "generic", name: "Large Target", description: "This model is a Large Target as defined in the shooting rules.")
 
 
-Mutation.create(name: "Daemon soul",  description: "A Daemon lives within the mutant’s soul. This gives
-them a 4+ save against the effects of spells or prayers.", cost: "20")
-Mutation.create(name: "Great claw", description: "One of the mutant’s arms ends in a great, crab-like
-claw. They may carry no weapons in this arm, but gains
-an extra attack in hand-to-hand combat with a +1
-Strength bonus.", cost: "50")
-Mutation.create(name: "Cloven hoofs", description: "The warrior gains +1
-Movement.", cost: "40")
-Mutation.create(name: "Tentacle", description: "One of the mutant’s arms ends in a tentacle. They may
-grapple their opponent in close combat to reduce their
-attacks by -1, down to a minimum of 1. The mutant
-may decide which attack his opponent loses.", cost: "35")    
-Mutation.create(name: "Blackblood", description: "If the model loses a wound in close combat, anyone
-in base contact with the model suffers a Strength 3 hit
-(no critical hits) from the spurting corrosive blood.", cost: "30")    
-Mutation.create(name: "Spines", description: "Any model in base contact with the mutant suffers an
-automatic Strength 1 hit at the beginning of each
-close combat phase. Spines will never cause critical
-hits.", cost: "35")    
-Mutation.create(name: "Scorpion tail", description: "The mutant has a long barbed tail with a venomed tip,
-allowing them to make an extra Strength 5 attack in
-each hand-to-hand combat phase. If the model hit by
-the tail is immune to poison, the Strength of
-the hit is reduced to 2.", cost: "40")    
-Mutation.create(name: "Extra arm", description: "The mutant may use any single-handed weapon
-in the extra arm, giving them +1 attack when fighting
-in hand-to-hand combat. Alternatively, they may carry a
-shield or a buckler in the extra arm. If a Possessed
-chooses to do this, they gain an extra attack but still
-cannot carry a weapon.", cost: "40")    
-Mutation.create(name: "Hideous", description: "The mutant causes fear. See the Psychology section
-for details.", cost: "40")
+Mutation.create(name: "Daemon soul",  description: "A Daemon lives within the mutant’s soul. This gives them a 4+ save against the effects of spells or prayers.", cost: "20")
+Mutation.create(name: "Great claw", description: "One of the mutant’s arms ends in a great, crab-like claw. They may carry no weapons in this arm, but gains an extra attack in hand-to-hand combat with a +1 Strength bonus.", cost: "50")
+Mutation.create(name: "Cloven hoofs", description: "The warrior gains +1 Movement.", cost: "40")
+Mutation.create(name: "Tentacle", description: "One of the mutant’s arms ends in a tentacle. They may grapple their opponent in close combat to reduce their attacks by -1, down to a minimum of 1. The mutant may decide which attack his opponent loses.", cost: "35")    
+Mutation.create(name: "Blackblood", description: "If the model loses a wound in close combat, anyone in base contact with the model suffers a Strength 3 hit (no critical hits) from the spurting corrosive blood.", cost: "30")    
+Mutation.create(name: "Spines", description: "Any model in base contact with the mutant suffers an automatic Strength 1 hit at the beginning of each close combat phase. Spines will never cause critical hits.", cost: "35")    
+Mutation.create(name: "Scorpion tail", description: "The mutant has a long barbed tail with a venomed tip, allowing them to make an extra Strength 5 attack in each hand-to-hand combat phase. If the model hit by the tail is immune to poison, the Strength of the hit is reduced to 2.", cost: "40")    
+Mutation.create(name: "Extra arm", description: "The mutant may use any single-handed weapon in the extra arm, giving them +1 attack when fighting in hand-to-hand combat. Alternatively, they may carry a shield or a buckler in the extra arm. If a Possessed chooses to do this, they gain an extra attack but still cannot carry a weapon.", cost: "40")    
+Mutation.create(name: "Hideous", description: "The mutant causes fear. See the Psychology section for details.", cost: "40")
 
 # Scenario.create(
 #     name:"", 
@@ -1606,7 +1548,7 @@ Scenario.create(
         name:"Brethren",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
-        description:"",
+        description:"Brethren are the crazed human followers of the cults of the dark gods, eager to ascend into damnation. Their vile deeds and unspeakable acts have driven them to the brink of insanity.",
         cost:"25",
         number:"",
         experience: 0,
