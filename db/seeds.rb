@@ -426,114 +426,26 @@ Scenario.create(
 
 Scenario.create(
     name:"Occupy", 
-    description: "This scenario takes place in a part of Mordheim where
-    the buildings are bursting with shards of wyrdstone
-    and other wealth. Taking and holding these buildings
-    means that your warband gains rich pickings.
-    Unfortunately, your opponent has the same idea.", 
-    terrain: "Each player takes it in turn to place a piece of terrain,
-    either a ruined building, tower, or other similar item.
-    We suggest that the terrain is set up within an area
-    roughly 4' x 4'.", 
-    warbands: "Each player rolls a D6. The player with the highest
-    score decides which warband sets up first. The first
-    player chooses the table edge he wants to set up on,
-    and places all his warriors within 8\" of it. His
-    opponent then sets up within 8\" of the opposite edge.",
-    starting:"Both players roll a D6. The player with the higher
-    score takes the first turn.",
-    ending: "There is no need to take any
-    Rout tests – as the game lasts
-    for a maximum of eight
-    turns. If one warband
-    voluntarily routs, the game
-    ends and the winning
-    warband is considered to
-    occupy all of the buildings
-    on the table",
-    experience: "+1 Survives. If a Hero or a
-    Henchman group survives
-    they gain +1 Experience.\n
-    +1 Winning Leader. The
-    leader of the warband who
-    controls the highest number
-    of buildings at the end of the
-    battle gains +1 Experience.
-    If both sides occupy the
-    same number of buildings,
-    then the battle is considered
-    to be a draw and neither
-    leader gains this bonus.\n
-    +1 Per Enemy Out of
-    Action. Any Hero earns +1
-    Experience for each enemy
-    he puts out of action.",
+    description: "This scenario takes place in a part of Mordheim where the buildings are bursting with shards of wyrdstone and other wealth. Taking and holding these buildings means that your warband gains rich pickings. Unfortunately, your opponent has the same idea.", 
+    terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "Each player rolls a D6. The player with the highest score decides which warband sets up first. The first player chooses the table edge he wants to set up on, and places all his warriors within 8\" of it. His opponent then sets up within 8\" of the opposite edge.",
+    starting:"Both players roll a D6. The player with the higher score takes the first turn.",
+    ending: "There is no need to take any Rout tests – as the game lasts for a maximum of eight turns. If one warband voluntarily routs, the game ends and the winning warband is considered to occupy all of the buildings on the table",
+    experience: "+1 Survives. If a Hero or a Henchman group survives they gain +1 Experience.\n +1 Winning Leader. The leader of the warband who controls the highest number of buildings at the end of the battle gains +1 Experience. If both sides occupy the same number of buildings, then the battle is considered to be a draw and neither leader gains this bonus.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.",
     wyrdstone: "",
-    special_rules: "The objective is to capture
-    D3+2 of the buildings on
-    the tabletop. Mark these
-    buildings, starting with the
-    one closest to the centre of
-    the table, working your way
-    outwards to the next nearest
-    building. A building is
-    occupied if at least one of
-    your standing models is
-    inside and no enemy models
-    are inside the building."
+    special_rules: "The objective is to capture D3+2 of the buildings on the tabletop. Mark these buildings, starting with the one closest to the centre of the table, working your way outwards to the next nearest building. A building is occupied if at least one of your standing models is inside and no enemy models are inside the building."
     )
 
 Scenario.create(
     name:"Suprise attack", 
-    description: "One warband is out searching the ruins of Mordheim
-    for loot when it is attacked by an enemy warband. The
-    defenders are spread thinly and must muster a
-    defence quickly to drive off their attackers.", 
-    terrain: "Starting with the attacker, each player takes it in turn
-    to place a piece of terrain, either a ruined building,
-    tower, or other similar item. We suggest that the
-    terrain is set up within an area roughly 4' x 4'.", 
-    warbands: "1. The defending player rolls a D6 for each Hero
-    and Henchman group in his warband, in any
-    order he chooses. On a 1-3, they are elsewhere in
-    the ruins and turn up later as reinforcements. On
-    a 4-6 they are deployed at the start of the game.
-    Note that at least one Hero or Henchmen group
-    will be present at the start. If all roll 1-3, the last
-    Hero or Henchmen group will automatically be
-    deployed at the start of the battle. \n
-    2. The defender deploys his available Heroes and
-    Henchmen on the table. No model may be closer
-    than 8\" to another model, as the warband is
-    spread out wide to search the ruins. No model
-    may be deployed closer than 8\" to a table edge.\n
-    3. The attacker deploys his whole warband within 8\"
-    of a random table edge, as shown below. He may
-    choose which edge to nominate as ‘1’ before
-    rolling to see where he deploys.",
-    starting:"The attacker always
-    gets the first
-    turn.",
-    ending: "The game ends when one warband fails a Rout test.
-    The routing warband loses",
-    experience: "+1 Survives. If a Hero or a Henchman group survives
-    the battle they gain +1 Experience.\n
-    +1 Winning Leader. The leader of the winning
-    warband gains +1 Experience.\n
-    +1 Per Enemy Out of
-    Action. A Hero earns
-    +1 Experience for
-    each enemy he
-    puts out of
-    action.",
+    description: "One warband is out searching the ruins of Mordheim  for loot when it is attacked by an enemy warband. The  defenders are spread thinly and must muster a  defence quickly to drive off their attackers.", 
+    terrain: "Starting with the attacker, each player takes it in turn  to place a piece of terrain, either a ruined building,  tower, or other similar item. We suggest that the  terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "1. The defending player rolls a D6 for each Hero  and Henchman group in his warband, in any  order he chooses. On a 1-3, they are elsewhere in  the ruins and turn up later as reinforcements. On  a 4-6 they are deployed at the start of the game.  Note that at least one Hero or Henchmen group  will be present at the start. If all roll 1-3, the last  Hero or Henchmen group will automatically be  deployed at the start of the battle. \n  2. The defender deploys his available Heroes and  Henchmen on the table. No model may be closer  than 8\" to another model, as the warband is  spread out wide to search the ruins. No model  may be deployed closer than 8\" to a table edge.\n  3. The attacker deploys his whole warband within 8\"  of a random table edge, as shown below. He may  choose which edge to nominate as ‘1’ before  rolling to see where he deploys.",
+    starting:"The attacker always gets the first turn.",
+    ending: "The game ends when one warband fails a Rout test. The routing warband loses",
+    experience: "+1 Survives. If a Hero or a Henchman group survives the battle they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 Per Enemy Out of Action. A Hero earns +1 Experience for each enemy he puts out of action.",
     wyrdstone: "",
-    special_rules: "The defender, at the start of his second and
-    subsequent turns, may roll a D6 for each of his
-    Henchmen groups or Heroes not yet on the table. On
-    a 4+ they move on in the movement phase from a
-    random table edge as shown below – roll a D6. All
-    reinforcements for that turn arrive from the same
-    edge and may charge on the turn in which they arrive."
+    special_rules: "The defender, at the start of his second and subsequent turns, may roll a D6 for each of his Henchmen groups or Heroes not yet on the table. On a 4+ they move on in the movement phase from a random table edge as shown below – roll a D6. All reinforcements for that turn arrive from the same edge and may charge on the turn in which they arrive."
     )
 
 
@@ -815,14 +727,7 @@ Scenario.create(
         name:"Mercenary Captain",
         warrior_type:"Hero",
         warband:"Mercenaries",
-        description:"A Mercenary Captain is a tough professional warrior,
-        a man who will fight for anyone or against anything so
-        long as the price is right. Mordheim offers such a man
-        the chance to become rich beyond his dreams,
-        though at great risk. But as ruthlessness and lack of
-        mercy and pity are the hallmarks of a successful
-        Mercenary Captain, it is no wonder that they flock to
-        Mordheim.",
+        description:"A Mercenary Captain is a tough professional warrior, a man who will fight for anyone or against anything so long as the price is right. Mordheim offers such a man the chance to become rich beyond his dreams, though at great risk. But as ruthlessness and lack of mercy and pity are the hallmarks of a successful Mercenary Captain, it is no wonder that they flock to Mordheim.",
         cost:"60",
         number:"1",
         experience: 20,
