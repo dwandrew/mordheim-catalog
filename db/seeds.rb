@@ -140,8 +140,7 @@ Equipment.create(name:"Mordheim map", description:"Some survivors of the catacly
 4: Catacomb map. The map shows a way through the catacombs into the city. You may automatically choose the scenario next time you fight a battle.\n
 5: Accurate. The map is recently made and very detailed. You may re-roll up to three dice during the next exploration phase if you wish. You must accept the result of the second roll.\n
 6: Master map. This is one of the twelve master maps of Mordheim made for Count von Steinhardt of Ostermark. From now on you may always re-roll one dice when rolling on the Exploration chart as long as the Hero who possesses this map was not taken out of action in the battle.", cost:"20+4D6", rarity:"Rare 9")
-Equipment.create(name:"Cathayan silk cloak", description:"Some rich warband leaders like to flaunt their wealth and purchase clothes made out of silk from distant Cathay. This silk is the most expensive fabric in the known world, and wearing such clothes is a sure way to attract attention – especially thieves and assassins!
-Any Mercenary warband whose leader is wearing silk clothes may re-roll the first failed Rout test. However, after each battle in which the leader is taken out of action, roll a D6. On a roll of 1-3 the clothes are ruined and must be discarded", cost:"50+2D6", rarity:"Rare 9")
+Equipment.create(name:"Cathayan silk cloak", description:"Some rich warband leaders like to flaunt their wealth and purchase clothes made out of silk from distant Cathay. This silk is the most expensive fabric in the known world, and wearing such clothes is a sure way to attract attention – especially thieves and assassins! Any Mercenary warband whose leader is wearing silk clothes may re-roll the first failed Rout test. However, after each battle in which the leader is taken out of action, roll a D6. On a roll of 1-3 the clothes are ruined and must be discarded", cost:"50+2D6", rarity:"Rare 9")
 Equipment.create(name:"Tears of shallaya", description:"Tears of Shallaya are vials of water from the holy spring in Couronne. Shallaya is the goddess of healing and mercy and it is said that this water has curative properties and is proof against any poison.\n A model who drinks a vial of the Tears of Shallaya at the beginning of a battle will be completely immune to all poisons for the duration of combat. Undead and Possessed warriors may not use the Tears of Shallaya.\n There is enough liquid in a vial of the Tears of Shallaya to last for the duration of one battle.", cost:"10+2D6", rarity:"Rare 7")
 Equipment.create(name:"Wardog", description:"The men of the Empire have always been experts at raising ferocious bloodhounds to guard their cattle and holdings against roaming Goblins and Beastmen. A highly trained wardog is a dangerous opponent and worth its weight in gold in Mordheim. If you purchase a wardog, it will fight exactly like a member of your warband, though it is treated as part of the equipment of the Hero who bought it. You will need a model to represent it on a battlefield. Wardogs never gain experience, and if they are put out of action they have exactly the same chance of recovering as Henchmen (ie, 1-2: Dead; 3-6: Alive). Wardogs count towards the maximum number of warriors allowed in your warband.
 Profile M WS BS S T W I A Ld
@@ -189,9 +188,9 @@ Spell.create(number:"6", name:"Spell of Awakening", difficulty: "Auto", school:"
 Spell.create(number: "1", school:"Chaos rituals", name: "Vision of Torment", difficulty: "10", description: "The Chaos Mage summons horrible visions of the realm of Chaos, causing their enemy to recoil in utter horror. This spell has a range of 6\" and must be cast on the closest enemy model. If the Chaos Mage is in hand-to-hand combat, they must choose their target from those in base contact with them. The affected model is immediately stunned. If the model cannot be stunned it is knocked down instead.")
 
 Spell.create(number: "2", school:"Chaos rituals",  name: "Eye of God", difficulty: "7", description: "The Chaos Mage implores the Dark gods to grant a boon to their servant. You may use the Eye of God successfully only once per battle. Choose any single model within 6\", friend or foe. Roll a D6 to see what happens to the affected model. D6 Result
-1 The wrath of the gods descends upon the target. The model is taken He does not have to roll on the Serious Injury chart after the battle though. out of action immediately.
-2-5 The model gains +1 to any one of their characteristics during this battle (chosen by the player who cast the spell).
-6 The model gains +1 to all of its characteristics for the duration of the battle.")
+1: The wrath of the gods descends upon the target. The model is taken He does not have to roll on the Serious Injury chart after the battle though. out of action immediately.
+2-5: The model gains +1 to any one of their characteristics during this battle (chosen by the player who cast the spell).
+6: The model gains +1 to all of its characteristics for the duration of the battle.")
 
 Spell.create(number: "3", school:"Chaos rituals",  name: "Dark Blood", difficulty: "8", description: "The Chaos Mage cuts their palm and their blood spurts out, burning flesh and armour. This attack has a range of 8\" and causes D3 S5 hits. It hits the first model in its path. After using this spell the Chaos Mage must roll on the Injury table for himself to see how dangerous the wound is, though treat the out of action result as stunned instead.")
 
@@ -205,208 +204,64 @@ Spell.create(number: "1", school: "Lesser magic", name: "Fires of U’Zhul", dif
 
 Spell.create(number: "2", school: "Lesser magic",  name: "Flight of Zimmeran", difficulty: "7", description: "Calling upon the power of the winds of magic, the wizard walks on air. The wizard may immediately move anywhere within 12\", including into base contact with an enemy, in which case they count as charging. If they engage a fleeing enemy in the close combat phase they will score 1 automatic hit and then their opponent will flee again (if they survive).")
 
-Spell.create(number: "3", school: "Lesser magic",  name: "Dread of Aramar", difficulty: "7", description:
-"The wizard places a sense of mind-numbing fear into the minds of their opponents.
-A single model within 12\" of the wizard must pass a Leadership test or flee 2D\" directly away from
-them. If they flee, they must test at the start of each of their own movement phases and will continue to
-flee until they pass a test. Note that this spell does not affect Undead or any model immune to
-fear.")
-Spell.create(number: "4", school: "Lesser magic",  name: "Silver Arrows of Arha", difficulty: "7", description:
-"Silvery arrows appear from thin air and circle around the wizard, shooting out to strike their foes.
-Unlike other spells, this cannot be cast whilst in hand-to-hand combat. The spell summons D6+2
-arrows which the wizard can use to shoot against one enemy model. The arrows have a range of
-24\". Use the wizard’s own Ballistic Skill to determine whether they hit or not, but ignore movement,
-range and cover penalties. The arrows cause one S3 hit each.")
+Spell.create(number: "3", school: "Lesser magic",  name: "Dread of Aramar", difficulty: "7", description: "The wizard places a sense of mind-numbing fear into the minds of their opponents. A single model within 12\" of the wizard must pass a Leadership test or flee 2D\" directly away from them. If they flee, they must test at the start of each of their own movement phases and will continue to flee until they pass a test. Note that this spell does not affect Undead or any model immune to fear.")
+Spell.create(number: "4", school: "Lesser magic",  name: "Silver Arrows of Arha", difficulty: "7", description: "Silvery arrows appear from thin air and circle around the wizard, shooting out to strike their foes. Unlike other spells, this cannot be cast whilst in hand-to-hand combat. The spell summons D6+2 arrows which the wizard can use to shoot against one enemy model. The arrows have a range of 24\". Use the wizard’s own Ballistic Skill to determine whether they hit or not, but ignore movement, range and cover penalties. The arrows cause one S3 hit each.")
 
 Spell.create(number: "5",  school: "Lesser magic", 
-name: "Luck of Shemtek", difficulty: "6", description:
-"The wizard summons the fickle power of magic to manipulate chance.
-The wizard may re-roll all their failed dice rolls, though the second results
-stand. The effect lasts until the beginning of their own next turn.")
+name: "Luck of Shemtek", difficulty: "6", description: "The wizard summons the fickle power of magic to manipulate chance. The wizard may re-roll all their failed dice rolls, though the second results stand. The effect lasts until the beginning of their own next turn.")
 
 Spell.create(number: "6", school: "Lesser magic", 
-name: "Sword of Rezhebel", difficulty: "8", description:
-"A flaming sword appears in the hand of the wizard,
-promising red ruin to all who stand in their way.
-The sword gives the wizard +1 Attack, +2 Strength and +2
-Weapon Skill. Take a Leadership test at the beginning of
-each of the wizard’s own turns. If the test fails, the sword
-disappears.")
+name: "Sword of Rezhebel", difficulty: "8", description: "A flaming sword appears in the hand of the wizard, promising red ruin to all who stand in their way. The sword gives the wizard +1 Attack, +2 Strength and +2 Weapon Skill. Take a Leadership test at the beginning of each of the wizard’s own turns. If the test fails, the sword disappears.")
 
 
-Spell.create(number: "1", school: "Magic of the horned rat", name: "Warpfire", difficulty: "8", description: 
-"A green flame leaps from the outstretched paw of the Sorcerer and burns its victims with
-indescribable agony.
-The spell has a range of 8\", hitting the first model in its path. The spell causes D3 Strength 4 hits
-on its target, and one Strength 3 hit on each model within 2\" of the target.")
-Spell.create(number: "2", school: "Magic of the horned rat",  name: "Children of the Horned Rat", difficulty: "Auto", description: 
-"The Sorcerer raises his paws and calls upon the Father of the Skaven to send forth his servants.
-This spell must be used before the game, and may only be used once. When cast, the spell
-summons D3 Giant Rats, which are placed within 6\" of the Sorcerer. The Sorcerer may cast this
-spell successfully only once per battle, and the rats disappear after the battle. They do not count
-towards the maximum size of the Skaven warband.")
-Spell.create(number: "3", school: "Magic of the horned rat",  name: "Gnawdoom", difficulty: "7", description: 
-"The target is attacked by rats and soon is covered from head to foot in small, bleeding wounds.
-The Gnawdoom causes 2D6 Strength 1 hits on a single model within 8\" of the caster.")
-Spell.create(number: "4", school: "Magic of the horned rat",  name: "Black Fury", difficulty: "8", description: 
-"With a chittering incantation the Sorcerer turns into a monstrous rat-like creature, which
-attacks with an insane fury.
-The Sorcerer may immediately charge any enemy model within 12\" (ignoring any terrain and
-interposing models) and gains 2 extra Attacks and +1 Strength during this turn’s hand-to-hand
-combat phase only.")
-Spell.create(number: "5", school: "Magic of the horned rat",  name: "Eye of the Warp", difficulty: "8", description: 
-"Gaze into the eye of the warp and despair!
-All standing models in base contact with the Sorcerer must take an immediate Leadership test. If
-they fail, they each suffer a Strength 3 hit and must run 2D6\" directly away from the Sorcerer,
-exactly as if they had lost their nerve when fighting against more than one opponent.")
-Spell.create(number: "6", school: "Magic of the horned rat",  name: "Sorcerer’s Curse", difficulty: "6", description: 
-"The Sorcerer points a claw towards one of his enemies and curses him in the name of the
-Horned One.
-The spell has a range of 12\" and affects a single model within range. The target must re-roll
-any successful armour saves and to hit rolls during the Skaven hand-to-hand phase and his
-own next shooting and hand-to-hand combat phases.")
+Spell.create(number: "1", school: "Magic of the horned rat", name: "Warpfire", difficulty: "8", description:  "A green flame leaps from the outstretched paw of the Sorcerer and burns its victims with indescribable agony. The spell has a range of 8\", hitting the first model in its path. The spell causes D3 Strength 4 hits on its target, and one Strength 3 hit on each model within 2\" of the target.")
+Spell.create(number: "2", school: "Magic of the horned rat",  name: "Children of the Horned Rat", difficulty: "Auto", description:  "The Sorcerer raises his paws and calls upon the Father of the Skaven to send forth his servants. This spell must be used before the game, and may only be used once. When cast, the spell summons D3 Giant Rats, which are placed within 6\" of the Sorcerer. The Sorcerer may cast this spell successfully only once per battle, and the rats disappear after the battle. They do not count towards the maximum size of the Skaven warband.")
+Spell.create(number: "3", school: "Magic of the horned rat",  name: "Gnawdoom", difficulty: "7", description:  "The target is attacked by rats and soon is covered from head to foot in small, bleeding wounds. The Gnawdoom causes 2D6 Strength 1 hits on a single model within 8\" of the caster.")
+Spell.create(number: "4", school: "Magic of the horned rat",  name: "Black Fury", difficulty: "8", description:  "With a chittering incantation the Sorcerer turns into a monstrous rat-like creature, which attacks with an insane fury. The Sorcerer may immediately charge any enemy model within 12\" (ignoring any terrain and interposing models) and gains 2 extra Attacks and +1 Strength during this turn’s hand-to-hand combat phase only.")
+Spell.create(number: "5", school: "Magic of the horned rat",  name: "Eye of the Warp", difficulty: "8", description:  "Gaze into the eye of the warp and despair! All standing models in base contact with the Sorcerer must take an immediate Leadership test. If they fail, they each suffer a Strength 3 hit and must run 2D6\" directly away from the Sorcerer, exactly as if they had lost their nerve when fighting against more than one opponent.")
+Spell.create(number: "6", school: "Magic of the horned rat",  name: "Sorcerer’s Curse", difficulty: "6", description:  "The Sorcerer points a claw towards one of his enemies and curses him in the name of the Horned One. The spell has a range of 12\" and affects a single model within range. The target must re-roll any successful armour saves and to hit rolls during the Skaven hand-to-hand phase and his own next shooting and hand-to-hand combat phases.")
 
 # Skill.create( type: "", name: "", description, "")
 
 
-Skill.create( skill_type: "combat", name: "Strike to Injure", description: "The warrior can land their blows with
-uncanny accuracy. Add +1 to all injury rolls caused by
-the model in hand-to-hand combat.")
-Skill.create( skill_type: "combat", name: "Combat Master", description: "The warrior is able to take on
-several opponents at once. If they fight against more
-than one enemy at a time, they gain an extra Attack in
-each hand-to-hand combat phase as long as they are
-fighting two or more enemy models. In addition, the
-warrior is immune to ‘All Alone’ tests.")
-Skill.create( skill_type: "combat", name: "Weapons Training", description: "A warrior with this skill is adept
-at using many different weapons. They may use any
-hand-to-hand combat weapon they comes across, not
-just those in their equipment options.")
-Skill.create( skill_type: "combat", name: "Web of Steel", description: "Few can match the ability of this
-warrior. They fight with great skill, weaving a web of
-steel around them. The model gains +1 to all their rolls
-on Critical Hit tables in hand-to-hand combat.")
-Skill.create( skill_type: "combat", name: "Expert Swordsman", description: "This warrior has been expertly
-taught in the art of swordsmanship. They may re-roll all
-missed attacks if he is using a sword in the hand-to-hand phase of the turn that they charge. Note that this
-only applies when they are armed with normal
-swords or weeping blades, and not with doublehanded swords or any other weapons.")
-Skill.create( skill_type: "combat", name: "Step Aside", description: "The warrior has a natural ability to avoid
-injury in combat. Each time they suffer a wound in
-close combat they may make an additional saving throw
-of 5+. This save is never modified and is taken after
-all other armour saves.")
+Skill.create( skill_type: "combat", name: "Strike to Injure", description: "The warrior can land their blows with uncanny accuracy. Add +1 to all injury rolls caused by the model in hand-to-hand combat.")
+Skill.create( skill_type: "combat", name: "Combat Master", description: "The warrior is able to take on several opponents at once. If they fight against more than one enemy at a time, they gain an extra Attack in each hand-to-hand combat phase as long as they are fighting two or more enemy models. In addition, the warrior is immune to ‘All Alone’ tests.")
+Skill.create( skill_type: "combat", name: "Weapons Training", description: "A warrior with this skill is adept at using many different weapons. They may use any hand-to-hand combat weapon they comes across, not just those in their equipment options.")
+Skill.create( skill_type: "combat", name: "Web of Steel", description: "Few can match the ability of this warrior. They fight with great skill, weaving a web of steel around them. The model gains +1 to all their rolls on Critical Hit tables in hand-to-hand combat.")
+Skill.create( skill_type: "combat", name: "Expert Swordsman", description: "This warrior has been expertly taught in the art of swordsmanship. They may re-roll all missed attacks if he is using a sword in the hand-to-hand phase of the turn that they charge. Note that this only applies when they are armed with normal swords or weeping blades, and not with doublehanded swords or any other weapons.")
+Skill.create( skill_type: "combat", name: "Step Aside", description: "The warrior has a natural ability to avoid injury in combat. Each time they suffer a wound in close combat they may make an additional saving throw of 5+. This save is never modified and is taken after all other armour saves.")
 
 
 
-Skill.create( skill_type: "shooting", name: "Quick Shot", description: "The warrior may shoot twice per turn
-with a bow or crossbow (but not a crossbow pistol).")
-Skill.create( skill_type: "shooting", name: "Pistolier", description: "The warrior is an expert at using all kinds
-of pistols. If they are equipped with a brace of pistols of
-any type (including crossbow pistols), they may fire
-twice in the Shooting phase (though note that normal
-reloading rules apply). If they have a single pistol then they
-may fire it in the same turn it was reloaded.")
-Skill.create( skill_type: "shooting", name: "Eagle Eyes", description: "The warrior’s sight is exceptionally keen.
-He adds +6\" to the range of any missile weapon they are
-using.")
-Skill.create( skill_type: "shooting", name: "Weapons Expert", description: "The warrior has been trained to
-use some of the more unusual weapons of the known
-world. They may use any missile weapon they come
-across, not just the weapons available from their
-warband’s list.")
-Skill.create( skill_type: "shooting", name: "Nimble", description: "The warrior may move and fire with
-weapons that are normally only used if the firer has
-not moved. Note that this skill cannot be combined
-with the Quick Shot skill.")
-Skill.create( skill_type: "shooting", name: "Trick Shooter", description: "The warrior can shoot through the
-tiniest gap without it affecting their aim. They ignore all
-modifiers for cover when using missile weapons.")
-Skill.create( skill_type: "shooting", name: "Hunter", description: "The warrior is an expert at getting their
-weapon loaded and ready. They may fire each turn with
-a handgun or Hochland long rifle.")
-Skill.create( skill_type: "shooting", name: "Knife-Fighter", description: "The warrior is an unrivalled expert at
-using throwing knives and throwing stars. They can
-throw a maximum of three of these missiles in their
-shooting phase and may divide their shots between any
-targets within range as they wish. Note that this skill
-cannot be combined with the Quick Shot skill.")
+Skill.create( skill_type: "shooting", name: "Quick Shot", description: "The warrior may shoot twice per turn with a bow or crossbow (but not a crossbow pistol).")
+Skill.create( skill_type: "shooting", name: "Pistolier", description: "The warrior is an expert at using all kinds of pistols. If they are equipped with a brace of pistols of any type (including crossbow pistols), they may fire twice in the Shooting phase (though note that normal reloading rules apply). If they have a single pistol then they may fire it in the same turn it was reloaded.")
+Skill.create( skill_type: "shooting", name: "Eagle Eyes", description: "The warrior’s sight is exceptionally keen. He adds +6\" to the range of any missile weapon they are using.")
+Skill.create( skill_type: "shooting", name: "Weapons Expert", description: "The warrior has been trained to use some of the more unusual weapons of the known world. They may use any missile weapon they come across, not just the weapons available from their warband’s list.")
+Skill.create( skill_type: "shooting", name: "Nimble", description: "The warrior may move and fire with weapons that are normally only used if the firer has not moved. Note that this skill cannot be combined with the Quick Shot skill.")
+Skill.create( skill_type: "shooting", name: "Trick Shooter", description: "The warrior can shoot through the tiniest gap without it affecting their aim. They ignore all modifiers for cover when using missile weapons.")
+Skill.create( skill_type: "shooting", name: "Hunter", description: "The warrior is an expert at getting their weapon loaded and ready. They may fire each turn with a handgun or Hochland long rifle.")
+Skill.create( skill_type: "shooting", name: "Knife-Fighter", description: "The warrior is an unrivalled expert at using throwing knives and throwing stars. They can throw a maximum of three of these missiles in their shooting phase and may divide their shots between any targets within range as they wish. Note that this skill cannot be combined with the Quick Shot skill.")
 
 
-Skill.create( skill_type: "academic", name: "Battle Tongue", description: "This skill may only be chosen by a
-leader. The warrior has drilled their warband to follow
-short barked commands. This increases the range of
-their Leader ability by 6\". Note that Undead leaders may
-not use this skill.")
-Skill.create( skill_type: "academic", name: "Sorcery", description: "This skill may only be taken by Heroes
-capable of casting spells. A warrior with this skill gains
-+1 to their rolls to see whether they can cast spells
-successfully or not. Note that Sisters of Sigmar and
-Warrior-Priests may not use this skill.")
-Skill.create( skill_type: "academic", name: "Streetwise", description: "A warrior with this skill has good contacts
-and knows where to purchase rare items. They may add
-+2 to the roll that determines their chance of finding
-such items (see the Trading section).")
-Skill.create( skill_type: "academic", name: "Haggle", description: "The warrior knows all the tricks of
-bargaining and haggling. They may deduct 2D6 gold
-crowns from the price of any single item (to a
-minimum cost of 1gc) once per post battle sequence.")
-Skill.create( skill_type: "academic", name: "Arcane Lore", description: "Witch Hunters, Sisters of Sigmar and
-Warrior-Priests may not have this skill. Any warrior
-with this skill may learn Lesser Magic if they own a
-Tome of Magic.")
-Skill.create( skill_type: "academic", name: "Wyrdstone Hunter", description: "The warrior has an uncanny
-ability to find hidden shards of wyrdstone. If a Hero
-with this skill is searching the ruins in the exploration
-phase you may re-roll one dice when rolling on the
-Exploration chart. The second result stands.")
-Skill.create( skill_type: "academic", name: "Warrior Wizard", description: "This skill may only be taken by
-spellcasters. The mental powers of the wizard allow
-them to wear armour and cast spells.")
+Skill.create( skill_type: "academic", name: "Battle Tongue", description: "This skill may only be chosen by a leader. The warrior has drilled their warband to follow short barked commands. This increases the range of their Leader ability by 6\". Note that Undead leaders may not use this skill.")
+Skill.create( skill_type: "academic", name: "Sorcery", description: "This skill may only be taken by Heroes capable of casting spells. A warrior with this skill gains +1 to their rolls to see whether they can cast spells successfully or not. Note that Sisters of Sigmar and Warrior-Priests may not use this skill.")
+Skill.create( skill_type: "academic", name: "Streetwise", description: "A warrior with this skill has good contacts and knows where to purchase rare items. They may add +2 to the roll that determines their chance of finding such items (see the Trading section).")
+Skill.create( skill_type: "academic", name: "Haggle", description: "The warrior knows all the tricks of bargaining and haggling. They may deduct 2D6 gold crowns from the price of any single item (to a minimum cost of 1gc) once per post battle sequence.")
+Skill.create( skill_type: "academic", name: "Arcane Lore", description: "Witch Hunters, Sisters of Sigmar and Warrior-Priests may not have this skill. Any warrior with this skill may learn Lesser Magic if they own a Tome of Magic.")
+Skill.create( skill_type: "academic", name: "Wyrdstone Hunter", description: "The warrior has an uncanny ability to find hidden shards of wyrdstone. If a Hero with this skill is searching the ruins in the exploration phase you may re-roll one dice when rolling on the Exploration chart. The second result stands.")
+Skill.create( skill_type: "academic", name: "Warrior Wizard", description: "This skill may only be taken by spellcasters. The mental powers of the wizard allow them to wear armour and cast spells.")
 
 
-Skill.create(skill_type: "strength", name:"Mighty Blow", description: "The warrior knows how to use their
-strength to maximum effect and has a +1 Strength
-bonus in close combat (excluding pistols). As their
-Strength is used for close combat weapons, the bonus
-applies to all such weapons.")
-Skill.create(skill_type: "strength", name:"Pit Fighter", description: "The warrior has learned how to fight in
-enclosed spaces from their time in the dangerous
-fighting pits of the Empire. They are an expert at fighting
-in confined areas and adds +1 to their WS and +1 to
-their Attacks if they are fighting inside buildings or ruins.
-It’s a good idea to define which bits of your terrain
-collection count as ‘buildings or ruins’ at the start of
-a battle to avoid confusion later.")
-Skill.create(skill_type: "strength", name:"Resilient", description: "The warrior is covered in battle scars.
-Deduct -1 Strength from all hits against them in close
-combat. This does not affect armour save modifiers.")
-Skill.create(skill_type: "strength", name:"Fearsome", description: "Such is the reputation and physique of the
-model that they cause fear in opposing models.")
-Skill.create(skill_type: "strength", name:"Strongman", description: "The warrior is capable of great feats of
-strength. They may use a double-handed weapon
-without the usual penalty of always striking last. Work
-out order of battle as you would with other weapons.")
-Skill.create(skill_type: "strength", name:"Unstoppable Charge", description: "When they charge, the warrior
-is almost impossible to halt. They add +1 to their
-Weapon Skill when charging.")
+Skill.create(skill_type: "strength", name:"Mighty Blow", description: "The warrior knows how to use their strength to maximum effect and has a +1 Strength bonus in close combat (excluding pistols). As their Strength is used for close combat weapons, the bonus applies to all such weapons.")
+Skill.create(skill_type: "strength", name:"Pit Fighter", description: "The warrior has learned how to fight in enclosed spaces from their time in the dangerous fighting pits of the Empire. They are an expert at fighting in confined areas and adds +1 to their WS and +1 to their Attacks if they are fighting inside buildings or ruins. It’s a good idea to define which bits of your terrain collection count as ‘buildings or ruins’ at the start of a battle to avoid confusion later.")
+Skill.create(skill_type: "strength", name:"Resilient", description: "The warrior is covered in battle scars. Deduct -1 Strength from all hits against them in close combat. This does not affect armour save modifiers.")
+Skill.create(skill_type: "strength", name:"Fearsome", description: "Such is the reputation and physique of the model that they cause fear in opposing models.")
+Skill.create(skill_type: "strength", name:"Strongman", description: "The warrior is capable of great feats of strength. They may use a double-handed weapon without the usual penalty of always striking last. Work out order of battle as you would with other weapons.")
+Skill.create(skill_type: "strength", name:"Unstoppable Charge", description: "When they charge, the warrior is almost impossible to halt. They add +1 to their Weapon Skill when charging.")
 
 
-Skill.create(skill_type: "speed", name:"Leap", description: "The warrior may leap D6\" in the movement
-phase in addition to his normal movement. They may
-move and leap, run and leap, or charge and leap, but
-they can only leap once per turn.
-A leaping warrior may jump over opposing man-sized
-models, including enemies, and obstacles 1\" high,
-without penalty.
-The leap may also be used to leap over gaps, but in
-this case you must commit the warrior to making the
-leap before rolling the dice to see how far they jump.
-If they fail to make it all the way across, they fall
-through the gap (see page 28).")
-Skill.create(skill_type: "speed", name:"Sprint", description: "The warrior may triple their Movement rate
-when they run or charge, rather than doubling it as
-normal.")
+Skill.create(skill_type: "speed", name:"Leap", description: "The warrior may leap D6\" in the movement phase in addition to his normal movement. They may move and leap, run and leap, or charge and leap, but they can only leap once per turn. A leaping warrior may jump over opposing man-sized models, including enemies, and obstacles 1\" high, without penalty. The leap may also be used to leap over gaps, but in this case you must commit the warrior to making the leap before rolling the dice to see how far they jump. If they fail to make it all the way across, they fall through the gap (see page 28).")
+Skill.create(skill_type: "speed", name:"Sprint", description: "The warrior may triple their Movement rate when they run or charge, rather than doubling it as normal.")
 Skill.create(skill_type: "speed", name:"Acrobat", description: "The warrior is incredibly supple and agile. They may fall or jump from a height of up to 12\" without taking any damage if they pass a single Initiative test, and can re-roll failed Diving Charge rolls. They can still only make a diving charge from a height of up to 6\".")
 Skill.create(skill_type: "speed", name:"Lightning Reflexes", description: "If the warrior is charged they will ‘strike first’ against those that charged that turn. As the charger(s) will also normally ‘strike first’ (for charging), the order of attack between the charger(s) and the warrior with this skill will be determined by comparing Initiative values.")
 Skill.create(skill_type: "speed", name:"Jump Up", description: "The warrior can regain their footing in an instant, springing to their feet immediately if they are knocked down. The warrior may ignore knocked down results when rolling for injuries, unless they are knocked down because of a successful save from wearing a helmet or because they have the No Pain special rule.")
@@ -450,13 +305,10 @@ Skill.create(skill_type: "undead", name: "Immune to Psychology", description:"Th
 Skill.create(skill_type: "undead", name: "Immune to Poison", description:"This model is not affected by any poison.")
 Skill.create(skill_type: "undead", name: "No Pain", description:"This model treats a ‘stunned’ result on the Injury chart as ‘knocked down’.")
 Skill.create(skill_type: "undead", name: "May not Run", description: "This model is slow to react and may not run (but may charge normally).")
-
 Skill.create(skill_type: "undead", name: "Dire Charge", description:"Dire Wolves are slavering creatures that overpower their opponents when they charge. Dire Wolves fight with 2 attacks instead of 1 during the turn they charge.")
-
 Skill.create(skill_type: "undead", name: "No Brain", description: "This model never gain experience. They do not learn from their mistakes. What did you expect?")
 
 Skill.create(skill_type: "skaven", name: "Perfect Killer", description: "An Assassin Adept always has an extra -1 modifier to any armour save the enemy has to take against wounds they inflicted (both with shooting and close combat weapons).")
-
 Skill.create(skill_type: "skaven", name: "Rat ogre stupidity", description: "A Rat Ogre is subject to stupidity unless a Skaven Hero is within 6\" of it.")
 
 Skill.create(skill_type: "generic", name: "Large Target", description: "This model is a Large Target as defined in the shooting rules.")
