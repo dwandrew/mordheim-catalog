@@ -749,14 +749,7 @@ Scenario.create(
         name:"Champion",
         warrior_type:"Hero",
         warband:"Mercenaries",
-        description:"In any Mercenary warband there is one warrior who is
-        bigger, stronger (and often uglier) than his comrades.
-        These men are called Champions (or berserkers, first
-        swordsmen and various other names). Champions are
-        amongst the toughest and the best fighters in the
-        warband. They often answer challenges issued to the
-        warband and, after the Captain, they get the pick of
-        any equipment and loot.",
+        description:"In any Mercenary warband there is one warrior who is bigger, stronger (and often uglier) than his comrades. These men are called Champions (or berserkers, first swordsmen and various other names). Champions are amongst the toughest and the best fighters in the warband. They often answer challenges issued to the warband and, after the Captain, they get the pick of any equipment and loot.",
         cost:"35",
         number:"0-2",
         experience: 8,
@@ -777,9 +770,7 @@ Scenario.create(
         name:"Youngblood",
         warrior_type:"Hero",
         warband:"Mercenaries",
-        description:"These are young fighters who are still inexperienced,
-        but eager to win their spurs in the savage fighting in
-        and around the ruins of Mordheim.",
+        description:"These are young fighters who are still inexperienced, but eager to win their spurs in the savage fighting in and around the ruins of Mordheim.",
         cost:"15",
         number:"0-2",
         experience: 0,
@@ -801,10 +792,7 @@ Scenario.create(
         name:"Warrior",
         warrior_type:"Henchman",
         warband:"Mercenaries",
-        description:"These dogs of war are grim, seasoned fighters,
-        fearing no man as long as they have their weapons
-        and armour. They form the core of any Mercenary
-        warband.",
+        description:"These dogs of war are grim, seasoned fighters, fearing no man as long as they have their weapons and armour. They form the core of any Mercenary warband.",
         cost:"25",
         number:"",
         move:4,
@@ -825,12 +813,7 @@ Scenario.create(
         name:"Marksmen",
         warrior_type:"Henchman",
         warband:"Mercenaries",
-        description:"The archers and hunters of the Old World are famed
-        for their skill, and it is said that they can hit a coin
-        from 300 paces with a long bow. In the savage street
-        fights of Mordheim they snipe at the enemy from the
-        windows of ruined buildings and pick out enemy
-        leaders with their arrows.",
+        description:"The archers and hunters of the Old World are famed for their skill, and it is said that they can hit a coin from 300 paces with a long bow. In the savage street fights of Mordheim they snipe at the enemy from the windows of ruined buildings and pick out enemy leaders with their arrows.",
         cost:"25",
         number:"0-7",
         move:4,
@@ -851,10 +834,7 @@ Scenario.create(
         name:"Swordsmen",
         warrior_type:"Henchman",
         warband:"Mercenaries",
-        description:"Swordsmen are professional warriors, experts at
-        taking on and beating several opponents at once.
-        They are much sought after by warband leaders, as
-        their skills are ideally suited for fighting in Mordheim.",
+        description:"Swordsmen are professional warriors, experts at taking on and beating several opponents at once. They are much sought after by warband leaders, as their skills are ideally suited for fighting in Mordheim.",
         cost:"35",
         number:"0-5",
         move:4,
@@ -877,10 +857,7 @@ Scenario.create(
         name:"Magister",
         warrior_type:"Hero",
         warband:"Cult of the possessed",
-        description:"Magisters lead the covens of the Possessed. They have
-        been granted magical powers by their patron gods.
-        They are fanatical followers of the Dark gods, utterly
-        dedicated to bringing Chaos to the world.",
+        description:"Magisters lead the covens of the Possessed. They have been granted magical powers by their patron gods. They are fanatical followers of the Dark gods, utterly dedicated to bringing Chaos to the world.",
         cost:"70",
         number:"1",
         experience: 20,
@@ -903,18 +880,7 @@ Scenario.create(
         name:"Possessed",
         warrior_type:"Hero",
         warband:"Cult of the possessed",
-        description:"The Possessed have committed the greatest of
-        heresies: they have given their bodies to Daemons. As
-        a result, they are nightmarish creatures, a melding of
-        flesh, metal and black magic. Inside them lives a
-        supernatural thing of evil, a Daemon from the dark
-        reaches of the Realm of Chaos.
-        The powerful spirit of a Daemon can meld several
-        creatures together, be they men or animals, into a
-        multi-faceted horror. These monstrous Possessed are
-        perhaps the most dangerous of the creatures of
-        Mordheim, and certainly the most loathsome and
-        dreadful.",
+        description:"The Possessed have committed the greatest of heresies: they have given their bodies to Daemons. As a result, they are nightmarish creatures, a melding of flesh, metal and black magic. Inside them lives a supernatural thing of evil, a Daemon from the dark reaches of the Realm of Chaos. The powerful spirit of a Daemon can meld several creatures together, be they men or animals, into a multi-faceted horror. These monstrous Possessed are perhaps the most dangerous of the creatures of Mordheim, and certainly the most loathsome and dreadful.",
         cost:"90",
         number:"0-2",
         experience: 8,
@@ -934,10 +900,7 @@ Scenario.create(
         name:"Mutant",
         warrior_type:"Hero",
         warband:"Cult of the possessed",
-        description:"Mutants are revered as the favoured ones of the Dark
-        gods, their physical disfigurements marking out the
-        vileness of their soul. They come in many shapes
-        and sizes, each more bizarre than the next.",
+        description:"Mutants are revered as the favoured ones of the Dark gods, their physical disfigurements marking out the vileness of their soul. They come in many shapes and sizes, each more bizarre than the next.",
         cost:"25",
         number:"0-2",
         experience: 0,
@@ -961,19 +924,7 @@ Scenario.create(
         name:"Darksoul",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
-        description:"Darksouls are men who have been driven insane by
-        the daemonic possession which became all too
-        common after the destruction of Mordheim. The
-        Daemons have left the bodies of these men, but their
-        minds have been scarred by the horror of the
-        experience.
-        Their insane strength makes Darksouls dangerous
-        fighters. The Cultists regard them as holy men, and let
-        them work out their unreasoning rage in battle. In
-        their tortured minds the Darksouls believe
-        themselves to be Daemons. They wear leering
-        daemonic masks and garb themselves in armour and
-        clothing resembling the scaled skin of Daemons.",
+        description:"Darksouls are men who have been driven insane by the daemonic possession which became all too common after the destruction of Mordheim. The Daemons have left the bodies of these men, but their minds have been scarred by the horror of the experience. Their insane strength makes Darksouls dangerous fighters. The Cultists regard them as holy men, and let them work out their unreasoning rage in battle. In their tortured minds the Darksouls believe themselves to be Daemons. They wear leering daemonic masks and garb themselves in armour and clothing resembling the scaled skin of Daemons.",
         cost:"35",
         number:"0-5",
         experience: 0,
@@ -1018,12 +969,7 @@ Scenario.create(
         name:"Beastmen",
         warrior_type:"Henchman",
         warband:"Cult of the possessed",
-        description:"Beastmen are mutated monstrosities that infest
-        the forests of the Empire: massive horned creatures
-        with an inhuman resistance to pain. The destruction
-        of Mordheim brought many Beastmen into the ruined
-        city to prey upon the survivors. They readily ally with
-        the Magisters of the Possessed warbands.",
+        description:"Beastmen are mutated monstrosities that infest the forests of the Empire: massive horned creatures with an inhuman resistance to pain. The destruction of Mordheim brought many Beastmen into the ruined city to prey upon the survivors. They readily ally with the Magisters of the Possessed warbands.",
         cost:"45",
         number:"0-3",
         experience: 0,
@@ -1045,12 +991,7 @@ Scenario.create(
         name:"Witch Hunter Captain",
         warrior_type:"Hero",
         warband:"Witch hunters",
-        description:"Driven by fanaticism, Witch Hunter Captains are
-        obsessed with cleansing Mordheim and bringing the
-        justice of Sigmar to all. Carrying the edict of the
-        Grand Theogonist himself, they have the divine right
-        to judge and execute warlocks, witches, Chaos
-        worshippers… in fact all who dare to oppose them.",
+        description:"Driven by fanaticism, Witch Hunter Captains are obsessed with cleansing Mordheim and bringing the justice of Sigmar to all. Carrying the edict of the Grand Theogonist himself, they have the divine right to judge and execute warlocks, witches, Chaos worshippers… in fact all who dare to oppose them.",
         cost:"60",
         number:"1",
         experience: 20,
@@ -1074,12 +1015,7 @@ Scenario.create(
         name:"Witch Hunter",
         warrior_type:"Hero",
         warband:"Witch hunters",
-        description:"Witch Hunters are members of the grim Order of
-        Witch Hunters, dedicated to eradicating Chaos and all
-        its minions. Usually they prowl the Old World
-        individually trying and executing the enemies of
-        Sigmar, but the situation in Mordheim requires them
-        to band together.",
+        description:"Witch Hunters are members of the grim Order of Witch Hunters, dedicated to eradicating Chaos and all its minions. Usually they prowl the Old World individually trying and executing the enemies of Sigmar, but the situation in Mordheim requires them to band together.",
         cost:"25",
         number:"0-2",
         experience: 8,
@@ -1104,14 +1040,7 @@ Scenario.create(
         name:"Warrior Priest",
         warrior_type:"Hero",
         warband:"Witch hunters",
-        description:"Many powerful fighting men have come from the
-        ranks of the faithful. The Priests of Sigmar are no
-        exception, and the military wing of the cult is feared
-        and respected throughout the Empire.
-        The Grand Theogonist himself has granted the
-        Warrior-Priests an edict to cleanse Mordheim of Chaos
-        filth. With fire burning in their eyes, the WarriorPriests stride into battle, chanting aloud the Deus
-        Sigmar, the praise of the patron god of the Empire",
+        description:"Many powerful fighting men have come from the ranks of the faithful. The Priests of Sigmar are no exception, and the military wing of the cult is feared and respected throughout the Empire. The Grand Theogonist himself has granted the Warrior-Priests an edict to cleanse Mordheim of Chaos filth. With fire burning in their eyes, the WarriorPriests stride into battle, chanting aloud the Deus Sigmar, the praise of the patron god of the Empire",
         cost:"40",
         number:"0-1",
         experience: 12,
@@ -1134,19 +1063,7 @@ Scenario.create(
         name:"Flagellants",
         warrior_type:"Henchman",
         warband:"Witch hunters",
-        description:"Flagellants are fanatics and madmen obsessed with
-        the end of the world. They are often men who have
-        lost their families to war or the ravages of nature, and
-        have also lost their minds. With insane persistence,
-        they travel the length and breadth of the Empire,
-        preaching their view of the end of the world. With
-        their rousing speeches, Witch Hunters can muster
-        these dangerous lunatics to fight in the streets of
-        Mordheim, where no sane man dares tread.
-        Flagellants are extremely dangerous opponents in
-        close combat, for they have the strength of madmen,
-        and their bodies have become inured to pain because
-        of self-mutilation.",
+        description:"Flagellants are fanatics and madmen obsessed with the end of the world. They are often men who have lost their families to war or the ravages of nature, and have also lost their minds. With insane persistence, they travel the length and breadth of the Empire, preaching their view of the end of the world. With their rousing speeches, Witch Hunters can muster these dangerous lunatics to fight in the streets of Mordheim, where no sane man dares tread. Flagellants are extremely dangerous opponents in close combat, for they have the strength of madmen, and their bodies have become inured to pain because of self-mutilation.",
         cost:"40",
         number:"0-5",
         experience: 0,
@@ -1169,19 +1086,7 @@ Scenario.create(
         name:"Zealots",
         warrior_type:"Henchman",
         warband:"Witch hunters",
-        description:"When a man loses his family, home and all he cared
-        for, religion is often the last refuge left to him. Such
-        men become wandering pilgrims, bitter and
-        dangerous fanatics who are prepared to avenge their
-        loss at any cost. These men are called Zealots.
-        Zealots have forsaken their former lives and exist only
-        to destroy evil and the minions of Chaos. Whilst they
-        might have been peasants and craftsmen before, and
-        thus may not be as dangerous in a fight as seasoned
-        mercenaries, their determination and fanaticism
-        should not be underestimated. Witch Hunters find
-        ready allies in their ranks, and many a band of Zealots
-        is led by Witch Hunters.",
+        description:"When a man loses his family, home and all he cared for, religion is often the last refuge left to him. Such men become wandering pilgrims, bitter and dangerous fanatics who are prepared to avenge their loss at any cost. These men are called Zealots. Zealots have forsaken their former lives and exist only to destroy evil and the minions of Chaos. Whilst they might have been peasants and craftsmen before, and thus may not be as dangerous in a fight as seasoned mercenaries, their determination and fanaticism should not be underestimated. Witch Hunters find ready allies in their ranks, and many a band of Zealots is led by Witch Hunters.",
         cost:"20",
         number:"",
         experience: 0,
@@ -1203,10 +1108,7 @@ Scenario.create(
         name:"Warhound",
         warrior_type:"Henchman",
         warband:"Witch hunters",
-        description:"Witch Hunters often keep packs of ferocious hunting
-        dogs. With their huge jaws and powerful bite, they are
-        perfect for hunting down (and tearing apart) any
-        heretics, mutants, deviants and witches.",
+        description:"Witch Hunters often keep packs of ferocious hunting dogs. With their huge jaws and powerful bite, they are perfect for hunting down (and tearing apart) any heretics, mutants, deviants and witches.",
         cost:"15",
         number:"0-5",
         experience: 0,
@@ -1226,13 +1128,7 @@ Scenario.create(
         name:"Sigmarite Matriach",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
-        description:"The Sigmarite Matriarchs, of whom there is an inner
-        circle of twelve, are answerable to the High Matriarch
-        of the temple. Each must lead a warband of Sisters in
-        frequent searches of the city in order to purge the
-        ruins. Matriarchs are driven by a zealous devotion to
-        the Cult of Sigmar and a relentless determination to
-        redeem the Sisterhood in His eyes.",
+        description:"The Sigmarite Matriarchs, of whom there is an inner circle of twelve, are answerable to the High Matriarch of the temple. Each must lead a warband of Sisters in frequent searches of the city in order to purge the ruins. Matriarchs are driven by a zealous devotion to the Cult of Sigmar and a relentless determination to redeem the Sisterhood in His eyes.",
         cost:"70",
         number:"1",
         experience: 20,
@@ -1255,13 +1151,7 @@ Scenario.create(
         name:"Sister Superior",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
-        description:"Each of the Sisters Superior is a long-serving priestess
-        of the Cult of Sigmar, well versed in the rituals of the
-        temple and an example to the younger Sisters and
-        Novices. The Sisters Superior are entrusted with
-        maintaining the faith and fervour of the order. Any
-        peril or foe that may lurk in the ruins of Mordheim is
-        as nothing compared to the wrath of a Sister Superior.",
+        description:"Each of the Sisters Superior is a long-serving priestess of the Cult of Sigmar, well versed in the rituals of the temple and an example to the younger Sisters and Novices. The Sisters Superior are entrusted with maintaining the faith and fervour of the order. Any peril or foe that may lurk in the ruins of Mordheim is as nothing compared to the wrath of a Sister Superior.",
         cost:"35",
         number:"0-3",
         experience: 8,
@@ -1283,13 +1173,7 @@ Scenario.create(
         name:"Augur",
         warrior_type:"Hero",
         warband:"Sisters of Sigmar",
-        description:"The blind Augurs of the Sisterhood are blessed
-        beyond their comrades. By giving up their sight they
-        have gained something far more, second sight – a gift
-        from their patron god. Only a very few are marked
-        this way, and they are greatly revered by the
-        Sisterhood. Unlike the rest of the priestesses, they
-        shave their heads, save for a single long braid.",
+        description:"The blind Augurs of the Sisterhood are blessed beyond their comrades. By giving up their sight they have gained something far more, second sight – a gift from their patron god. Only a very few are marked this way, and they are greatly revered by the Sisterhood. Unlike the rest of the priestesses, they shave their heads, save for a single long braid.",
         cost:"25",
         number:"0-1",
         experience: 0,
@@ -1312,11 +1196,7 @@ Scenario.create(
         name:"Sigmarite Sister",
         warrior_type:"Henchman",
         warband:"Sisters of Sigmar",
-        description:"Sigmarite Sisters know that their entire order is
-        shamed in the eyes of their Lord Sigmar. Every one of
-        them is sworn upon His altar to pacify the city and
-        thereby redeem themselves. Whatever the perils and
-        horrors that stand in their way, they will be overcome!",
+        description:"Sigmarite Sisters know that their entire order is shamed in the eyes of their Lord Sigmar. Every one of them is sworn upon His altar to pacify the city and thereby redeem themselves. Whatever the perils and horrors that stand in their way, they will be overcome!",
         cost:"25",
         number:"",
         experience: 0,
@@ -1339,16 +1219,7 @@ Scenario.create(
         name:"Novice",
         warrior_type:"Henchman",
         warband:"Sisters of Sigmar",
-        description:"By tradition, the Sisters draw their recruits only from
-        the most noble houses of the Empire, and families
-        consider it a great honour to have their daughter
-        accepted into the order. Only maidens of noble
-        lineage can be relied upon to have the devotion to
-        duty and innate sense of honour. Few though the
-        recruits may be, they must endure several years as
-        Novices during which time their devotion will be
-        tested to the full. All are eager to prove themselves
-        worthy to be the handmaidens of Sigmar.",
+        description:"By tradition, the Sisters draw their recruits only from the most noble houses of the Empire, and families consider it a great honour to have their daughter accepted into the order. Only maidens of noble lineage can be relied upon to have the devotion to duty and innate sense of honour. Few though the recruits may be, they must endure several years as Novices during which time their devotion will be tested to the full. All are eager to prove themselves worthy to be the handmaidens of Sigmar.",
         cost:"15",
         number:"0-10",
         experience: 0,
@@ -1370,15 +1241,7 @@ Scenario.create(
         name:"Vampire",
         warrior_type:"Hero",
         warband:"The Undead",
-        description:"Vampires lead the Undead in their search for the
-        magical stones that will give their master the power to
-        conquer the Empire.
-        Although but pale shadows when compared to the
-        dread Vampire Lords, the immortal servants of Vlad
-        are still some of the most powerful creatures who
-        fight in Mordheim. Most of them serve the undying
-        count of Sylvania, but some have found the city to
-        their liking, and have become independent.",
+        description:"Vampires lead the Undead in their search for the magical stones that will give their master the power to conquer the Empire. Although but pale shadows when compared to the dread Vampire Lords, the immortal servants of Vlad are still some of the most powerful creatures who fight in Mordheim. Most of them serve the undying count of Sylvania, but some have found the city to their liking, and have become independent.",
         cost:"110",
         number:"1",
         experience: 20,
@@ -1401,14 +1264,7 @@ Scenario.create(
         name:"Necromancer",
         warrior_type:"Hero",
         warband:"The Undead",
-        description:"Necromancers are evil wizards, studying the corrupt
-        art of Necromancy. Many of them are acolytes and
-        servants of Vlad von Carstein, and follow the agents of
-        their master to the city of the Damned. Others are
-        recruited from amongst wizards and warlocks who
-        have come under the suspicion of the various agents
-        of Sigmar and have fled to Mordheim to avoid
-        persecution.",
+        description:"Necromancers are evil wizards, studying the corrupt art of Necromancy. Many of them are acolytes and servants of Vlad von Carstein, and follow the agents of their master to the city of the Damned. Others are recruited from amongst wizards and warlocks who have come under the suspicion of the various agents of Sigmar and have fled to Mordheim to avoid persecution.",
         cost:"35",
         number:"0-1",
         experience: 8,
@@ -1431,24 +1287,7 @@ Scenario.create(
         name:"Dreg",
         warrior_type:"Hero",
         warband:"The Undead",
-        description:"Dregs are the most miserable human
-        survivors of the demise of Mordheim.
-        They are deformed and rejected
-        individuals, shunned even by the other men and
-        women who still live in the ruins and catacombs of
-        the city.
-        Vampires often recruit Dregs as their servants and
-        treat them with surprising kindness. As a result, Dregs
-        are often fanatically loyal to their Undead overlords
-        and will do anything to protect and serve them.
-        Dregs are very useful to their masters as they can be
-        sent to buy equipment, weapons and supplies from
-        the settlements around Mordheim which would often
-        not welcome Necromancers or where Vampires
-        would fall under the suspicion of the Witch Hunters.
-        They can also do the bidding of their vampiric master
-        during daylight, when the Vampires must rest in their
-        coffins.",
+        description:"Dregs are the most miserable human survivors of the demise of Mordheim. They are deformed and rejected individuals, shunned even by the other men and women who still live in the ruins and catacombs of the city. Vampires often recruit Dregs as their servants and treat them with surprising kindness. As a result, Dregs are often fanatically loyal to their Undead overlords and will do anything to protect and serve them. Dregs are very useful to their masters as they can be sent to buy equipment, weapons and supplies from the settlements around Mordheim which would often not welcome Necromancers or where Vampires would fall under the suspicion of the Witch Hunters. They can also do the bidding of their vampiric master during daylight, when the Vampires must rest in their coffins.",
         cost:"20",
         number:"0-3",
         experience: 0,
@@ -1471,9 +1310,7 @@ Scenario.create(
         name:"Zombie",
         warrior_type:"Henchman",
         warband:"The Undead",
-        description:"Zombies are the most common of the Undead:
-        creatures animated by the will of their Necromantic
-        masters.",
+        description:"Zombies are the most common of the Undead: creatures animated by the will of their Necromantic masters.",
         cost:"15",
         number:"",
         experience: 0,
@@ -1499,13 +1336,7 @@ Scenario.create(
         name:"Dire Wolf",
         warrior_type:"Henchman",
         warband:"The Undead",
-        description:"Dire Wolves are slavering Undead hounds, the
-        animated remains of the giant wolves of the Worlds
-        Edge Mountains. Their chilling howls can strike fear
-        into the hearts of even the bravest warriors or most
-        ruthless Dwarf mercenaries. They prowl the streets of
-        Mordheim like shadows, and many men have died
-        with the cold jaws of a Dire Wolf around their neck.",
+        description:"Dire Wolves are slavering Undead hounds, the animated remains of the giant wolves of the Worlds Edge Mountains. Their chilling howls can strike fear into the hearts of even the bravest warriors or most ruthless Dwarf mercenaries. They prowl the streets of Mordheim like shadows, and many men have died with the cold jaws of a Dire Wolf around their neck.",
         cost:"50",
         number:"0-5",
         experience: 0,
@@ -1531,23 +1362,9 @@ Scenario.create(
 
     Warrior.create(
         name:"Ghoul",
-        warrior_type:"Hero",
+        warrior_type:"Henchman",
         warband:"The Undead",
-        description:"Ghouls are the descendants of evil and insane men
-        who ate the flesh of the dead. When the lean and
-        hungry times of famine come upon the Old World, the
-        most depraved and destitute took to feasting on
-        corpses to survive.
-        Driven by their unspeakable craving for the meat of
-        their fellow men, these creatures have given up their
-        human life and dwell near graveyards, crypts and
-        tombs, digging up the rotting corpses of the recently
-        buried and consuming the cold flesh with their bare
-        teeth and claws.
-        The destruction of Mordheim attracted many Ghoul
-        clans from the north, and now they have taken up
-        permanent residence in the crypts and cemeteries of
-        the ruined city.",
+        description:"Ghouls are the descendants of evil and insane men who ate the flesh of the dead. When the lean and hungry times of famine come upon the Old World, the most depraved and destitute took to feasting on corpses to survive. Driven by their unspeakable craving for the meat of their fellow men, these creatures have given up their human life and dwell near graveyards, crypts and tombs, digging up the rotting corpses of the recently buried and consuming the cold flesh with their bare teeth and claws. The destruction of Mordheim attracted many Ghoul clans from the north, and now they have taken up permanent residence in the crypts and cemeteries of the ruined city.",
         cost:"40",
         number:"",
         experience: 0,
@@ -1565,13 +1382,9 @@ Scenario.create(
 
     adept = Warrior.create(
         name:"Assassin Adept",
-        warrior_type:"Henchman",
+        warrior_type:"Hero",
         warband:"Skaven",
-        description:"The Nightmaster of Clan Eshin has sent the Assassin
-        to collect precious wyrdstone. Success means many
-        breeders, wealth and a better position amongst the
-        clan. Failure, on the other hand, is best not
-        contemplated…",
+        description:"The Nightmaster of Clan Eshin has sent the Assassin to collect precious wyrdstone. Success means many breeders, wealth and a better position amongst the clan. Failure, on the other hand, is best not contemplated…",
         cost:"60",
         number:"1",
         experience: 20,
@@ -1594,10 +1407,7 @@ Scenario.create(
         name:"Black Skaven",
         warrior_type:"Hero",
         warband:"Skaven",
-        description:"Black Skaven are the most powerful fighters of Clan
-        Eshin: black-furred killers trained in the martial arts of
-        their clan. In Mordheim they excel at ambushing and
-        assassinating man-things.",
+        description:"Black Skaven are the most powerful fighters of Clan Eshin: black-furred killers trained in the martial arts of their clan. In Mordheim they excel at ambushing and assassinating man-things.",
         cost:"40",
         number:"0-2",
         experience: 8,
@@ -1619,11 +1429,7 @@ Scenario.create(
         name:"Eshin Sorcerer",
         warrior_type:"Hero",
         warband:"Skaven",
-        description:"The Sorcerers of Clan Eshin are black magicians who
-        manufacture the enchanted weapons of the Assassins.
-        Though their power is slight compared to the
-        Warlocks of Clan Skryre or the mighty Grey Seer, their
-        black sorcery is still potent.",
+        description:"The Sorcerers of Clan Eshin are black magicians who manufacture the enchanted weapons of the Assassins. Though their power is slight compared to the Warlocks of Clan Skryre or the mighty Grey Seer, their black sorcery is still potent.",
         cost:"45",
         number:"0-1",
         experience: 8,
@@ -1646,10 +1452,7 @@ Scenario.create(
         name:"Night Runner",
         warrior_type:"Hero",
         warband:"Skaven",
-        description:"Night Runners are the young apprentices of Clan
-        Eshin. Recently initiated into the secrets of the clan,
-        they make up for their lack of knowledge with their
-        ambition and energy. ",
+        description:"Night Runners are the young apprentices of Clan Eshin. Recently initiated into the secrets of the clan, they make up for their lack of knowledge with their ambition and energy. ",
         cost:"20",
         number:"0-2",
         experience: 0,
@@ -1669,12 +1472,7 @@ Scenario.create(
         name:"Verminkin",
         warrior_type:"Henchman",
         warband:"Skaven",
-        description:"Verminkin are the Clanrats of Clan Eshin. The
-        strongest amongst them are initiated into the secrets
-        of the clans and begin their training to become
-        Assassins, the most feared warriors of the Skaven
-        warbands. All the Clanrats of Clan Eshin dream of
-        rising to the status of an Assassin one day.",
+        description:"Verminkin are the Clanrats of Clan Eshin. The strongest amongst them are initiated into the secrets of the clans and begin their training to become Assassins, the most feared warriors of the Skaven warbands. All the Clanrats of Clan Eshin dream of rising to the status of an Assassin one day.",
         cost:"20",
         number:"",
         experience: 0,
@@ -1694,10 +1492,7 @@ Scenario.create(
         name:"Giant Rat",
         warrior_type:"Henchman",
         warband:"Skaven",
-        description:"Giant Rats are creations of the twisted genius of the
-        Skaven. They are mutated monstrosities the size of
-        dogs. They fight alongside the Skaven, overpowering
-        any opponents by sheer weight of numbers. ",
+        description:"Giant Rats are creations of the twisted genius of the Skaven. They are mutated monstrosities the size of dogs. They fight alongside the Skaven, overpowering any opponents by sheer weight of numbers. ",
         cost:"15",
         number:"",
         experience: 0,
@@ -1716,8 +1511,7 @@ Scenario.create(
         name:"Rat Ogre",
         warrior_type:"Henchman",
         warband:"Skaven",
-        description:"These horrible monsters are much in demand as
-        bodyguards to important Skaven.",
+        description:"These horrible monsters are much in demand as bodyguards to important Skaven.",
         cost:"210",
         number:"0-1",
         experience: 0,
