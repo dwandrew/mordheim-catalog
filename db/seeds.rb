@@ -338,326 +338,90 @@ Mutation.create(name: "Hideous", description: "The mutant causes fear. See the P
 
 Scenario.create(
 name:"Defend the find", 
-description: "Often a warband finds a building with a hoard of
-wyrdstone or other treasure inside, only to be
-challenged by a rival warband. This usually leads to
-conflict as it is unlikely that either side will be willing
-to give up the wealth easily.", 
-terrain: "Each player takes it in turn to place a piece of terrain,
-either a ruined building, tower, or other similar item.
-We suggest that the terrain is set up within an area
-roughly 4' x 4'. The first building should be placed in
-the centre of the table, and the objective of the
-scenario is to take control of this building.", 
-warbands: "The warband with the lowest number of warriors in it
-is automatically the defender. If both sides are equal,
-roll to decide.
-The defender is deployed first inside or within 6\" of
-the objective building. The attacking warband is
-deployed within 6\" of any table edge. Note that you
-can split the warband to enter from different edges if
-you wish.",
+description: "Often a warband finds a building with a hoard of wyrdstone or other treasure inside, only to be challenged by a rival warband. This usually leads to conflict as it is unlikely that either side will be willing to give up the wealth easily.", 
+terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'. The first building should be placed in the centre of the table, and the objective of the scenario is to take control of this building.", 
+warbands: "The warband with the lowest number of warriors in it is automatically the defender. If both sides are equal, roll to decide. The defender is deployed first inside or within 6\" of the objective building. The attacking warband is deployed within 6\" of any table edge. Note that you can split the warband to enter from different edges if you wish.",
 starting: "The attacker has the first turn.",
-ending: "If at the end of the defender’s turn the
-attacker has more standing models within 6\" of the
-objective than the defender, the attacker wins.
-Alternatively, when one of the warbands fails its Rout
-test the game ends",
-experience: "+1 Survives. If a Hero or Henchman group survives
-the battle they gain +1 Experience.\n
-+1 Winning Leader. The leader of the winning
-warband gains +1 extra Experience.\n
-+1 Per Enemy Out of Action. Any Hero earns +1
-Experience for each enemy he puts out of action",
-wyrdstone: "One shard of wyrdstone for each Hero of either
-warband who is inside the objective building at the
-end of the game (up to a maximum of three shards
-per warband).",
+ending: "If at the end of the defender’s turn the attacker has more standing models within 6\" of the objective than the defender, the attacker wins. Alternatively, when one of the warbands fails its Rout test the game ends",
+experience: "+1 Survives. If a Hero or Henchman group survives the battle they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 extra Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action",
+wyrdstone: "One shard of wyrdstone for each Hero of either warband who is inside the objective building at the end of the game (up to a maximum of three shards per warband).",
 special_rules: ""
  )
  Scenario.create(
 name:"Skirmish", 
-description: "In the vastness of the Mordheim ruins there is always
-the risk of running into a rival warband. While two
-groups sometimes pass each other without a fight,
-more often than not there is a vicious battle amongst
-the ruins. If a warband can drive their rivals away, they
-will have a larger area in which to search for
-wyrdstone.", 
-terrain: "Each player takes it in turn to place a piece of terrain,
-either a ruined building, tower, or other similar item.
-We suggest that the terrain is set up within an area
-roughly 4' x 4", 
-warbands: "Each player rolls a dice. Whoever rolls highest
-chooses who sets up first. The first player then
-chooses which table edge to set up on, placing all his
-warriors within 8\" of that edge. His opponent then
-sets up within 8\" of the opposite edge.",
-starting:"Both players roll a D6. The higher scoring player takes
-the first turn.",
-ending: "When one of the warbands fails its Rout test, the game
-ends. The routing warband loses and their opponents
-win.",
-experience: "+1 Survives. If a Hero or a Henchman group survives
-the battle they gain +1 Experience. \n
-+1 Winning Leader. The leader of the winning
-warband gains +1 extra Experience.\n
-+1 Per Enemy Out of Action. Any Hero earns +1
-Experience for each enemy model he puts out of
-action.",
+description: "In the vastness of the Mordheim ruins there is always the risk of running into a rival warband. While two groups sometimes pass each other without a fight, more often than not there is a vicious battle amongst the ruins. If a warband can drive their rivals away, they will have a larger area in which to search for wyrdstone.", 
+terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4", 
+warbands: "Each player rolls a dice. Whoever rolls highest chooses who sets up first. The first player then chooses which table edge to set up on, placing all his warriors within 8\" of that edge. His opponent then sets up within 8\" of the opposite edge.",
+starting:"Both players roll a D6. The higher scoring player takes the first turn.",
+ending: "When one of the warbands fails its Rout test, the game ends. The routing warband loses and their opponents win.",
+experience: "+1 Survives. If a Hero or a Henchman group survives the battle they gain +1 Experience. \n +1 Winning Leader. The leader of the winning warband gains +1 extra Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy model he puts out of action.",
 wyrdstone: "",
 special_rules: ""
  )
  Scenario.create(
 name:"Wyrdstone hunt", 
-description: "Scattered in the ruins of Mordheim are innumerable
-tiny shards of priceless wyrdstone. It often happens
-that two warbands come upon the same area and only
-a battle can determine who will pick the spoils.
-In this scenario, warbands encounter each other
-while scavenging in the same ruined warehouse,
-vault, temple or other such potentially rich building.", 
-terrain: "Each player takes it in turn to place a piece of terrain,
-either a ruined building, tower, or other similar item.
-We suggest that the terrain is set up within an area
-roughly 4' x 4'.", 
-warbands: "Both players roll a D6 to see who deploys
-first. Whoever rolls highest sets up first,
-within 8\" of the table edge of his choice. His
-opponent then sets up within 8\" of the
-opposite edge.",
-starting:"Both players roll a D6. The highest scoring
-player takes the first turn.",
-ending: "The game ends when one warband fails its
-Rout test. The routers automatically lose.",
-experience: "+1 Survives. If a Hero or a Henchman
-group survives the battle they gain +1
-Experience.\n
-+1 Winning Leader. The leader of the
-winning warband gains +1 Experience.\n
-+1 per Wyrdstone Counter. If a Hero or
-Henchman is carrying a Wyrdstone counter
-at the end of the battle he receives +1
-Experience.\n
-+1 Per Enemy Out of Action. Any Hero
-earns +1 Experience for each enemy he puts
-out of action.",
-wyrdstone: "Your warriors earn one shard of wyrdstone
-for each counter still in their possession at
-the end of the battle.",
-special_rules: "Once you have placed the terrain, put some
-Wyrdstone counters on the tabletop to represent
-where the shards are. There will be D3+1 counters in
-total.
-Each player takes it in turn to place a counter. Roll a
-D6 to see which player goes first. The counters must
-be placed more than 10\" from the edge of the table
-and at least 6\" away from each other. Note that
-counters are placed before deciding which edge the
-warbands will play from, so it is a good idea to put
-counters towards the middle of the table. Warriors
-can pick up the counters simply by moving into
-contact with them. A warrior can carry any
-amount of wyrdstone without any penalty.
-Warriors cannot transfer their wyrdstone to
-another warrior. If the warrior who is
-carrying a counter is taken out of action,
-place the counter on the table where he fell"
+description: "Scattered in the ruins of Mordheim are innumerable tiny shards of priceless wyrdstone. It often happens that two warbands come upon the same area and only a battle can determine who will pick the spoils. In this scenario, warbands encounter each other while scavenging in the same ruined warehouse, vault, temple or other such potentially rich building.", 
+terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+warbands: "Both players roll a D6 to see who deploys first. Whoever rolls highest sets up first, within 8\" of the table edge of his choice. His opponent then sets up within 8\" of the opposite edge.",
+starting:"Both players roll a D6. The highest scoring player takes the first turn.",
+ending: "The game ends when one warband fails its Rout test. The routers automatically lose.",
+experience: "+1 Survives. If a Hero or a Henchman group survives the battle they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 per Wyrdstone Counter. If a Hero or Henchman is carrying a Wyrdstone counter at the end of the battle he receives +1 Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.",
+wyrdstone: "Your warriors earn one shard of wyrdstone for each counter still in their possession at the end of the battle.",
+special_rules: "Once you have placed the terrain, put some Wyrdstone counters on the tabletop to represent where the shards are. There will be D3+1 counters in total. Each player takes it in turn to place a counter. Roll a D6 to see which player goes first. The counters must be placed more than 10\" from the edge of the table and at least 6\" away from each other. Note that counters are placed before deciding which edge the warbands will play from, so it is a good idea to put counters towards the middle of the table. Warriors can pick up the counters simply by moving into contact with them. A warrior can carry any amount of wyrdstone without any penalty. Warriors cannot transfer their wyrdstone to another warrior. If the warrior who is carrying a counter is taken out of action, place the counter on the table where he fell"
  )
 
 Scenario.create(
     name:"Breakthrough", 
-    description: "When news of a huge deposit of wyrdstone starts
-    circulating, warbands will mount expeditions to
-    unearth the wealth. However, their rivals often try to
-    block them, eager to claim all the wyrdstone for
-    themselves.", 
-    terrain: "Each player takes it in turn to place a piece of terrain,
-    either a ruined building, tower, or other similar item.
-    We suggest that the terrain is set up within an area
-    roughly 4' x 4'.", 
-    warbands: "Each player rolls a dice. Whoever scores higher
-    decides which table edge the attacker sets up on.
-    The attacker sets up first, within 8\" of his table edge.
-    The defender sets up anywhere on the table as long as
-    all his warriors are at least 14\" away from any attacker.",
+    description: "When news of a huge deposit of wyrdstone starts circulating, warbands will mount expeditions to unearth the wealth. However, their rivals often try to block them, eager to claim all the wyrdstone for themselves.", 
+    terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "Each player rolls a dice. Whoever scores higher decides which table edge the attacker sets up on. The attacker sets up first, within 8\" of his table edge. The defender sets up anywhere on the table as long as all his warriors are at least 14\" away from any attacker.",
     starting:"The attacker has the first turn.",
-    ending: "If one of the warbands fails a Rout test, the game ends
-    immediately and the routing warband loses.
-    If the attacker manages to move two or more standing
-    warriors to within 2\" of the defender’s table edge,
-    they have broken through and he wins the game.",
-    experience: "+1 Survives. If a Hero or a Henchman group survives
-    the battle, they gain +1 Experience.\n
-    +1 Winning Leader. The leader of the winning
-    warband gains +1 Experience.\n
-    +1 Per Enemy Out of Action. Any Hero earns +1
-    Experience for each enemy he puts out of action.\n
-    +1 Breaking Through. Any warrior earns +1
-    Experience for breaking through enemy lines. If the
-    warrior is a Henchman, then the whole group gains
-    +1 Experience.",
+    ending: "If one of the warbands fails a Rout test, the game ends immediately and the routing warband loses. If the attacker manages to move two or more standing warriors to within 2\" of the defender’s table edge, they have broken through and he wins the game.",
+    experience: "+1 Survives. If a Hero or a Henchman group survives the battle, they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.\n +1 Breaking Through. Any warrior earns +1 Experience for breaking through enemy lines. If the warrior is a Henchman, then the whole group gains +1 Experience.",
     wyrdstone: "",
     special_rules: ""
     )
 
 Scenario.create(
     name:"Street fight", 
-    description: "Often two warbands will come face to face with each
-    other in the narrow streets of Mordheim. Sometimes
-    they pass each other without incident but more often
-    the meeting ends in bloodshed. ", 
-    terrain: "Set up all the buildings into a single street, with no
-    gaps along the sides. Behind the buildings are
-    impassable ruins, although the buildings themselves
-    are still accessible. The only way out is along the
-    street. The street may be as winding as you like and
-    should not be too narrow to fight in, but can have
-    narrow bottlenecks at some points. We suggest that
-    the terrain is set up within an area roughly 4' x 4'.", 
-    warbands: "Both players roll a D6 to see who sets up first.
-    Whoever rolls highest chooses whether to deploy first
-    or second. The warbands are deployed within 6\" of
-    opposite ends of the street.",
+    description: "Often two warbands will come face to face with each other in the narrow streets of Mordheim. Sometimes they pass each other without incident but more often the meeting ends in bloodshed. ", 
+    terrain: "Set up all the buildings into a single street, with no gaps along the sides. Behind the buildings are impassable ruins, although the buildings themselves are still accessible. The only way out is along the street. The street may be as winding as you like and should not be too narrow to fight in, but can have narrow bottlenecks at some points. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "Both players roll a D6 to see who sets up first. Whoever rolls highest chooses whether to deploy first or second. The warbands are deployed within 6\" of opposite ends of the street.",
     starting: "Roll a D6 to see who has the first turn.",
-    ending: "When one of the warbands manages to move all its
-    remaining warriors out of the street via the opposing
-    edge, the game ends and that player is victorious.
-    Alternatively a warband which fails a Rout test loses
-    the game.",
-    experience: "+1 Survives. If a Hero or a Henchman group survives
-    the battle they gain +1 Experience.\n
-    +1 Winning Leader. The leader of the winning
-    warband gains +1 Experience.\n
-    +1 Per Enemy Out of Action. Any Hero earns +1
-    Experience for each enemy he puts out of action.\n
-    +1 Escaping. The first Hero from either side (not
-    both!) who exits via the opposing table edge gains
-    +1 Experience.",
+    ending: "When one of the warbands manages to move all its remaining warriors out of the street via the opposing edge, the game ends and that player is victorious. Alternatively a warband which fails a Rout test loses the game.",
+    experience: "+1 Survives. If a Hero or a Henchman group survives the battle they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.\n +1 Escaping. The first Hero from either side (not both!) who exits via the opposing table edge gains +1 Experience.",
     wyrdstone: "",
-    special_rules: "Neither warband can backtrack down the street to
-    leave the battlefield via their own edge."
+    special_rules: "Neither warband can backtrack down the street to leave the battlefield via their own edge."
     )
 
 Scenario.create(
     name:"Chance encounter", 
-    description: "Both warbands have completed their daily search of
-    the ruins and are on their way back to their
-    encampment when they run into each other. Neither
-    side was expecting a fight, and the warband that
-    reacts the quickest has the advantage.", 
-    terrain: "Each player takes it in turn to place a piece of terrain,
-    either a ruined building, tower, or other similar item.
-    We suggest that the terrain is set up within an area
-    roughly 4' x 4'.", 
-    warbands: "1. Each player rolls a D6. The player with the higher
-    score can choose to deploy first or second.\n
-    2. The first player to deploy sets up his entire
-    warband in deployment zone A as shown below.
-    He may choose which quarter
-    of the table to nominate as
-    deployment zone A.\n
-    3. The second warband
-    can then be set up in
-    deployment zone B,
-    but no model
-    may be set up
-    within 14\" of
-    any enemy
-    model.",
-    starting:"Each player rolls a D6 and adds the normal Initiative
-    of their leader. The player with the higher score goes
-    first.",
-    ending: "The battle ends when one warband fails a Rout test.
-    The routing warband loses.",
-    experience: "+1 Survives. If a Hero or a Henchman group survives
-    the battle then they gain +1 Experience.\n
-    +1 Winning Leader. The leader of the winning
-    warband gains +1 Experience.\n
-    +1 Per Enemy Out of Action. Any Hero earns +1
-    Experience for each enemy he puts out of action.",
-    wyrdstone: "Both warbands gain all the wyrdstone they were
-    carrying at the beginning of the battle, minus the
-    number of their own Heroes that were taken out of
-    action during the game, down to a minimum of zero.
-    In addition, they gain one extra shard of wyrdstone
-    for each enemy Hero they take out of action, up to
-    the maximum number of shards the
-    opposing warband was carrying at the
-    beginning of the battle.",
-    special_rules: "Each warband is carrying D3 shards of wyrdstone at
-    the beginning of the battle. Mark down the number
-    each warband has."
+    description: "Both warbands have completed their daily search of the ruins and are on their way back to their encampment when they run into each other. Neither side was expecting a fight, and the warband that reacts the quickest has the advantage.", 
+    terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "1. Each player rolls a D6. The player with the higher score can choose to deploy first or second.\n 2. The first player to deploy sets up his entire warband in deployment zone A as shown below. He may choose which quarter of the table to nominate as deployment zone A.\n 3. The second warband can then be set up in deployment zone B, but no model may be set up within 14\" of any enemy model.",
+    starting:"Each player rolls a D6 and adds the normal Initiative of their leader. The player with the higher score goes first.",
+    ending: "The battle ends when one warband fails a Rout test. The routing warband loses.",
+    experience: "+1 Survives. If a Hero or a Henchman group survives the battle then they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.",
+    wyrdstone: "Both warbands gain all the wyrdstone they were carrying at the beginning of the battle, minus the number of their own Heroes that were taken out of action during the game, down to a minimum of zero. In addition, they gain one extra shard of wyrdstone for each enemy Hero they take out of action, up to the maximum number of shards the opposing warband was carrying at the beginning of the battle.",
+    special_rules: "Each warband is carrying D3 shards of wyrdstone at the beginning of the battle. Mark down the number each warband has."
     )
 
 Scenario.create(
     name:"Hidden treasure", 
-    description: "There is a rumour that one of the ruined buildings
-    has a concealed cellar with a treasure chest hidden in
-    it. Two rival warbands have heard about the cellar and
-    are now searching the area. Who knows what they will
-    find?", 
-    terrain: "Each player takes it in turn to place a piece of terrain,
-    either a ruined building, tower, or other similar item.
-    We suggest that the terrain is set up within an area
-    roughly 4' x 4'.", 
-    warbands: "Both players roll a D6 and whoever rolls highest
-    chooses which warband sets up first. This warband is
-    deployed within 8\" of any table edge the player
-    chooses. His opponent sets up within 8\" of the
-    opposite side.",
+    description: "There is a rumour that one of the ruined buildings has a concealed cellar with a treasure chest hidden in it. Two rival warbands have heard about the cellar and are now searching the area. Who knows what they will find?", 
+    terrain: "Each player takes it in turn to place a piece of terrain, either a ruined building, tower, or other similar item. We suggest that the terrain is set up within an area roughly 4' x 4'.", 
+    warbands: "Both players roll a D6 and whoever rolls highest chooses which warband sets up first. This warband is deployed within 8\" of any table edge the player chooses. His opponent sets up within 8\" of the opposite side.",
     starting:"Roll a D6. The player rolling highest has the first turn.",
-    ending: "When one warband gets the treasure to safety, or a
-    warband fails a Rout test, the game ends. The
-    victorious warband then gains the treasure chest.",
-    experience: "+1 Survives. If a Hero or a Henchman group survives
-    the battle they gain +1 Experience.\n
-    +1 Winning Leader. The leader of the winning
-    warband gains +1 Experience.\n
-    +1 Per Enemy Out of Action. Any Hero earns +1
-    Experience for each enemy he puts out of action.\n
-    +2 For Finding the Chest. If a Hero finds the
-    treasure chest he earns +2 Experience.",
+    ending: "When one warband gets the treasure to safety, or a warband fails a Rout test, the game ends. The victorious warband then gains the treasure chest.",
+    experience: "+1 Survives. If a Hero or a Henchman group survives the battle they gain +1 Experience.\n +1 Winning Leader. The leader of the winning warband gains +1 Experience.\n +1 Per Enemy Out of Action. Any Hero earns +1 Experience for each enemy he puts out of action.\n +2 For Finding the Chest. If a Hero finds the treasure chest he earns +2 Experience.",
     wyrdstone: "",
-    special_rules: "All the warriors (not animals!) in each warband know
-    roughly what they are looking for and must inspect
-    the buildings to find the treasure. Each time a warrior
-    enters a building which has not been previously
-    searched by either side roll 2D6. On a score of 12, he
-    has found the treasure. Buildings in the deployment
-    zones are not searched (since they have already
-    been thoroughly ransacked) and each building
-    may only be searched once.
-    If you have not scored 12 with any roll when
-    there is only one building left to search, the
-    treasure will automatically be found there. After
-    finding the treasure chest, the warrior must then
-    take it to safety via his own table edge. Carrying
-    the treasure chest will slow the warrior carrying
-    it to half speed. Two or more models may carry
-    the chest without any penalty. You may use the
-    treasure chest model to represent the chest. If
-    the carrier is put out of action, place the treasure
-    chest at the spot where he fell. Any man-sized
-    model may pick it up by moving into base
-    contact with it.
-    Whoever recovers the chest may roll on the
-    following chart after the game to see what the
-    chest contains. Note that you roll for each item
-    separately, apart from the gold crowns, which are
-    always automatically found. For example, roll to
-    see if you find any wyrdstone – you need a 5+ to
-    find it. Then roll to see if you find the armour,
-    and so on. This can make the chest a very
-    valuable acquisition – however, it could also
-    mean that your warband has risked death for
-    only three gold crowns!
-    ITEMS D6 ROLL REQUIRED TO FIND
-    3D6 gc Automatic
-    D3 pieces of wyrdstone 5+
-    Suit of light armour 4+
-    Sword 3+
-    D3 gems worth 10 gc each 5+"
+    special_rules: "All the warriors (not animals!) in each warband know roughly what they are looking for and must inspect the buildings to find the treasure. Each time a warrior enters a building which has not been previously searched by either side roll 2D6. On a score of 12, he has found the treasure. Buildings in the deployment zones are not searched (since they have already been thoroughly ransacked) and each building may only be searched once. If you have not scored 12 with any roll when there is only one building left to search, the treasure will automatically be found there. \n After finding the treasure chest, the warrior must then take it to safety via his own table edge. Carrying the treasure chest will slow the warrior carrying it to half speed. Two or more models may carry the chest without any penalty. You may use the treasure chest model to represent the chest. If the carrier is put out of action, place the treasure chest at the spot where he fell. Any man-sized model may pick it up by moving into base contact with it.\n Whoever recovers the chest may roll on the following chart after the game to see what the chest contains. Note that you roll for each item separately, apart from the gold crowns, which are always automatically found. For example, roll to see if you find any wyrdstone – you need a 5+ to find it. Then roll to see if you find the armour, and so on. This can make the chest a very valuable acquisition – however, it could also mean that your warband has risked death for only three gold crowns!
+    \nITEMS D6 ROLL REQUIRED TO FIND
+    \n3D6 gc Automatic
+    \nD3 pieces of wyrdstone - 5+
+    \nSuit of light armour - 4+
+    \nSword - 3+
+    \nD3 gems worth 10 gc each - 5+"
     )
 
 Scenario.create(
