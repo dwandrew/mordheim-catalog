@@ -29,11 +29,11 @@ SpecialRule.create(name:"Cannot be parried", description:"The steel whip is a fl
 SpecialRule.create(name:"Poison", description:"The needles fired by a blowpipe are coated in a venom very similar in its effects to the Black Lotus (if you roll a 6 on the To Hit roll, the victim is automatically wounded). A blowpipe cannot cause critical hits. This weapon has a positive armour save modifier, so a model that normally has a save of 5+ will get a save of 4+ against a blowpipe dart. Even models that normally do not have an armour save will get a 6+ save to take into account protection offered by clothes, fur or the like.")
 SpecialRule.create(name:"Stealthy", description:"A Skaven armed with a blowpipe can fire while hidden without revealing his position to the enemy. The target model can take an Initiative test in order to try to spot the firing Skaven. If the test is successful, the Skaven no longer counts as hidden.")
 
-SpecialRule.create(name:"Climb", description:": A Skaven equipped with Fighting Claws can add +1 to his Initiative when making Climbing tests.")
-SpecialRule.create(name:"Pair", description:" These weapons are traditionally used in pairs, one in each hand. A warrior armed with these weapons gets an additional attack, but must one of these weapons in each hand.")
-SpecialRule.create(name:"Claw parry", description:" A Skaven armed with Fighting Claws may parry blows and can re-roll a failed attempt once, in the same way as a model armed with a sword and buckler.")
+SpecialRule.create(name:"Climb", description:"A Skaven equipped with Fighting Claws can add +1 to his Initiative when making Climbing tests.")
+SpecialRule.create(name:"Pair", description:"These weapons are traditionally used in pairs, one in each hand. A warrior armed with these weapons gets an additional attack, but must one of these weapons in each hand.")
+SpecialRule.create(name:"Claw parry", description:"A Skaven armed with Fighting Claws may parry blows and can re-roll a failed attempt once, in the same way as a model armed with a sword and buckler.")
 SpecialRule.create(name:"Cumbersome", description:"A model armed with Fighting Claws may not use any other weapons in the entire battle.")
-SpecialRule.create(name:"Venomous", description:" The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.")
+SpecialRule.create(name:"Venomous", description:"The venom of Weeping Blades will enter the blood of the victim and ravage his organs and muscles. These weapons count as being permanently coated in black lotus (see the Equipment section). No additional poison may be applied to Weeping Blades.")
 
 
 
@@ -77,7 +77,7 @@ Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", co
 Weapon.create(name:"Fighting claws",range:"Close Combat", rarity: "Rare 7 (Skaven only)", cost:"35 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Climb"), SpecialRule.find_by_name("Claw parry"), SpecialRule.find_by_name("Cumbersome")]
 Weapon.create(name:"Weeping blades",range:"Close Combat", rarity: "Rare 9 (Skaven only)", cost:"50 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Venomous"), SpecialRule.find_by_name("Parry")]
 Weapon.create(name:"Sigmarite warhammer",range:"Close Combat", rarity: "Common (Sisters of Sigmar only)", cost:"15", strength:"As user +1" ).special_rules<< [SpecialRule.find_by_name("Concussion"), SpecialRule.find_by_name("Holy")]
-Weapon.create(name:"Steel whip", cost:"10", rarity: "Common (Sisters of Sigmar only).", strength: "As user", range: "Close combat").special_rules<< [SpecialRule.find_by_name("Whipcrack"), SpecialRule.find_by_name("Cannot be parried")]
+Weapon.create(name:"Steel whip", cost:"10", rarity: "Common (Sisters of Sigmar only)", strength: "As user", range: "Close combat").special_rules<< [SpecialRule.find_by_name("Whipcrack"), SpecialRule.find_by_name("Cannot be parried")]
 
 
 
