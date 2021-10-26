@@ -61,7 +61,7 @@ SpecialRule.create(name:"Ithilmar weapon", description:"This weapon gives the us
 # Weapon.create(name:"", range:"Close Combat", cost:0, strength:"As user")
 # Weapon.create(name:"Fist", range:"Close Combat", cost:0, strength:"As user -1")
 Weapon.create(name:"Fist", range:"Close Combat", cost:"0", strength:"As user -1").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour saving_throw")
-Weapon.create(name:"Dagger", range:"Close Combat", cost:"2", strength:"").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour saving_throw")
+Weapon.create(name:"Dagger", range:"Close Combat", cost:"2", strength:"As user").special_rules<< SpecialRule.find_by_name("+1 Enemy Armour saving_throw")
 Weapon.create(name:"Hammer, staff, mace or club", range:"Close Combat", cost:"3", strength:"As user").special_rules<< SpecialRule.find_by_name("Concussion")
 Weapon.create(name:"Axe or pick", range:"Close Combat", cost:"5", strength:"As user").special_rules<< SpecialRule.find_by_name("Cutting edge")
 Weapon.create(name:"Sword", range:"Close Combat", cost:"10", strength:"As user").special_rules<< SpecialRule.find_by_name("Parry")
@@ -74,16 +74,12 @@ Weapon.create(name:"Double-handed weapon", range:"Close Combat", cost:"15", stre
 Weapon.create(name:"Gromril weapon", rarity: "Rare 11", range:"Close Combat", cost: "4 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Gromril weapon")
 Weapon.create(name:"Ithilmar weapon", rarity: "Rare 9", range:"Close Combat", cost: "3 x price", strength:"As user" ).special_rules<< SpecialRule.find_by_name("Ithilmar weapon")
 
-Weapon.create(name:"Sigmarite warhammer",range:"Close Combat", rarity: "Common (Sisters of Sigmar only)", cost:"15", strength:"As user +1" ).special_rules<< [SpecialRule.find_by_name("Concussion"), SpecialRule.find_by_name("Holy")]
 Weapon.create(name:"Fighting claws",range:"Close Combat", rarity: "Rare 7 (Skaven only)", cost:"35 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Climb"), SpecialRule.find_by_name("Claw parry"), SpecialRule.find_by_name("Cumbersome")]
 Weapon.create(name:"Weeping blades",range:"Close Combat", rarity: "Rare 9 (Skaven only)", cost:"50 (per pair)", strength:"As user" ).special_rules<< [SpecialRule.find_by_name("Pair"), SpecialRule.find_by_name("Venomous"), SpecialRule.find_by_name("Parry")]
-
-
-
+Weapon.create(name:"Sigmarite warhammer",range:"Close Combat", rarity: "Common (Sisters of Sigmar only)", cost:"15", strength:"As user +1" ).special_rules<< [SpecialRule.find_by_name("Concussion"), SpecialRule.find_by_name("Holy")]
 Weapon.create(name:"Steel whip", cost:"10", rarity: "Common (Sisters of Sigmar only).", strength: "As user", range: "Close combat").special_rules<< [SpecialRule.find_by_name("Whipcrack"), SpecialRule.find_by_name("Cannot be parried")]
 
 
-Weapon.create(name:"Blowpipe", range:"8\"", cost:"25", strength:"1", rarity: "Rare 7 (skaven only)").special_rules << [SpecialRule.find_by_name("Poison"), SpecialRule.find_by_name("Stealthy"), SpecialRule.find_by_name("+1 Enemy Armour saving_throw")]
 
 
 Weapon.create(name:"Short bow", range:"16\"", cost:"5", strength:"3")
@@ -95,6 +91,7 @@ Weapon.create(name:"Sling", range:"18\"", cost:"2", strength:"3").special_rules<
 Weapon.create(name:"Throwing star/knife", rarity: "Rare 5", range:"6\"", cost:"15", strength:"As user").special_rules<< SpecialRule.find_by_name("Thrown weapon")
 Weapon.create(name:"Repeater crossbow", rarity: "Rare 8", range:"24\"", cost:"40", strength:"3").special_rules<< SpecialRule.find_by_name("Fire twice")
 Weapon.create(name:"Crossbow pistol", rarity: "Rare 9", range:"10\"", cost:"35", strength:"4").special_rules<< SpecialRule.find_by_name("Shoot in close combat")
+Weapon.create(name:"Blowpipe", range:"8\"", cost:"25", strength:"1", rarity: "Rare 7 (skaven only)").special_rules << [SpecialRule.find_by_name("Poison"), SpecialRule.find_by_name("Stealthy"), SpecialRule.find_by_name("+1 Enemy Armour saving_throw")]
 
 Weapon.create(name:"Pistol", rarity: "Rare 8", range:"6\"", cost:"15/30", strength:"4").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
 Weapon.create(name:"Warplock Pistol", rarity: "Rare 11 (Skaven only)", range:"8\"", cost:"35/70", strength:"5").special_rules<< [SpecialRule.find_by_name("Prepare shot"), SpecialRule.find_by_name("-1 Enemy Armour saving_throw"), SpecialRule.find_by_name("Hand to hand")]
